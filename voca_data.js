@@ -748,6 +748,7 @@ const examData = [
 
 
 
+
 // --- 기출 필수 숙어 모음 (idiomData) - 1~22일차 확장판 ---
 const idiomData = [
     // 💡 1~14일차 추가 발굴된 초빈출 숙어/전치사 짝꿍
@@ -804,5 +805,5 @@ const idiomData = [
     { idiom: "prevail on (upon) A to V", m: "A가 ~하도록 설득하다 (= persuade)", w: "prevail", d: "24일차" },
     { idiom: "lose one's temper", m: "화를 내다, 평정심을 잃다", w: "temper", d: "24일차" },
     { idiom: "at the outset", m: "처음에, 발단에", w: "outset", d: "24일차" }
-    
+
 ];
