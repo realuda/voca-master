@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gong-Voca Exam Master v32</title>
+    <style>
+        :root {
+            --primary: #818cf8; --success: #34d399; --amber: #fbbf24;
+            --rose: #fb7185; --bg: #0f172a; --card: #1e293b;
+            --text-main: #f1f5f9; --text-sub: #94a3b8; --border: #334155;
+            --item-hover: #2d3748;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, sans-serif;
+            background-color: var(--bg); color: var(--text-main);
+            margin: 0; display: flex; justify-content: center; min-height: 100vh; padding: 20px; box-sizing: border-box;
+            letter-spacing: -0.02em;
+        }
+
+        .container { width: 100%; max-width: 800px; }
+
+        #main-menu { text-align: center; padding-top: 20px; }
+        .menu-title { font-size: 32px; font-weight: 800; color: var(--primary); margin-bottom: 5px; }
+        .menu-sub { color: var(--text-sub); margin-bottom: 20px; }
+        
+        .dashboard { display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; margin-bottom: 30px; }
+        .stat-box { background: rgba(129, 140, 248, 0.1); border: 1px solid rgba(129, 140, 248, 0.3); padding: 12px 20px; border-radius: 15px; font-weight: 700; color: var(--text-main); font-size: 15px; display: flex; align-items: center; gap: 8px; }
+        .stat-num { color: var(--amber); font-size: 18px; }
+
+        .menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .menu-card {
+            background: var(--card); padding: 25px; border-radius: 20px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); cursor: pointer;
+            transition: 0.3s; border: 2px solid transparent; text-align: left;
+        }
+        .menu-card:hover { transform: translateY(-3px); border-color: var(--primary); background: #263143; }
+        .menu-card h3 { margin: 0 0 5px 0; color: var(--primary); font-size: 18px; }
+        .menu-card p { margin: 0; color: var(--text-sub); font-size: 13px; line-height: 1.4; }
+        .menu-card.full-width { grid-column: span 2; text-align: center; background: linear-gradient(145deg, #1e293b, #2d3748); border: 1px solid var(--border); }
+        .menu-card.highlight { background: linear-gradient(145deg, #312e81, #1e293b); border-color: #4f46e5; }
+
+        .game-area { display: none; background: var(--card); padding: 35px; border-radius: 24px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.4); }
+        .back-btn { background: none; border: none; color: var(--text-sub); cursor: pointer; font-weight: 600; margin-bottom: 20px; display: flex; align-items: center; gap: 5px; font-size: 15px; }
+        
+        .progress-header { margin-bottom: 15px; font-weight: 700; color: var(--primary); font-size: 18px; display: flex; flex-direction: column; gap: 8px; }
+        .progress-top-row { display: flex; justify-content: space-between; align-items: center; }
+        .progress-badge { background: #312e81; padding: 4px 12px; border-radius: 10px; font-size: 14px; color: #c7d2fe; }
+        .scope-badge { font-size: 13px; color: var(--text-sub); font-weight: 500; text-align: center; background: #0f172a; padding: 5px 10px; border-radius: 8px; border: 1px solid var(--border); }
+
+        .timer-container { width: 100%; height: 6px; background: var(--border); border-radius: 4px; margin-bottom: 20px; overflow: hidden; }
+        .timer-bar { height: 100%; background: var(--amber); width: 100%; transition: width 1s linear, background-color 0.5s; }
+        .timer-bar.warning { background: var(--rose); }
+
+        .match-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .item { padding: 16px 12px; border-radius: 12px; border: 2px solid var(--border); text-align: center; cursor: pointer; transition: 0.2s; background: #1e293b; color: var(--text-main); font-weight: 500; font-size: 14px; word-break: keep-all; }
+        .item.selected { border-color: var(--primary); background: #312e81; color: white; font-weight: 700; transform: scale(0.98); }
+        .item.correct { opacity: 0; pointer-events: none; transform: scale(0.9); transition: 0.4s; }
+        .item.wrong { border-color: var(--rose); background: #451225; animation: shake 0.4s; }
+
+        .wrong-list-box { background: #0f172a; border: 1px solid var(--border); border-radius: 15px; padding: 20px; margin: 20px 0; text-align: left; max-height: 250px; overflow-y: auto; }
+        .wrong-list-box h4 { color: var(--rose); margin-top: 0; margin-bottom: 15px; font-size: 16px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+        .wrong-list-ul { list-style: none; padding: 0; margin: 0; }
+        .wrong-list-ul li { margin-bottom: 10px; font-size: 15px; color: var(--text-main); line-height: 1.4; display: flex; align-items: center; gap: 10px; }
+        .wrong-word-hl { color: var(--primary); font-weight: 700; display: inline-block; min-width: 120px; }
+        .time-result { color: var(--amber); font-weight: 800; font-size: 20px; margin: 15px 0; background: rgba(251, 191, 36, 0.1); padding: 10px; border-radius: 10px; display: inline-block; border: 1px solid rgba(251, 191, 36, 0.3); }
+
+        .word-display { font-size: 48px; font-weight: 800; color: var(--primary); margin-bottom: 25px; text-align: center; }
+        .slot-container { display: flex; flex-direction: column; gap: 10px; margin-bottom: 25px; }
+        .slot { padding: 16px; border: 2px dashed var(--border); border-radius: 12px; text-align: center; font-weight: 600; color: var(--text-sub); font-size: 18px; }
+        .slot.hinted { color: #cbd5e1; }
+        .slot.filled { border-color: var(--success); color: var(--success); background: #064e3b; border-style: solid; }
+        
+        .exam-sentence { font-size: 19px; line-height: 1.6; margin-bottom: 30px; padding: 20px; background: #0f172a; border-radius: 15px; border-left: 5px solid var(--primary); color: #e2e8f0; }
+        .underlined { text-decoration: underline; font-weight: 800; color: var(--primary); }
+        .options-list { display: flex; flex-direction: column; gap: 10px; }
+        .opt-btn { width: 100%; padding: 16px; border: 2px solid var(--border); border-radius: 12px; text-align: left; background: #1e293b; cursor: pointer; font-size: 16px; transition: 0.2s; color: var(--text-main); }
+        .opt-btn:hover { background: var(--item-hover); }
+        .opt-btn.correct-ans { background: #065f46; color: white; border-color: var(--success); }
+        .opt-btn.wrong-ans { background: #7f1d1d; color: white; border-color: var(--rose); }
+
+        .filter-container { margin-bottom: 20px; padding: 25px 20px; background: #161e2e; border-radius: 15px; text-align: center; }
+        .day-badge { display: inline-block; padding: 8px 16px; margin: 5px; background: #1e293b; border: 1px solid var(--border); border-radius: 20px; cursor: pointer; font-size: 14px; font-weight: 600; color: var(--text-sub); transition: 0.2s; user-select: none; }
+        .day-badge.active { background: var(--primary); color: white; border-color: var(--primary); }
+        .btn-toggle-all { background: transparent; color: var(--primary); border: 1px solid var(--primary); padding: 6px 14px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; margin-bottom: 15px; transition: 0.2s; }
+        .btn-toggle-all:hover { background: rgba(129, 140, 248, 0.1); }
+        
+        .btn-start-match { margin-top: 10px; background: var(--primary); color: white; padding: 16px; border: none; border-radius: 12px; font-weight: 800; font-size: 16px; cursor: pointer; width: 100%; transition: 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
+        .btn-start-match:hover { background: #6366f1; transform: translateY(-2px); }
+        .btn-start-hardcore { margin-top: 10px; background: #0f172a; color: var(--amber); border: 2px solid var(--amber); padding: 16px; border-radius: 12px; font-weight: 800; font-size: 16px; cursor: pointer; width: 100%; transition: 0.3s; }
+        .btn-start-hardcore:hover { background: rgba(251, 191, 36, 0.1); }
+
+        input[type="text"] { width: 100%; padding: 18px; border: 2px solid var(--border); border-radius: 15px; font-size: 18px; text-align: center; box-sizing: border-box; outline: none; margin-bottom: 15px; background: #0f172a; color: white; }
+        .btn-group { display: flex; gap: 10px; }
+        .btn-group button { flex: 1; padding: 14px; border: none; border-radius: 12px; font-weight: 600; cursor: pointer; transition: 0.2s; }
+        .btn-hint { background: var(--amber); color: #451a03; }
+        .btn-next { background: #334155; color: #e2e8f0; }
+
+        .tts-btn { cursor: pointer; font-size: 20px; transition: 0.2s; margin-right: 8px; user-select: none; }
+        .tts-btn:hover { transform: scale(1.2); filter: brightness(1.2); }
+        .fc-tts-btn { font-size: 28px; cursor: pointer; padding: 10px; border-radius: 50%; background: rgba(255,255,255,0.1); display: inline-block; margin-bottom: 15px; }
+
+        .glossary-header-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px; }
+        .glossary-search-box { flex: 1 1 100%; margin-bottom: 0 !important; padding: 16px; border-radius: 12px; border: 1px solid var(--border); background: #0f172a; color: var(--text-main); font-size: 16px; outline: none; transition: 0.3s; box-sizing: border-box; }
+        .glossary-search-box:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.2); }
+        .glossary-btn-group { display: flex; gap: 10px; width: 100%; justify-content: flex-end; }
+        .btn-toggle-action { background: #1e293b; color: var(--text-sub); border: 1px solid var(--border); border-radius: 12px; padding: 8px 16px; cursor: pointer; transition: 0.2s; font-weight: 700; white-space: nowrap; }
+        .btn-toggle-action.active { background: rgba(251, 191, 36, 0.1); color: var(--amber); border-color: var(--amber); }
+
+        .glossary-day-filters { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 20px; }
+        .glossary-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 15px; max-height: 60vh; overflow-y: auto; padding: 5px; }
+        .glossary-list::-webkit-scrollbar { width: 8px; }
+        .glossary-list::-webkit-scrollbar-track { background: var(--bg); border-radius: 10px; }
+        .glossary-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
+        .glossary-item { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; padding: 20px; background: #1e293b; border: 1px solid var(--border); border-radius: 15px; transition: 0.2s; }
+        .glossary-item:hover { transform: translateY(-3px); border-color: var(--primary); background: #263143; }
+        
+        .glossary-word-row { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 8px; }
+        .glossary-word-wrap { display: flex; align-items: center; }
+        .glossary-word { font-size: 22px; font-weight: 800; color: var(--primary); }
+        .fav-star { font-size: 24px; cursor: pointer; color: var(--border); transition: 0.2s; user-select: none; margin-left: 10px; }
+        .fav-star:hover { transform: scale(1.2); }
+        .fav-star.active { color: var(--amber); }
+
+        .glossary-meanings { font-size: 15px; color: var(--text-main); line-height: 1.5; margin-bottom: 10px; transition: 0.3s; }
+        .glossary-core { font-size: 13px; color: var(--amber); background: rgba(251, 191, 36, 0.1); padding: 8px; border-radius: 8px; border: 1px solid rgba(251, 191, 36, 0.2); margin-bottom: 15px; width: 100%; box-sizing: border-box; line-height: 1.4; transition: 0.3s; }
+        .glossary-day-tag { font-size: 12px; font-weight: 600; color: var(--text-sub); background: #0f172a; padding: 6px 12px; border-radius: 8px; align-self: flex-end; }
+        .glossary-list.hide-meanings .glossary-meanings, .glossary-list.hide-meanings .glossary-core { display: none; }
+
+        /* 💡 필수 숙어 전용 스타일 추가 */
+        .idiom-base-word { font-size: 13px; color: #cbd5e1; background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 6px; margin-bottom: 10px; display: inline-block; }
+
+        .fc-scene { perspective: 1000px; width: 100%; height: 350px; margin: 20px 0; }
+        .fc-card { width: 100%; height: 100%; transition: transform 0.6s; transform-style: preserve-3d; cursor: pointer; position: relative; }
+        .fc-card.is-flipped { transform: rotateY(180deg); }
+        .fc-face { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #1e293b; border: 2px solid var(--border); border-radius: 24px; padding: 30px; box-sizing: border-box; text-align: center; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); }
+        .fc-back { transform: rotateY(180deg); background: #263143; border-color: var(--primary); }
+        .fc-word { font-size: 42px; font-weight: 800; color: var(--primary); margin-bottom: 15px; }
+        .fc-meanings { font-size: 22px; color: white; margin-bottom: 20px; font-weight: 600; line-height: 1.4; }
+        .fc-core { font-size: 16px; color: var(--amber); background: rgba(251, 191, 36, 0.1); padding: 15px; border-radius: 12px; border: 1px solid rgba(251, 191, 36, 0.2); line-height: 1.5; width: 100%; word-break: keep-all;}
+        .fc-controls { display: flex; justify-content: space-between; align-items: center; margin-top: 15px; gap: 15px; }
+        .fc-btn { flex: 1; padding: 18px; border: none; border-radius: 15px; font-weight: 800; font-size: 16px; cursor: pointer; transition: 0.2s; background: var(--primary); color: white; }
+        .fc-btn:active { transform: scale(0.95); }
+        .fc-btn.secondary { background: var(--border); color: var(--text-main); }
+        .fc-progress { font-size: 16px; font-weight: 700; color: var(--text-sub); width: 80px; text-align: center; }
+        .fc-hint { color: var(--text-sub); font-size: 13px; margin-top: 15px; opacity: 0.7; }
+
+        @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+        @media (max-width: 600px) { 
+            .menu-grid { grid-template-columns: 1fr; } 
+            .menu-card.full-width { grid-column: span 1; }
+            .match-grid { grid-template-columns: 1fr; } 
+            .word-display { font-size: 36px; } 
+            .fc-word { font-size: 32px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div id="main-menu">
+        <h1 class="menu-title">Voca Exam Master</h1>
+        <p class="menu-sub">v32.0 기출 필수 숙어 모음 탑재</p>
+        
+        <div id="dashboard" class="dashboard">
+            <div class="stat-box">📚 영단어: <span id="stat-total" class="stat-num">0</span>개</div>
+            <div class="stat-box">⭐ 즐겨찾기: <span id="stat-fav" class="stat-num">0</span>개</div>
+            <div class="stat-box">💡 필수 숙어: <span id="stat-idiom" class="stat-num">0</span>개</div>
+        </div>
+
+        <div class="menu-grid">
+            <div class="menu-card" onclick="openMatchDaySelect()">
+                <h3>01. 스피드 매칭 ⚡</h3>
+                <p>30초 제한! 끝나면 틀린 단어와 소요 시간이 나옵니다.</p>
+            </div>
+            <div class="menu-card" onclick="initPolyGame()">
+                <h3>02. 다의어 마스터 🧠</h3>
+                <p>공무원 시험의 함정, 다의어를 주관식으로 확실히 외웁니다.</p>
+            </div>
+            <div class="menu-card" onclick="initExamGame()">
+                <h3>03. 실전 객관식 🎯</h3>
+                <p>기출 문맥 퀴즈를 풀며 독해와 어휘를 동시에 잡습니다.</p>
+            </div>
+            <div class="menu-card" onclick="openGlossary()">
+                <h3>04. 미니 사전 📖</h3>
+                <p>뜻을 가리고 암기하거나 발음(TTS)을 들어보세요.</p>
+            </div>
+            <div class="menu-card full-width" onclick="openFlashcardSettings()">
+                <h3>05. 출퇴근 플래시카드 🃏</h3>
+                <p>대중교통에서 한 손으로 넘기며 외우는 코어 이미지 카드!</p>
+            </div>
+            <div class="menu-card full-width highlight" onclick="openIdiomDictionary()">
+                <h3>06. 기출 필수 숙어 💡</h3>
+                <p>시험에 무조건 나오는 전치사 짝꿍과 비유적 숙어 모음!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="game-area" class="game-area">
+        <button class="back-btn" onclick="showMenu()">← 메뉴로 돌아가기</button>
+        <div id="game-content"></div>
+    </div>
+</div>
+
+<script src="voca_data.js"></script>
+
+<script>
+    let mPool = [], mAttempted = 0, mTotal = 0, selDays = [];
+    let matchTimer = null;
+    let mWrongSet = new Set();
+    let gameStartTime = 0;
+
+    let pPool = [], pCur = 0, pTotal = 0;
+    let ePool = [], eCur = 0, eTotal = 0;
+
+    let favWords = JSON.parse(localStorage.getItem('vocaFavorites')) || [];
+    let showOnlyFavs = false;
+    let currentGlossaryDay = 'all'; 
+    let isMeaningHidden = false; 
+
+    let fcPool = [], fcIndex = 0; 
+
+    // 💡 최고 품질의 원어민 목소리 탐색
+    let engVoice = null;
+    function loadVoices() {
+        const voices = window.speechSynthesis.getVoices();
+        engVoice = voices.find(v => v.lang === 'en-US' && v.name.includes('Google')) ||
+                   voices.find(v => v.lang === 'en-US' && v.name.includes('Apple')) ||
+                   voices.find(v => v.lang === 'en-US') ||
+                   voices.find(v => v.lang.startsWith('en'));
+    }
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+
+    window.onload = updateDashboard;
+
+    function updateDashboard() {
+        document.getElementById('stat-total').innerText = fullDB.length;
+        document.getElementById('stat-fav').innerText = favWords.length;
+        // 💡 idiomData 배열이 voca_data.js에 정의되어 있다면 길이를 표시
+        if(typeof idiomData !== 'undefined') {
+            document.getElementById('stat-idiom').innerText = idiomData.length;
+        }
+    }
+
+    function playTTS(text, event) {
+        if(event) event.stopPropagation(); 
+        if ('speechSynthesis' in window) {
+            window.speechSynthesis.cancel(); 
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'en-US'; 
+            
+            if(!engVoice) loadVoices(); 
+            if(engVoice) utterance.voice = engVoice; 
+
+            utterance.rate = 0.9; 
+            window.speechSynthesis.speak(utterance);
+        } else {
+            alert("해당 브라우저에서는 음성 지원을 지원하지 않습니다.");
+        }
+    }
+
+    function showMenu() { 
+        clearInterval(matchTimer);
+        updateDashboard();
+        document.getElementById('main-menu').style.display = 'block'; 
+        document.getElementById('game-area').style.display = 'none'; 
+    }
+
+    /* --- [1] 스피드 매칭 --- */
+    function openMatchDaySelect() {
+        const area = document.getElementById('game-content');
+        document.getElementById('main-menu').style.display = 'none';
+        document.getElementById('game-area').style.display = 'block';
+        const days = [...new Set(fullDB.map(i => i.d))].sort((a,b) => parseInt(a) - parseInt(b));
+        area.innerHTML = `
+            <div class="filter-container">
+                <h3 style="margin-top:0; color:var(--primary);">학습 날짜 선택</h3>
+                <button class="btn-toggle-all" onclick="toggleAllDays()">전체 선택 / 해제</button>
+                <div id="day-badges">${days.map(d => `<span class="day-badge" data-day="${d}" onclick="tglD(this, '${d}')">${d}</span>`).join('')}</div>
+                <button class="btn-start-match" onclick="startMatch(false)">일반 매칭 시작 (30초)</button>
+                <button class="btn-start-hardcore" onclick="startMatch(true)">⭐ 내 별표 단어로만 매칭 시작</button>
+            </div>`;
+    }
+
+    function toggleAllDays() {
+        const badges = document.querySelectorAll('.day-badge');
+        const allDaysCount = [...new Set(fullDB.map(i => i.d))].length;
+        if (selDays.length === allDaysCount) {
+            selDays = []; badges.forEach(b => b.classList.remove('active'));
+        } else {
+            selDays = [...new Set(fullDB.map(i => i.d))].sort((a,b) => parseInt(a) - parseInt(b));
+            badges.forEach(b => b.classList.add('active'));
+        }
+    }
+
+    function tglD(el, d) { 
+        el.classList.toggle('active'); 
+        if(selDays.includes(d)) selDays = selDays.filter(i=>i!==d); 
+        else selDays.push(d); 
+    }
+    
+    function getScopeText() {
+        const allDaysCount = [...new Set(fullDB.map(i => i.d))].length;
+        if (selDays.length === allDaysCount) return `전체 범위 (1일차~${allDaysCount}일차)`;
+        const sortedSel = [...selDays].sort((a,b) => parseInt(a) - parseInt(b));
+        if (sortedSel.length > 3) return `${sortedSel.slice(0, 3).join(', ')} 외 ${sortedSel.length - 3}일`;
+        return sortedSel.join(', ');
+    }
+
+    function startMatch(isHardcore) {
+        let filtered = [];
+        if(isHardcore) {
+            if(favWords.length < 6) return alert("별표 단어가 최소 6개 이상 필요합니다! 미니 사전에서 별표를 추가해주세요.");
+            filtered = fullDB.filter(i => favWords.includes(i.w));
+            selDays = ["⭐ 즐겨찾기"]; 
+        } else {
+            filtered = fullDB.filter(i => selDays.includes(i.d));
+            if(filtered.length === 0) return alert("날짜를 하나 이상 선택하세요.");
+        }
+        mPool = [...filtered].sort(() => Math.random() - 0.5); 
+        mTotal = mPool.length; 
+        mAttempted = 0; 
+        mWrongSet.clear();
+        gameStartTime = Date.now();
+        nextMatch(isHardcore);
+    }
+
+    function startTimer(isHardcore) {
+        clearInterval(matchTimer);
+        let timeLeft = 30;
+        const timerBar = document.getElementById('match-timer-bar');
+        timerBar.style.transition = 'none';
+        timerBar.style.width = '100%';
+        timerBar.classList.remove('warning');
+        
+        setTimeout(() => {
+            timerBar.style.transition = 'width 1s linear, background-color 0.5s';
+            matchTimer = setInterval(() => {
+                timeLeft--;
+                timerBar.style.width = `${(timeLeft / 30) * 100}%`;
+                if (timeLeft <= 10) timerBar.classList.add('warning');
+                
+                if (timeLeft <= 0) {
+                    clearInterval(matchTimer);
+                    document.querySelectorAll('#w-col .item:not(.correct)').forEach(el => {
+                        mWrongSet.add(el.dataset.id);
+                    });
+                    setTimeout(() => nextMatch(isHardcore), 500);
+                }
+            }, 1000);
+        }, 50);
+    }
+
+    function nextMatch(isHardcore) {
+        clearInterval(matchTimer);
+        const area = document.getElementById('game-content');
+        
+        if(mPool.length === 0) { 
+            const timeTaken = Math.floor((Date.now() - gameStartTime) / 1000);
+            const minutes = Math.floor(timeTaken / 60);
+            const seconds = timeTaken % 60;
+            const timeText = minutes > 0 ? `${minutes}분 ${seconds}초` : `${seconds}초`;
+
+            let wrongHTML = '';
+            if(mWrongSet.size > 0) {
+                wrongHTML = `
+                    <div class="wrong-list-box">
+                        <h4>🔥 스마트 오답 노트</h4>
+                        <ul class="wrong-list-ul">
+                `;
+                mWrongSet.forEach(wordId => {
+                    const wordObj = fullDB.find(item => item.w === wordId);
+                    if(wordObj) {
+                        wrongHTML += `
+                            <li>
+                                <span class="tts-btn" onclick="playTTS('${wordObj.w}', event)">🔊</span>
+                                <span class="wrong-word-hl">${wordObj.w}</span> : ${wordObj.m.join(', ')}
+                            </li>`;
+                    }
+                });
+                wrongHTML += `</ul></div>`;
+            } else {
+                wrongHTML = `<div style="margin: 20px 0; padding: 20px; background: #064e3b; border-radius: 12px; color: #a7f3d0; font-weight: 700;">시간 초과 없이 완벽하게 매칭했습니다! 대단해요 👍</div>`;
+            }
+
+            area.innerHTML = `
+                <div style="text-align:center; padding:10px 20px 20px 20px;">
+                    <h2 style="color:var(--success); margin-bottom: 5px;">정복 완료! 🎉</h2>
+                    <div class="time-result">⏱️ 총 소요 시간: ${timeText}</div>
+                    ${wrongHTML}
+                    <button class="btn-start-match" style="width:100%; max-width:300px; margin-top: 10px;" onclick="showMenu()">메뉴로 돌아가기</button>
+                </div>`; 
+            selDays = []; 
+            return; 
+        }
+        
+        const set = mPool.splice(0, 6); 
+        const shuf = [...set].sort(() => Math.random() - 0.5);
+        mAttempted += set.length;
+        
+        area.innerHTML = `
+            <div class="progress-header">
+                <div class="progress-top-row">
+                    <span>Speed Match ${isHardcore ? '⭐' : ''}</span>
+                    <span class="progress-badge">${mAttempted - set.length + 1}~${mAttempted} / ${mTotal}</span>
+                </div>
+                <div class="scope-badge">출제 범위: ${isHardcore ? '내 즐겨찾기 단어' : getScopeText()}</div>
+            </div>
+            <div class="timer-container"><div class="timer-bar" id="match-timer-bar"></div></div>
+            <div class="match-grid"><div class="column" id="w-col"></div><div class="column" id="m-col"></div></div>`;
+            
+        document.getElementById('w-col').innerHTML = set.map(i => `<div class="item" data-id="${i.w}" onclick="selM(this, 'w')">${i.w}</div>`).join('');
+        document.getElementById('m-col').innerHTML = shuf.map(i => `<div class="item" data-id="${i.w}" onclick="selM(this, 'm')">${i.m.slice(0, 2).join(', ')}</div>`).join('');
+        
+        sw = null; sm = null; rS = 0;
+        startTimer(isHardcore);
+    }
+    
+    let sw = null, sm = null, rS = 0;
+    function selM(el, type) {
+        if(el.classList.contains('correct')) return;
+        if(el.classList.contains('selected')) {
+            el.classList.remove('selected');
+            if(type === 'w') sw = null; else sm = null;
+            return;
+        }
+
+        document.querySelectorAll(`#${type}-col .item`).forEach(i => i.classList.remove('selected'));
+        el.classList.add('selected'); 
+        if(type === 'w') sw = el; else sm = el;
+        
+        if(sw && sm) {
+            const correctMeaningNode = document.querySelector(`#m-col .item[data-id="${sw.dataset.id}"]`);
+            const correctText = correctMeaningNode ? correctMeaningNode.innerText : "";
+
+            if(sw.dataset.id === sm.dataset.id || sm.innerText === correctText) { 
+                sw.classList.add('correct'); sm.classList.add('correct'); rS++; 
+                if(rS === document.querySelectorAll('#w-col .item').length) { 
+                    rS = 0; clearInterval(matchTimer); setTimeout(() => nextMatch(selDays[0] === '⭐ 즐겨찾기'), 600); 
+                } 
+            } else { 
+                sw.classList.add('wrong'); sm.classList.add('wrong'); 
+                mWrongSet.add(sw.dataset.id);
+                mWrongSet.add(sm.dataset.id);
+                const a=sw, b=sm; setTimeout(() => { a.classList.remove('wrong', 'selected'); b.classList.remove('wrong', 'selected'); }, 400); 
+            }
+            sw = null; sm = null;
+        }
+    }
+
+    /* --- [2] 다의어 --- */
+    function initPolyGame() {
+        const polyItems = fullDB.filter(i => i.m.length > 1);
+        pPool = [...polyItems].sort(() => Math.random() - 0.5); pTotal = pPool.length; pCur = 0;
+        document.getElementById('main-menu').style.display = 'none'; document.getElementById('game-area').style.display = 'block'; nextPoly();
+    }
+    let pItem = null, pF = [];
+    function nextPoly() {
+        if(pPool.length === 0) { document.getElementById('game-content').innerHTML = `<div style="text-align:center; padding:40px;"><h2 style="color:var(--success)">다의어 마스터! 🎉</h2><button class="btn-next" style="width:200px" onclick="showMenu()">메뉴로</button></div>`; return; }
+        pItem = pPool.pop(); pCur++; pF = [];
+        const area = document.getElementById('game-content');
+        area.innerHTML = `
+            <div class="progress-header"><div class="progress-top-row"><span>Polysemy</span><span class="progress-badge">${pCur} / ${pTotal}</span></div></div>
+            <div class="word-display"><span class="tts-btn" style="font-size:32px;" onclick="playTTS('${pItem.w}')">🔊</span> ${pItem.w}</div>
+            <div class="slot-container" id="p-slots"></div>
+            <input type="text" id="p-input" placeholder="뜻 입력 후 엔터" autocomplete="off">
+            <div class="btn-group"><button class="btn-hint" onclick="hP('cho')">🧩 초성</button><button class="btn-hint" onclick="hP('first')">💡 첫글자</button><button class="btn-next" onclick="nextPoly()">건너뛰기</button></div>`;
+        document.getElementById('p-slots').innerHTML = pItem.m.map((_, i) => `<div class="slot" id="s-${i}">?</div>`).join('');
+        const inp = document.getElementById('p-input'); inp.focus();
+        inp.onkeypress = (e) => { if(e.key === 'Enter') {
+            const v = e.target.value.trim().replace(/\s/g, ''); pItem.m.forEach((syn, i) => { if(!pF.includes(i) && (syn.replace(/\s/g, '').includes(v) || v.includes(syn.replace(/\s/g, '')))) { pF.push(i); const s = document.getElementById(`s-${i}`); s.innerText = syn; s.classList.add('filled'); } });
+            e.target.value = ""; if(pF.length === pItem.m.length) setTimeout(nextPoly, 800);
+        }};
+    }
+    function hP(t) { for(let i=0; i<pItem.m.length; i++) { if(!pF.includes(i)) { const s = document.getElementById(`s-${i}`); if(t === 'cho') { s.innerText = getC(pItem.m[i]); s.classList.add('hinted'); } else { document.getElementById('p-input').value = pItem.m[i][0]; document.getElementById('p-input').focus(); } break; } } }
+
+    /* --- [3] 객관식 --- */
+    function initExamGame() {
+        ePool = [...examData].sort(() => Math.random() - 0.5); eTotal = ePool.length; eCur = 0;
+        document.getElementById('main-menu').style.display = 'none'; document.getElementById('game-area').style.display = 'block'; nextExam();
+    }
+    function nextExam() {
+        if(ePool.length === 0) { document.getElementById('game-content').innerHTML = `<div style="text-align:center; padding:40px;"><h2 style="color:var(--success)">객관식 테스트 완주! 🎉</h2><button class="btn-next" style="width:200px" onclick="showMenu()">메뉴로</button></div>`; return; }
+        const item = ePool.pop(); eCur++; const area = document.getElementById('game-content');
+        let dist = []; while(dist.length < 4) { let rW = fullDB[Math.floor(Math.random() * fullDB.length)].w; if(rW !== item.w && rW !== item.c && !dist.includes(rW)) dist.push(rW); }
+        let opts = [...dist, item.c].sort(() => Math.random() - 0.5);
+        area.innerHTML = `<div class="progress-header"><div class="progress-top-row"><span>Exam</span><span class="progress-badge">${eCur} / ${eTotal}</span></div></div><div class="exam-sentence">${item.s}</div><div class="options-list">${opts.map((o, i) => `<button class="opt-btn" onclick="chkE(this, '${o}', '${item.c}')">${i+1}. ${o}</button>`).join('')}</div><div id="e-msg" style="margin-top:20px; font-weight:700; text-align:center; min-height:24px"></div>`;
+    }
+    function chkE(el, o, corr) { const m = document.getElementById('e-msg'); if(o === corr) { el.classList.add('correct-ans'); m.innerHTML = "<span style='color:var(--success)'>정답입니다! 🎯</span>"; setTimeout(nextExam, 1000); } else { el.classList.add('wrong-ans'); m.innerHTML = "<span style='color:var(--rose)'>오답입니다.</span>"; } }
+
+    /* --- [4] 미니 사전 --- */
+    function openGlossary() {
+        showOnlyFavs = false;
+        currentGlossaryDay = 'all'; 
+        isMeaningHidden = false; 
+        const area = document.getElementById('game-content');
+        document.getElementById('main-menu').style.display = 'none';
+        document.getElementById('game-area').style.display = 'block';
+        
+        const sortedDB = [...fullDB].sort((a, b) => a.w.localeCompare(b.w));
+        const days = [...new Set(fullDB.map(i => i.d))].sort((a,b) => parseInt(a) - parseInt(b));
+        
+        area.innerHTML = `
+            <div class="progress-header"><span>미니 사전 (Total: ${sortedDB.length})</span></div>
+            <div class="glossary-header-actions">
+                <input type="text" id="glossary-search" class="glossary-search-box" placeholder="영단어, 한글 뜻, 코어 검색..." onkeyup="filterGlossary()">
+                <div class="glossary-btn-group">
+                    <button id="btn-fav-filter" class="btn-toggle-action" onclick="toggleFavFilter()">★ 별표만</button>
+                    <button id="btn-hide-meaning" class="btn-toggle-action" onclick="toggleMeaning()">👀 뜻 가리기</button>
+                </div>
+            </div>
+            <div class="glossary-day-filters" id="glossary-day-filters">
+                <span class="day-badge active" onclick="filterGlossaryByDay('all', this)">전체보기</span>
+                ${days.map(d => `<span class="day-badge" onclick="filterGlossaryByDay('${d}', this)">${d}</span>`).join('')}
+            </div>
+            <div class="glossary-list" id="glossary-list">
+                ${sortedDB.map(item => `
+                    <div class="glossary-item" data-word="${item.w}" data-day="${item.d}">
+                        <div style="width: 100%;">
+                            <div class="glossary-word-row">
+                                <div class="glossary-word-wrap">
+                                    <span class="tts-btn" onclick="playTTS('${item.w}', event)">🔊</span>
+                                    <span class="glossary-word">${item.w}</span>
+                                </div>
+                                <div class="fav-star ${favWords.includes(item.w) ? 'active' : ''}" onclick="toggleFavWord(this, '${item.w}')">★</div>
+                            </div>
+                            <div class="glossary-meanings">${item.m.join(', ')}</div>
+                            ${item.core ? `<div class="glossary-core">${item.core}</div>` : ''}
+                        </div>
+                        <div class="glossary-day-tag">${item.d}</div>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+        document.getElementById('glossary-search').focus();
+    }
+
+    function toggleMeaning() {
+        isMeaningHidden = !isMeaningHidden;
+        const btn = document.getElementById('btn-hide-meaning');
+        const list = document.getElementById('glossary-list');
+        
+        if(isMeaningHidden) {
+            btn.classList.add('active');
+            btn.innerText = '🙈 뜻 보기';
+            list.classList.add('hide-meanings');
+        } else {
+            btn.classList.remove('active');
+            btn.innerText = '👀 뜻 가리기';
+            list.classList.remove('hide-meanings');
+        }
+    }
+
+    function filterGlossaryByDay(day, el) {
+        currentGlossaryDay = day;
+        document.querySelectorAll('#glossary-day-filters .day-badge').forEach(b => b.classList.remove('active'));
+        el.classList.add('active');
+        filterGlossary(); 
+    }
+
+    function toggleFavWord(el, word) {
+        if(favWords.includes(word)) {
+            favWords = favWords.filter(w => w !== word);
+            el.classList.remove('active');
+            if(showOnlyFavs) filterGlossary();
+        } else {
+            favWords.push(word);
+            el.classList.add('active');
+        }
+        localStorage.setItem('vocaFavorites', JSON.stringify(favWords));
+        updateDashboard(); 
+    }
+
+    function toggleFavFilter() {
+        showOnlyFavs = !showOnlyFavs;
+        const btn = document.getElementById('btn-fav-filter');
+        if(showOnlyFavs) btn.classList.add('active');
+        else btn.classList.remove('active');
+        filterGlossary();
+    }
+
+    function filterGlossary() {
+        const query = document.getElementById('glossary-search').value.toLowerCase();
+        const items = document.querySelectorAll('.glossary-item');
+        
+        items.forEach(item => {
+            const word = item.querySelector('.glossary-word').innerText.toLowerCase();
+            const meaning = item.querySelector('.glossary-meanings').innerText.toLowerCase();
+            const core = item.querySelector('.glossary-core') ? item.querySelector('.glossary-core').innerText.toLowerCase() : '';
+            const itemDay = item.dataset.day;
+            
+            const matchSearch = word.includes(query) || meaning.includes(query) || core.includes(query);
+            const matchFav = showOnlyFavs ? favWords.includes(item.dataset.word) : true;
+            const matchDay = currentGlossaryDay === 'all' ? true : itemDay === currentGlossaryDay;
+
+            if (matchSearch && matchFav && matchDay) item.style.display = "flex";
+            else item.style.display = "none";
+        });
+    }
+
+    /* --- [5] 출퇴근 플래시카드 --- */
+    function openFlashcardSettings() {
+        const area = document.getElementById('game-content');
+        document.getElementById('main-menu').style.display = 'none';
+        document.getElementById('game-area').style.display = 'block';
+        const days = [...new Set(fullDB.map(i => i.d))].sort((a,b) => parseInt(a) - parseInt(b));
+        
+        area.innerHTML = `
+            <div class="filter-container">
+                <h3 style="margin-top:0; color:var(--primary);">플래시카드 범위 선택</h3>
+                <button class="btn-toggle-all" onclick="toggleAllDays()">전체 선택 / 해제</button>
+                <div id="day-badges">${days.map(d => `<span class="day-badge" data-day="${d}" onclick="tglD(this, '${d}')">${d}</span>`).join('')}</div>
+                <button class="btn-start-match" onclick="startFlashcards(false)">일반 단어장 시작</button>
+                <button class="btn-start-hardcore" onclick="startFlashcards(true)">⭐ 내 별표 단어로만 시작</button>
+            </div>`;
+    }
+
+    function startFlashcards(isHardcore) {
+        if(isHardcore) {
+            if(favWords.length === 0) return alert("별표 단어가 없습니다! 미니 사전에서 별표를 추가해주세요.");
+            fcPool = fullDB.filter(i => favWords.includes(i.w));
+            selDays = ["⭐ 즐겨찾기"];
+        } else {
+            fcPool = fullDB.filter(i => selDays.includes(i.d));
+            if(fcPool.length === 0) return alert("날짜를 하나 이상 선택하세요.");
+        }
+        fcPool.sort((a, b) => a.w.localeCompare(b.w));
+        fcIndex = 0;
+        renderFlashcard();
+    }
+
+    function renderFlashcard() {
+        const area = document.getElementById('game-content');
+        const item = fcPool[fcIndex];
+        const isFav = favWords.includes(item.w);
+        
+        area.innerHTML = `
+            <div class="progress-header">
+                <div class="progress-top-row">
+                    <span>Flashcards ${selDays[0] === '⭐ 즐겨찾기' ? '⭐' : ''}</span>
+                    <span class="progress-badge">${fcIndex + 1} / ${fcPool.length}</span>
+                </div>
+            </div>
+            <div class="fc-scene">
+                <div class="fc-card" id="fc-card" onclick="flipCard(this)">
+                    <div class="fc-face fc-front">
+                        <div class="fc-tts-btn" onclick="playTTS('${item.w}', event)">🔊</div>
+                        <div class="fc-word">${item.w}</div>
+                        <div class="fc-hint">터치해서 뜻 확인하기</div>
+                    </div>
+                    <div class="fc-face fc-back">
+                        <div class="fc-meanings">${item.m.join(', ')}</div>
+                        ${item.core ? `<div class="fc-core">${item.core}</div>` : ''}
+                    </div>
+                </div>
+            </div>
+            <div class="fc-controls">
+                <button class="fc-btn secondary" onclick="prevCard()">◀ 이전</button>
+                <div class="fav-star ${isFav ? 'active' : ''}" style="font-size:32px;" onclick="toggleFavFromFC(this, '${item.w}')">★</div>
+                <button class="fc-btn" onclick="nextCard()">다음 ▶</button>
+            </div>
+        `;
+        setupSwipe(); 
+    }
+
+    function flipCard(el) { el.classList.toggle('is-flipped'); }
+    function nextCard() { if (fcIndex < fcPool.length - 1) { fcIndex++; renderFlashcard(); } else alert("마지막 단어입니다!"); }
+    function prevCard() { if (fcIndex > 0) { fcIndex--; renderFlashcard(); } }
+    function toggleFavFromFC(el, word) { toggleFavWord(el, word); }
+
+    function setupSwipe() {
+        let touchstartX = 0; let touchendX = 0;
+        const card = document.getElementById('fc-card');
+        card.addEventListener('touchstart', e => { touchstartX = e.changedTouches[0].screenX; }, {passive: true});
+        card.addEventListener('touchend', e => { touchendX = e.changedTouches[0].screenX; handleSwipe(); }, {passive: true});
+        function handleSwipe() {
+            if (touchendX < touchstartX - 60) nextCard();
+            else if (touchendX > touchstartX + 60) prevCard();
+        }
+    }
+
+    /* --- [6] 기출 필수 숙어 모음 --- */
+    function openIdiomDictionary() {
+        currentGlossaryDay = 'all'; 
+        isMeaningHidden = false; 
+        const area = document.getElementById('game-content');
+        document.getElementById('main-menu').style.display = 'none';
+        document.getElementById('game-area').style.display = 'block';
+        
+        if (typeof idiomData === 'undefined') {
+            area.innerHTML = `<h3 style="color:var(--rose)">데이터 로드 오류: voca_data.js에 idiomData가 없습니다.</h3>`;
+            return;
+        }
+
+        // 숙어는 날짜순 정렬
+        const sortedIdioms = [...idiomData].sort((a, b) => parseInt(a.d) - parseInt(b.d));
+        const days = [...new Set(idiomData.map(i => i.d))].sort((a,b) => parseInt(a) - parseInt(b));
+        
+        area.innerHTML = `
+            <div class="progress-header"><span>기출 필수 숙어 모음 (Total: ${sortedIdioms.length})</span></div>
+            <div class="glossary-header-actions">
+                <input type="text" id="idiom-search" class="glossary-search-box" placeholder="숙어, 뜻, 관련 단어 검색..." onkeyup="filterIdioms()">
+                <div class="glossary-btn-group">
+                    <button id="btn-hide-idiom-meaning" class="btn-toggle-action" onclick="toggleIdiomMeaning()">👀 뜻 가리기</button>
+                </div>
+            </div>
+            <div class="glossary-day-filters" id="idiom-day-filters">
+                <span class="day-badge active" onclick="filterIdiomsByDay('all', this)">전체보기</span>
+                ${days.map(d => `<span class="day-badge" onclick="filterIdiomsByDay('${d}', this)">${d}</span>`).join('')}
+            </div>
+            <div class="glossary-list" id="idiom-list">
+                ${sortedIdioms.map(item => `
+                    <div class="glossary-item" data-day="${item.d}">
+                        <div style="width: 100%;">
+                            <div class="idiom-base-word">관련 단어: ${item.w}</div>
+                            <div class="glossary-word-row">
+                                <div class="glossary-word-wrap">
+                                    <span class="tts-btn" onclick="playTTS('${item.idiom}', event)">🔊</span>
+                                    <span class="glossary-word" style="font-size:18px;">${item.idiom}</span>
+                                </div>
+                            </div>
+                            <div class="glossary-meanings" style="margin-top:10px;">${item.m}</div>
+                        </div>
+                        <div class="glossary-day-tag">${item.d}</div>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+        document.getElementById('idiom-search').focus();
+    }
+
+    function toggleIdiomMeaning() {
+        isMeaningHidden = !isMeaningHidden;
+        const btn = document.getElementById('btn-hide-idiom-meaning');
+        const list = document.getElementById('idiom-list');
+        
+        if(isMeaningHidden) {
+            btn.classList.add('active');
+            btn.innerText = '🙈 뜻 보기';
+            list.classList.add('hide-meanings');
+        } else {
+            btn.classList.remove('active');
+            btn.innerText = '👀 뜻 가리기';
+            list.classList.remove('hide-meanings');
+        }
+    }
+
+    function filterIdiomsByDay(day, el) {
+        currentGlossaryDay = day;
+        document.querySelectorAll('#idiom-day-filters .day-badge').forEach(b => b.classList.remove('active'));
+        el.classList.add('active');
+        filterIdioms(); 
+    }
+
+    function filterIdioms() {
+        const query = document.getElementById('idiom-search').value.toLowerCase();
+        const items = document.querySelectorAll('#idiom-list .glossary-item');
+        
+        items.forEach(item => {
+            const idiom = item.querySelector('.glossary-word').innerText.toLowerCase();
+            const meaning = item.querySelector('.glossary-meanings').innerText.toLowerCase();
+            const baseWord = item.querySelector('.idiom-base-word').innerText.toLowerCase();
+            const itemDay = item.dataset.day;
+            
+            const matchSearch = idiom.includes(query) || meaning.includes(query) || baseWord.includes(query);
+            const matchDay = currentGlossaryDay === 'all' ? true : itemDay === currentGlossaryDay;
+
+            if (matchSearch && matchDay) item.style.display = "flex";
+            else item.style.display = "none";
+        });
+    }
+
+    function getC(s) { const c = ["ㄱ","ㄲ","ㄴ","ㄷ","ㄸ","ㄹ","ㅁ","ㅂ","ㅃ","ㅅ","ㅆ","ㅇ","ㅈ","ㅉ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"]; let r = ""; for(let i=0; i<s.length; i++) { let cd = s.charCodeAt(i) - 44032; if(cd>-1 && cd<11172) r += c[Math.floor(cd/588)]; else r += s[i]; } return r; }
+</script>
+</body>
+</html>
