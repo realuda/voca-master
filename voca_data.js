@@ -607,6 +607,37 @@ const fullDB = [
     {w:"momentous", m:["중대한"], core:"*코어 이미지(뉘앙스): 단순한 순간(moment)이 아니라 [역사에 길이 남을 만큼 매우 중요하고 엄청난 영향을 미치는]", d:"23일차"},
     {w:"neglect", m:["무시하다", "방치하다"], core:"*코어 이미지: 마땅히 해야 할 주의나 돌봄, 의무를 의도적으로 선택하지 않고(neg) 내버려 두다", d:"23일차"},
     {w:"marginal", m:["중요하지 않은", "한계의"], core:"*코어 이미지(뉘앙스): 종이의 중심이 아니라 여백/가장자리(margin)에 적혀 있어 [별로 중요하지 않고 미미한 수준의]", d:"23일차"}
+,
+    // --- 24일차 (29단어, 뉘앙스 완벽 구별 및 필수 전치사 반영) ---
+    {w:"tedious", m:["지루한"], core:"*코어 이미지: 너무 길고 반복적이어서 [하품이 날 정도로 지루하고 따분한]", d:"24일차"},
+    {w:"temper", m:["성질", "화"], core:"*코어 이미지(뉘앙스): 불을 조절하다에서 유래 [순간적으로 확 끓어오르는 감정 변화나 분노 (※기출: lose one's temper 화내다)]", d:"24일차"},
+    {w:"temperament", m:["기질", "성격"], core:"*코어 이미지(뉘앙스): 바탕에 깔린 온도 [그 사람이 태어날 때부터 타고난 기본적이고 지속적인 성격]", d:"24일차"},
+    {w:"mitigate", m:["누그러뜨리다", "완화하다"], core:"*코어 이미지(뉘앙스): 부드럽게(miti) 만들다 [재난, 위험, 처벌 등의 심각성을 줄여 충격을 약하게 만드는 것]", d:"24일차"},
+    {w:"alleviate", m:["완화시키다"], core:"*코어 이미지(뉘앙스): 가볍게(lev) 만들다 [주로 육체적 고통이나 슬픔을 일시적으로나마 가볍게 덜어주는 것]", d:"24일차"},
+    {w:"epidemic", m:["유행성의", "전염병"], core:"*코어 이미지(뉘앙스): 사람들(demo) 사이(epi)에 퍼짐 [질병이 짧은 시간 안에 매우 빠르게 확 퍼져나가는 상태]", d:"24일차"},
+    {w:"endemic", m:["풍토성의", "고질적인"], core:"*코어 이미지(뉘앙스): 특정 지역 안(en)에 머무름 [어떤 질병이나 현상이 특정 지역에 늘 뿌리박혀 항상 존재하는 상태]", d:"24일차"},
+    {w:"rampant", m:["만연하는", "걷잡을 수 없는"], core:"*코어 이미지(뉘앙스): 맹수가 뒷다리로 일어서서 날뜀 [나쁜 것이 통제 불가능하게 사방으로 걷잡을 수 없이 퍼져나가는 상태]", d:"24일차"},
+    {w:"ubiquitous", m:["도처에 존재하는"], core:"*코어 이미지(뉘앙스): [동시에 모든 곳에서 보일 정도로 아주 흔하고 어디에나 있는 상태 (예: 스마트폰)]", d:"24일차"},
+    {w:"pervasive", m:["만연한", "스며드는"], core:"*코어 이미지(뉘앙스): 속속들이(per) 가다(vas) [생각, 영향력, 냄새 등이 보이지 않게 깊숙이 스며들어 전체를 지배하는 상태]", d:"24일차"},
+    {w:"prevail", m:["우세하다", "만연하다"], core:"*코어 이미지: 힘(vail)이 남들보다 앞서다(pre) [주로 이기거나 우세함 (※문법 함정: prevail on A to V = A를 설득하다)]", d:"24일차"},
+    {w:"onset", m:["시작", "발병"], core:"*코어 이미지(뉘앙스): 위에(on) 덮쳐오듯 놓임(set) [질병이나 불쾌한 일, 겨울 등 부정적인 것의 시작]", d:"24일차"},
+    {w:"outset", m:["시작", "최초"], core:"*코어 이미지(뉘앙스): 밖으로(out) 발을 내디딤(set) [프로젝트, 여행 등 어떤 일의 가장 처음 출발점 (※at the outset)]", d:"24일차"},
+    {w:"setback", m:["방해", "차질"], core:"*코어 이미지(뉘앙스): 진행되던 일을 뒤로(back) 놓아버림(set) [예기치 못하게 발생해 퇴보하게 만드는 장애물이나 차질]", d:"24일차"},
+    {w:"drawback", m:["결점", "문제점"], core:"*코어 이미지(뉘앙스): 긍정적 요소를 뒤로(back) 끌어당김(draw) [어떤 대상이 본질적으로 가지고 있는 피할 수 없는 단점]", d:"24일차"},
+    {w:"invoice", m:["송장", "청구서"], core:"*코어 이미지: 물건을 보낼 때 안에(in) 넣는 길(voie) 안내장 [대금 청구서]", d:"24일차"},
+    {w:"rate", m:["비율", "평가하다", "속도"], core:"*코어 이미지: 일정하게 정해진 기준이나 비율 [동사로는 '등급을 매기다, 평가하다'로 빈출]", d:"24일차"},
+    {w:"pardon", m:["용서하다"], core:"*코어 이미지(뉘앙스): 완전히(par) 주다(don) [죄나 잘못에 대해 국가/권위자가 '공식적으로 용서를 선언'하는 행위]", d:"24일차"},
+    {w:"condone", m:["용납하다", "눈감아주다"], core:"*코어 이미지(뉘앙스): 함께(con) 주다(don) [도덕적으로 잘못된 행동을 묵인하거나 슬쩍 눈감아주는 것]", d:"24일차"},
+    {w:"condense", m:["응축시키다", "요약하다"], core:"*코어 이미지(뉘앙스): 빽빽하게(dense) 모으다 [기체가 액체로 응결되거나, 긴 글을 핵심만 남겨 밀도 있게 줄이는 것]", d:"24일차"},
+    {w:"abridge", m:["요약하다", "축약하다"], core:"*코어 이미지(뉘앙스): 다리(bridge)를 놓아 길을 짧게 함 [책, 영화 등의 원래 줄거리는 유지한 채 길이만 축약본으로 줄이는 것]", d:"24일차"},
+    {w:"brevity", m:["간결함"], core:"*코어 이미지(뉘앙스): 짧은(brev) 상태 [말이나 글이 불필요한 부분 없이 짧고 명료한 '좋은 특성']", d:"24일차"},
+    {w:"terse", m:["간결한", "퉁명스러운"], core:"*코어 이미지(뉘앙스): [필요한 말만 해서 매우 짧지만, 그 때문에 무뚝뚝하거나 퉁명스럽게 느껴지는 반응]", d:"24일차"},
+    {w:"prolong", m:["연장하다"], core:"*코어 이미지(뉘앙스): 앞으로(pro) 길게(long) 늘리다 [물리적인 것이 아니라 생명, 수명, 회의 등 '시간'을 길게 끄는 것]", d:"24일차"},
+    {w:"elongate", m:["늘이다", "길어지다"], core:"*코어 이미지(뉘앙스): 밖으로(e) 길게(long) 만들다 [고무줄이나 신체 부위 등 '물리적인 길이' 자체를 길게 늘이는 것]", d:"24일차"},
+    {w:"congestion", m:["혼잡", "막힘"], core:"*코어 이미지: 한곳으로 꽉 막히게(gest) 모여듦(con) [교통 혼잡이나 코막힘]", d:"24일차"},
+    {w:"populous", m:["인구가 조밀한"], core:"*코어 이미지: 사람(popul)이 꽉 차서(ous) 바글바글한", d:"24일차"},
+    {w:"populate", m:["거주시키다", "살다"], core:"*코어 이미지: 어떤 지역에 사람(popul)을 채워 넣다", d:"24일차"},
+    {w:"abide", m:["따르다", "참다", "머물다"], core:"*코어 이미지: [※기출 무조건 암기: abide by (~을 따르다, 준수하다)]", d:"24일차"}
 ];
 
 
@@ -684,6 +715,13 @@ const examData = [
     { w: "resilient", s: "Children are often much more <span class='underlined'>resilient</span> than adults when recovering from a traumatic event.", c: "quick to recover / tough" },
     { w: "momentous", s: "The signing of the peace treaty was a truly <span class='underlined'>momentous</span> occasion for both nations.", c: "very important / historic" },
     { w: "fabricate", s: "He tried to <span class='underlined'>fabricate</span> a completely false story to explain why he was late for work.", c: "make up / invent" }
+,
+    // Day 24 뉘앙스/빈출 숙어 예문 추가
+    { w: "abide", s: "All employees are strictly required to <span class='underlined'>abide</span> by the new safety regulations in the laboratory.", c: "comply with / observe" },
+    { w: "alleviate", s: "The doctor prescribed a strong painkiller to <span class='underlined'>alleviate</span> her severe backache.", c: "relieve / ease" },
+    { w: "pervasive", s: "The feeling of hopelessness was <span class='underlined'>pervasive</span> among the factory workers after the layoff announcement.", c: "widespread / prevalent" },
+    { w: "setback", s: "Despite a minor <span class='underlined'>setback</span> due to bad weather, the construction project was completed on time.", c: "obstacle / hindrance" }
+
 ];
 
 
@@ -760,4 +798,11 @@ const idiomData = [
     { idiom: "competent to V", m: "~할 자격이 있는, 능력이 있는", w: "competent", d: "23일차" },
     { idiom: "neglect to V", m: "~해야 할 일을 (부주의로) 하지 않다", w: "neglect", d: "23일차" },
     { idiom: "staple food", m: "주식(主食), 기본 식품", w: "staple", d: "23일차" }
+,
+    // 💡 24일차 필수 문법/숙어 표현
+    { idiom: "abide by", m: "~을 따르다, 준수하다 (= comply with, conform to, observe)", w: "abide", d: "24일차" },
+    { idiom: "prevail on (upon) A to V", m: "A가 ~하도록 설득하다 (= persuade)", w: "prevail", d: "24일차" },
+    { idiom: "lose one's temper", m: "화를 내다, 평정심을 잃다", w: "temper", d: "24일차" },
+    { idiom: "at the outset", m: "처음에, 발단에", w: "outset", d: "24일차" }
+    
 ];
