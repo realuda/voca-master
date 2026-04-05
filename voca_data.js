@@ -678,14 +678,14 @@ const examData = [
     // Day 22 기출 함정/숙어 예문 추가
     { w: "tentative", s: "Since we haven't booked the venue yet, the date for the meeting is still <span class='underlined'>tentative</span>.", c: "not final / subject to change" },
     { w: "squander", s: "It is a pity to see him <span class='underlined'>squander</span> all his talent and time on playing video games.", c: "waste foolishly" },
-    { w: "aftermath", s: "In the <span class='underlined'>aftermath</span> of the earthquake, many families were left homeless and without food.", c: "consequence / period following a disaster" }
-];
-,
+    { w: "aftermath", s: "In the <span class='underlined'>aftermath</span> of the earthquake, many families were left homeless and without food.", c: "consequence / period following a disaster" },
     // Day 23 위조/조작 4형제 및 기출 예문 추가
     { w: "forge", s: "The criminal was arrested for attempting to <span class='underlined'>forge</span> the artist's signature on the painting.", c: "counterfeit / fake" },
     { w: "resilient", s: "Children are often much more <span class='underlined'>resilient</span> than adults when recovering from a traumatic event.", c: "quick to recover / tough" },
     { w: "momentous", s: "The signing of the peace treaty was a truly <span class='underlined'>momentous</span> occasion for both nations.", c: "very important / historic" },
     { w: "fabricate", s: "He tried to <span class='underlined'>fabricate</span> a completely false story to explain why he was late for work.", c: "make up / invent" }
+];
+
 
 
 
