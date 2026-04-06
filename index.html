@@ -169,6 +169,10 @@
             <div class="stat-box">💡 필수 숙어: <span id="stat-idiom" class="stat-num">0</span>개</div>
         </div>
 
+        <div style="text-align: center; margin-bottom: 25px; display: flex; justify-content: center; gap: 10px;">
+            <button onclick="exportFavorites()" style="padding: 8px 16px; font-size: 13px; font-weight: 600; background: #1e293b; border: 1px solid var(--border); color: var(--text-sub); border-radius: 8px; cursor: pointer; transition: 0.2s;">📤 즐겨찾기 내보내기</button>
+            <button onclick="importFavorites()" style="padding: 8px 16px; font-size: 13px; font-weight: 600; background: #1e293b; border: 1px solid var(--border); color: var(--text-sub); border-radius: 8px; cursor: pointer; transition: 0.2s;">📥 불러오기 (동기화)</button>
+        </div>
         <div class="menu-grid">
             <div class="menu-card" onclick="openMatchDaySelect()">
                 <h3>01. 스피드 매칭 ⚡</h3>
@@ -236,6 +240,37 @@
 
     window.onload = updateDashboard;
 
+    // --- 즐겨찾기 동기화 (내보내기/불러오기) ---
+    function exportFavorites() {
+        const favs = localStorage.getItem('vocaFavorites') || "[]";
+        if (favs === "[]" || favWords.length === 0) {
+            alert("내보낼 즐겨찾기 단어가 없습니다."); 
+            return;
+        }
+        // 코드를 복사하기 쉽게 창을 띄워줍니다.
+        prompt("👇 아래 코드를 복사해서 다른 기기의 '불러오기'에 붙여넣으세요:", favs);
+    }
+
+    function importFavorites() {
+        const input = prompt("📥 복사해온 즐겨찾기 코드를 아래에 붙여넣으세요:");
+        if (!input) return;
+        
+        try {
+            const parsed = JSON.parse(input);
+            if (Array.isArray(parsed)) {
+                // 기존 즐겨찾기와 덮어쓰기 (합치고 싶다면 로직 변경 가능)
+                localStorage.setItem('vocaFavorites', JSON.stringify(parsed));
+                favWords = parsed;
+                updateDashboard();
+                alert(`성공! ${parsed.length}개의 즐겨찾기 단어가 동기화되었습니다. 🎉`);
+            } else {
+                alert("코드가 올바르지 않습니다.");
+            }
+        } catch (e) {
+            alert("오류가 발생했습니다. 코드를 처음부터 끝까지 정확히 복사했는지 확인해주세요.");
+        }
+    }
+    
     function updateDashboard() {
         document.getElementById('stat-total').innerText = fullDB.length;
         document.getElementById('stat-fav').innerText = favWords.length;
