@@ -638,6 +638,27 @@ const fullDB = [
     {w:"populous", m:["인구가 조밀한"], core:"*코어 이미지: 사람(popul)이 꽉 차서(ous) 바글바글한", d:"24일차"},
     {w:"populate", m:["거주시키다", "살다"], core:"*코어 이미지: 어떤 지역에 사람(popul)을 채워 넣다", d:"24일차"},
     {w:"abide", m:["따르다", "참다", "머물다"], core:"*코어 이미지: [※기출 무조건 암기: abide by (~을 따르다, 준수하다)]", d:"24일차"}
+    ,
+    // --- 25일차 (18단어, 스펠링 함정 및 전치사 짝꿍 반영) ---
+    {w:"adept", m:["능숙한", "숙련자"], core:"*코어 이미지: 특정 분야에 능통한 전문가 [※스펠링 함정: adapt(적응하다), adopt(채택하다)와 완벽 구별!]", d:"25일차"},
+    {w:"sage", m:["현자", "현명한"], core:"*코어 이미지: 깊은 지혜와 경험을 바탕으로 현명한 판단을 내리는 노인이나 성인", d:"25일차"},
+    {w:"realm", m:["영역", "왕국"], core:"*코어 이미지(뉘앙스): 왕이 다스리는 영토처럼 [특정 활동, 학문, 지식의 확고한 범위나 영역]", d:"25일차"},
+    {w:"coverage", m:["보도", "범위", "보급률"], core:"*코어 이미지: 덮어서(cover) 다루는 범위 [뉴스 보도 범위나 보험이 보장해 주는 범위]", d:"25일차"},
+    {w:"plow", m:["경작하다", "쟁기"], core:"*코어 이미지: 쟁기로 땅을 뒤집어엎어 농사지을 준비를 하다", d:"25일차"},
+    {w:"leap", m:["껑충 뛰다", "도약"], core:"*코어 이미지: 훌쩍 위로 뛰어오르다 [※기출 숙어: by leaps and bounds (비약적으로, 급속히)]", d:"25일차"},
+    {w:"rear", m:["양육하다", "뒤", "일으키다"], core:"*코어 이미지(뉘앙스): 등 뒤(rear)에서 밀어주다 [아이를 키우거나 건물을 위로 세워 일으킴]", d:"25일차"},
+    {w:"domesticate", m:["사육하다", "재배하다"], core:"*코어 이미지(뉘앙스): 야생의 것을 집(domus) 안으로 들이다 [종 자체를 인간의 통제하에 두는 '가축화']", d:"25일차"},
+    {w:"demographics", m:["인구 통계"], core:"*코어 이미지: 사람(demo)에 대한 그래프(graph) [인구의 변동, 분포 등을 나타내는 통계적 자료]", d:"25일차"},
+    {w:"diagram", m:["도표", "그림"], core:"*코어 이미지: 선과 기호로 원리나 구조를 한눈에 보여주는 도해", d:"25일차"},
+    {w:"empirical", m:["경험적인", "실증적인"], core:"*코어 이미지(뉘앙스): 이론이나 추측이 아니라 [실제 경험이나 관찰, 실험을 통해 증명할 수 있는]", d:"25일차"},
+    {w:"personnel", m:["전 직원", "인사과"], core:"*코어 이미지: 조직에 속한 사람(person)들의 총합 [※스펠링 함정: personal(개인의)과 헷갈리지 말 것!]", d:"25일차"},
+    {w:"incorporate", m:["포함시키다", "합병하다"], core:"*코어 이미지(뉘앙스): 하나의 몸체(corpus) 안(in)으로 합치다 [※기출 짝꿍: incorporate A into B]", d:"25일차"},
+    {w:"entrepreneurship", m:["기업가 정신"], core:"*코어 이미지: 위험을 무릅쓰고 새로운 사업을 창조하고 이끌어가는 혁신적인 마인드", d:"25일차"},
+    {w:"administer", m:["운영하다", "집행하다", "투여하다"], core:"*코어 이미지: 장관(minister)처럼 맡아서 [조직을 운영하거나 규칙을 실무로 집행함 / (약을) 투여하다]", d:"25일차"},
+    {w:"superintend", m:["관리하다", "감독하다"], core:"*코어 이미지: 높은 곳(super)에서 아래로 향하여(intend) [전체 과정을 총괄하고 지휘함]", d:"25일차"},
+    {w:"moderate", m:["적당한", "절제하는", "완화하다"], core:"*코어 이미지(뉘앙스): 극단으로 치우치지 않고 중간(med)을 지키는 [양이나 정도가 과하지 않고 온건한]", d:"25일차"},
+    {w:"modest", m:["겸손한", "적당한"], core:"*코어 이미지(뉘앙스): 분수를 지키는 [태도가 잘난 체하지 않고 겸손하거나, 양/크기가 '소박하고 크지 않은']", d:"25일차"}
+    
 ];
 
 
@@ -645,7 +666,7 @@ const fullDB = [
 
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////11111111//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -721,6 +742,12 @@ const examData = [
     { w: "alleviate", s: "The doctor prescribed a strong painkiller to <span class='underlined'>alleviate</span> her severe backache.", c: "relieve / ease" },
     { w: "pervasive", s: "The feeling of hopelessness was <span class='underlined'>pervasive</span> among the factory workers after the layoff announcement.", c: "widespread / prevalent" },
     { w: "setback", s: "Despite a minor <span class='underlined'>setback</span> due to bad weather, the construction project was completed on time.", c: "obstacle / hindrance" }
+,
+    // Day 25 헷갈리는 스펠링/다의어 기출 예문 추가
+    { w: "adept", s: "After years of practice, she became highly <span class='underlined'>adept</span> at playing the classical guitar.", c: "skillful / proficient" },
+    { w: "incorporate", s: "The designers decided to <span class='underlined'>incorporate</span> sustainable materials into the new building's architecture.", c: "include / integrate" },
+    { w: "modest", s: "Despite his enormous success and wealth, he lived in a relatively <span class='underlined'>modest</span> house.", c: "humble / not large" },
+    { w: "empirical", s: "The scientist's theory was not accepted until it was backed up by solid <span class='underlined'>empirical</span> evidence.", c: "observed / experimental" }
 
 ];
 
@@ -736,7 +763,7 @@ const examData = [
 
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////22222222////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -805,5 +832,11 @@ const idiomData = [
     { idiom: "prevail on (upon) A to V", m: "A가 ~하도록 설득하다 (= persuade)", w: "prevail", d: "24일차" },
     { idiom: "lose one's temper", m: "화를 내다, 평정심을 잃다", w: "temper", d: "24일차" },
     { idiom: "at the outset", m: "처음에, 발단에", w: "outset", d: "24일차" }
+,
+    // 💡 25일차 필수 문법/숙어 표현
+    { idiom: "adept at (in) -ing", m: "~하는 데 매우 능숙하다", w: "adept", d: "25일차" },
+    { idiom: "incorporate A into B", m: "A를 B로 통합시키다, 포함하다", w: "incorporate", d: "25일차" },
+    { idiom: "by leaps and bounds", m: "비약적으로, 급속하게 (주로 성장이나 발전을 묘사할 때)", w: "leap", d: "25일차" },
+    { idiom: "administer medicine", m: "약을 투여하다 (※ 독해 단골 덩어리 표현)", w: "administer", d: "25일차" }
 
 ];
