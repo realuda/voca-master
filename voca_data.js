@@ -658,7 +658,39 @@ const fullDB = [
     {w:"superintend", m:["관리하다", "감독하다"], core:"*코어 이미지: 높은 곳(super)에서 아래로 향하여(intend) [전체 과정을 총괄하고 지휘함]", d:"25일차"},
     {w:"moderate", m:["적당한", "절제하는", "완화하다"], core:"*코어 이미지(뉘앙스): 극단으로 치우치지 않고 중간(med)을 지키는 [양이나 정도가 과하지 않고 온건한]", d:"25일차"},
     {w:"modest", m:["겸손한", "적당한"], core:"*코어 이미지(뉘앙스): 분수를 지키는 [태도가 잘난 체하지 않고 겸손하거나, 양/크기가 '소박하고 크지 않은']", d:"25일차"}
-    
+    ,
+    // --- 26일차 (30단어, 슬픔/기이함 뉘앙스 및 스펠링 함정 반영) ---
+    {w:"prompt", m:["즉각적인", "촉발하다"], core:"*코어 이미지: 앞으로(pro) 튀어나오는 [망설임 없이 즉각적인 행동 / ※문법: prompt A to V (A가 ~하도록 유발하다)]", d:"26일차"},
+    {w:"immediate", m:["즉각적인", "직접적인"], core:"*코어 이미지(뉘앙스): 중간(medi)에 아무것도 개입하지 않는 [0초 딜레이의 즉각적인 (Right now)]", d:"26일차"},
+    {w:"inclined", m:["~하는 경향이 있는", "~하고 싶어 하는"], core:"*코어 이미지(뉘앙스): 마음이 그쪽으로 확 기울어진 [개인의 성향이나 기호에 따른 행동 (※기출: be inclined to)]", d:"26일차"},
+    {w:"liable", m:["책임이 있는", "~하기 쉬운"], core:"*코어 이미지(뉘앙스): 끈으로 묶인(lia) [※기출 전치사 구별: liable for (법적 책임이 있는) / liable to V (~하기 쉬운)]", d:"26일차"},
+    {w:"mourn", m:["애도하다", "슬퍼하다"], core:"*코어 이미지(뉘앙스): 죽음으로 인한 상실감을 깊고 길게 슬퍼하는 감정", d:"26일차"},
+    {w:"lament", m:["한탄하다", "애통해하다"], core:"*코어 이미지(뉘앙스): 후회나 실망이 섞인 슬픔을 말로 밖으로 내뱉으며 슬퍼하는 것", d:"26일차"},
+    {w:"condole", m:["애도하다", "조의를 표하다"], core:"*코어 이미지(뉘앙스): 남의 슬픔(dole)을 함께(con) 나누다", d:"26일차"},
+    {w:"wail", m:["울부짖다", "통곡하다"], core:"*코어 이미지: '아이고~' 하고 길게 소리 내어 크게 통곡하는 모습", d:"26일차"},
+    {w:"sob", m:["흐느껴 울다"], core:"*코어 이미지: 숨을 헐떡이고 들이마시며 흑흑 흐느껴 우는 소리", d:"26일차"},
+    {w:"deplore", m:["개탄하다", "비판하다"], core:"*코어 이미지(뉘앙스): 강하게 울며 호소하다 [어떤 행위가 매우 잘못되었다고 강하게 비난하며 유감을 표하다]", d:"26일차"},
+    {w:"entreat", m:["간청하다", "애원하다"], core:"*코어 이미지(뉘앙스): 안으로 끌어들이며(treat) [마음을 다해 진지하게 간청하다]", d:"26일차"},
+    {w:"implore", m:["애원하다", "탄원하다"], core:"*코어 이미지(뉘앙스): 눈물을 흘리며(plore) [entreat보다 더 다급하고 격하게 매달리며 애원하다]", d:"26일차"},
+    {w:"solicit", m:["간청하다", "구하다"], core:"*코어 이미지(뉘앙스): 전체를 강하게 흔들어 깨우다 [정보, 조언, 기부금 등을 적극적으로 요구하고 구하다]", d:"26일차"},
+    {w:"yearn", m:["갈망하다", "동경하다"], core:"*코어 이미지(뉘앙스): 마음이 뜨거워져서 [애틋하게 그리워하며 간절히 원하다 (※기출: yearn for)]", d:"26일차"},
+    {w:"fancy", m:["상상하다", "원하다", "화려한"], core:"*코어 이미지(뉘앙스): 가볍게 무언가를 원하거나 머릿속에 떠올리는 호감 / 화려하게 장식된", d:"26일차"},
+    {w:"lust", m:["욕망", "갈망"], core:"*코어 이미지(뉘앙스): 육체적이거나 물질적인 것을 통제 안 될 정도로 강하게 원하는 [다소 부정적인 뉘앙스]", d:"26일차"},
+    {w:"petition", m:["청원하다", "탄원서"], core:"*코어 이미지(뉘앙스): 권위자나 정부 기관을 향해 [공식적으로 서명을 모아 요구하는 행위나 문서]", d:"26일차"},
+    {w:"entail", m:["수반하다", "필요로 하다"], core:"*코어 이미지(뉘앙스): 꼬리(tail)를 달고 오다 [어떤 일을 할 때 필연적으로 결과나 노력을 끌고 들어오다]", d:"26일차"},
+    {w:"profound", m:["심오한", "깊은"], core:"*코어 이미지: 바닥(found)까지 닿는 [사상, 의미, 영향력 등이 겉핥기가 아니라 아주 깊숙한]", d:"26일차"},
+    {w:"peculiar", m:["독특한", "특유의"], core:"*코어 이미지(뉘앙스): 남들과 평범하지 않고 [살짝 이상하거나 고유한 특이함]", d:"26일차"},
+    {w:"bizarre", m:["기이한", "특이한"], core:"*코어 이미지(뉘앙스): 수염이 난 기이한 모습에서 유래 [상식적으로 이해하기 힘들고 강하게 낯선 기이함]", d:"26일차"},
+    {w:"eccentric", m:["괴짜의", "별난"], core:"*코어 이미지(뉘앙스): 중심(center)에서 밖으로(ec) 벗어난 [부정적이기보다 독특한 취향을 가진 무해한 괴짜 느낌]", d:"26일차"},
+    {w:"riddle", m:["수수께끼", "난제"], core:"*코어 이미지: 알아맞히기 어렵게 꼬아 놓은 질문이나 미스터리", d:"26일차"},
+    {w:"decipher", m:["해독하다", "판독하다"], core:"*코어 이미지: 꼬인 암호(cipher)를 풀어내다(de) [어려운 글씨나 숨겨진 의미를 파악하다]", d:"26일차"},
+    {w:"literate", m:["글을 읽고 쓸 줄 아는"], core:"*코어 이미지: 글자(letter)를 이해하는 [※스펠링 함정: literal(글자 그대로의), literary(문학의)]", d:"26일차"},
+    {w:"illegible", m:["읽기 어려운", "판독 불가한"], core:"*코어 이미지: 도무지 읽을(leg) 수 없는(il) [글씨가 악필이라 판독이 안 되는. ※함정: eligible(자격이 있는)]", d:"26일차"},
+    {w:"friction", m:["마찰", "갈등"], core:"*코어 이미지: 표면이 서로 비벼지며 긁히는 [물리적 마찰, 혹은 사람 사이의 의견 충돌과 갈등]", d:"26일차"},
+    {w:"percussion", m:["타악기", "충돌"], core:"*코어 이미지: 물체를 세게 쳐서(cuss) 소리를 내거나 울림을 발생시키는 것", d:"26일차"},
+    {w:"futile", m:["헛된", "소용없는"], core:"*코어 이미지(뉘앙스): 밑 빠진 독처럼 물이 새어버려 [아무리 노력해도 결실을 맺지 못하는 허무함]", d:"26일차"},
+    {w:"outstretch", m:["뻗다", "펴다"], core:"*코어 이미지: 팔이나 다리, 날개 등을 몸 밖으로(out) 쭉 늘여서 뻗다(stretch)", d:"26일차"}
+
 ];
 
 
@@ -748,6 +780,12 @@ const examData = [
     { w: "incorporate", s: "The designers decided to <span class='underlined'>incorporate</span> sustainable materials into the new building's architecture.", c: "include / integrate" },
     { w: "modest", s: "Despite his enormous success and wealth, he lived in a relatively <span class='underlined'>modest</span> house.", c: "humble / not large" },
     { w: "empirical", s: "The scientist's theory was not accepted until it was backed up by solid <span class='underlined'>empirical</span> evidence.", c: "observed / experimental" }
+,
+    // Day 26 빈출 다의어 및 전치사 기출 예문 추가
+    { w: "liable", s: "The shipping company is legally <span class='underlined'>liable</span> for any damage to the cargo during transit.", c: "legally responsible" },
+    { w: "decipher", s: "It took the researchers months to <span class='underlined'>decipher</span> the ancient symbols carved on the stone wall.", c: "figure out / decode" },
+    { w: "futile", s: "All his attempts to convince the stubborn committee members proved completely <span class='underlined'>futile</span>.", c: "useless / in vain" },
+    { w: "entail", s: "Accepting this promotion will <span class='underlined'>entail</span> traveling overseas at least twice a month.", c: "involve / require" }
 
 ];
 
@@ -838,5 +876,11 @@ const idiomData = [
     { idiom: "incorporate A into B", m: "A를 B로 통합시키다, 포함하다", w: "incorporate", d: "25일차" },
     { idiom: "by leaps and bounds", m: "비약적으로, 급속하게 (주로 성장이나 발전을 묘사할 때)", w: "leap", d: "25일차" },
     { idiom: "administer medicine", m: "약을 투여하다 (※ 독해 단골 덩어리 표현)", w: "administer", d: "25일차" }
-
+,
+    // 💡 26일차 필수 문법/숙어 표현
+    { idiom: "be liable for N", m: "~에 대해 (법적) 책임이 있다 (= responsible for)", w: "liable", d: "26일차" },
+    { idiom: "be liable to V", m: "~하기 쉽다, ~하는 경향이 있다 (= prone to)", w: "liable", d: "26일차" },
+    { idiom: "prompt A to V", m: "A가 ~하도록 촉발하다, 유도하다", w: "prompt", d: "26일차" },
+    { idiom: "yearn for", m: "~을 간절히 원하다, 갈망하다", w: "yearn", d: "26일차" }
+    
 ];
