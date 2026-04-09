@@ -690,6 +690,35 @@ const fullDB = [
     {w:"percussion", m:["타악기", "충돌"], core:"*코어 이미지: 물체를 세게 쳐서(cuss) 소리를 내거나 울림을 발생시키는 것", d:"26일차"},
     {w:"futile", m:["헛된", "소용없는"], core:"*코어 이미지(뉘앙스): 밑 빠진 독처럼 물이 새어버려 [아무리 노력해도 결실을 맺지 못하는 허무함]", d:"26일차"},
     {w:"outstretch", m:["뻗다", "펴다"], core:"*코어 이미지: 팔이나 다리, 날개 등을 몸 밖으로(out) 쭉 늘여서 뻗다(stretch)", d:"26일차"}
+,
+    // --- 27일차 (27단어, 다의어 함정 및 기출 전치사 반영) ---
+    {w:"feasible", m:["실현 가능한"], core:"*코어 이미지: 물리적으로 만들어 낼(feas) 수 있는 [계획이나 프로젝트가 현실적으로 가능한]", d:"27일차"},
+    {w:"viable", m:["생존 가능한", "실행 가능한"], core:"*코어 이미지(뉘앙스): 생명력(vi)이 있는 [단순한 가능성을 넘어 경제적으로 자립하고 '살아남을 수 있는']", d:"27일차"},
+    {w:"sensible", m:["현명한", "분별 있는"], core:"*코어 이미지: 감각(sense)이 제대로 작동하는 [감정적이지 않고 이성적이고 합리적인 판단]", d:"27일차"},
+    {w:"sober", m:["술 취하지 않은", "진지한"], core:"*코어 이미지: 제정신인 상태 [술이 깼거나, 상황을 들뜨지 않고 아주 진지하고 냉철하게 보는]", d:"27일차"},
+    {w:"temperate", m:["온화한", "차분한"], core:"*코어 이미지: 온도가 끓거나 얼지 않은 [기후가 온화하거나, 사람의 성품이 극단적이지 않고 절제하는]", d:"27일차"},
+    {w:"absurd", m:["터무니없는", "불합리한"], core:"*코어 이미지: 귀가 먹어(surd) 말이 안 통하는 [상식적으로 도저히 말도 안 되고 어리석은]", d:"27일차"},
+    {w:"shiver", m:["떨다"], core:"*코어 이미지(뉘앙스): [추위나 오싹한 공포 때문에 몸이 반사적으로 부르르 짧게 떨리는 것]", d:"27일차"},
+    {w:"tremble", m:["떨다"], core:"*코어 이미지(뉘앙스): [극심한 공포나 분노 등 강한 감정 때문에 통제 불능 상태로 덜덜 떨리는 것]", d:"27일차"},
+    {w:"reckon", m:["계산하다", "추측하다"], core:"*코어 이미지(뉘앙스): 머리를 굴려 셈을 하다 [자신의 경험이나 느낌을 바탕으로 '내 생각엔 ~일 것 같다'고 추측함]", d:"27일차"},
+    {w:"speculate", m:["사색하다", "추측하다"], core:"*코어 이미지(뉘앙스): 이리저리 살펴보다(spec) [불충분한 증거를 두고 이럴 수도 저럴 수도 있다고 여러 가능성을 따지는 추측]", d:"27일차"},
+    {w:"exert", m:["행사하다", "노력하다"], core:"*코어 이미지(뉘앙스): 밖으로(ex) 밀어내다 [자신이 가진 힘, 영향력, 권위 등을 밖으로 뿜어내어 강하게 발휘하다]", d:"27일차"},
+    {w:"harness", m:["이용하다", "동력화하다"], core:"*코어 이미지(뉘앙스): 말에 마구를 채우다 [자연의 힘(바람, 태양 등)을 통제하여 기술적으로 유용하게 '이용'하는 행위]", d:"27일차"},
+    {w:"exploit", m:["개발하다", "착취하다"], core:"*코어 이미지(뉘앙스): 밖으로 접힌 걸 펴다 [자원을 최대한 개발해 내거나, 남의 노동력을 '부당하게 착취'하는 부정적 뉘앙스]", d:"27일차"},
+    {w:"yield", m:["생산하다", "굴복하다"], core:"*코어 이미지: 내어주다 [※기출 다의어: 결과물을 내어주다(생산하다) vs 압력에 길을 내어주다(yield to: 굴복하다)]", d:"27일차"},
+    {w:"tow", m:["견인하다", "끌다"], core:"*코어 이미지(뉘앙스): 밧줄이나 쇠사슬을 [차나 배 등에 연결해서 뒤에서 질질 끌고 가는 것]", d:"27일차"},
+    {w:"haul", m:["잡아끌다", "운반하다"], core:"*코어 이미지(뉘앙스): [매우 무거운 물건을 땀 흘리며 온 힘을 다해 힘겹게 잡아끄는 것]", d:"27일차"},
+    {w:"bestow", m:["수여하다", "부여하다"], core:"*코어 이미지(뉘앙스): 소중한 장소에 두다 [윗사람이 아랫사람에게 상, 명예, 선물 등을 '공식적으로' 내려주는 것]", d:"27일차"},
+    {w:"endow", m:["부여하다", "기부하다"], core:"*코어 이미지: [※기출 짝꿍: be endowed with (~한 천부적 재능이나 특성을 부여받다)]", d:"27일차"},
+    {w:"grant", m:["수여하다", "승인하다", "보조금"], core:"*코어 이미지(뉘앙스): [요청했던 것을 허락하여 주거나 정부 '보조금'. ※기출: take it for granted (당연히 여기다)]", d:"27일차"},
+    {w:"render", m:["~이 되게 하다", "제공하다"], core:"*코어 이미지: [※문법 함정: render + 목적어 + 형용사 (어떤 대상을 특정 상태가 되게 '만들다'), 혹은 공식적으로 제공하다]", d:"27일차"},
+    {w:"eligible", m:["적임의", "자격이 있는"], core:"*코어 이미지: [※기출 짝꿍: eligible for N (혜택을 받을 자격이 있는), eligible to V (~할 자격이 있는)]", d:"27일차"},
+    {w:"appropriate", m:["적합한", "도용하다", "충당하다"], core:"*코어 이미지: 내 것(prop)으로 만들다 [상황에 딱 맞거나(형), 남의 돈/아이디어를 '허락 없이 도용/횡령'하다(동)]", d:"27일차"},
+    {w:"relevant", m:["관련된", "적절한"], core:"*코어 이미지: 현재 다루는 주제와 밀접하게 맞닿아 있어 '유의미하고 적절한'", d:"27일차"},
+    {w:"exempt", m:["면제하다", "면제되는"], core:"*코어 이미지: 밖으로(ex) 빼내다(empt) [※기출 짝꿍: be exempt from (~의 의무나 세금으로부터 면제된)]", d:"27일차"},
+    {w:"blueprint", m:["청사진"], core:"*코어 이미지(뉘앙스): 파란 종이에 흰 선으로 그린 [매우 상세하고 기술적이며 희망적인 설계도/계획]", d:"27일차"},
+    {w:"scheme", m:["계획", "음모"], core:"*코어 이미지(뉘앙스): [단순한 계획을 넘어, 목적 달성을 위해 치밀하게 짜인 교활한 '책략이나 음모' (부정적 뉘앙스)]", d:"27일차"},
+    {w:"streamline", m:["간소화하다", "능률화하다"], core:"*코어 이미지: 물이나 공기의 저항을 줄이는 유선형(streamline)으로 만들다 [불필요한 과정을 없애 '간소화'하다]", d:"27일차"}
 
 ];
 
@@ -786,6 +815,12 @@ const examData = [
     { w: "decipher", s: "It took the researchers months to <span class='underlined'>decipher</span> the ancient symbols carved on the stone wall.", c: "figure out / decode" },
     { w: "futile", s: "All his attempts to convince the stubborn committee members proved completely <span class='underlined'>futile</span>.", c: "useless / in vain" },
     { w: "entail", s: "Accepting this promotion will <span class='underlined'>entail</span> traveling overseas at least twice a month.", c: "involve / require" }
+,
+    // Day 27 다의어/뉘앙스 기출 예문 추가
+    { w: "yield", s: "After hours of fierce negotiation, the company finally had to <span class='underlined'>yield</span> to the workers' demands.", c: "surrender / give in" },
+    { w: "appropriate", s: "The politician was accused of attempting to <span class='underlined'>appropriate</span> public funds for his personal use.", c: "embezzle / steal" },
+    { w: "render", s: "The sudden and heavy snowstorm was enough to <span class='underlined'>render</span> the mountain roads completely impassable.", c: "make / cause to become" },
+    { w: "harness", s: "Engineers are continuously looking for new ways to effectively <span class='underlined'>harness</span> solar energy.", c: "utilize / make use of" }
 
 ];
 
@@ -882,5 +917,11 @@ const idiomData = [
     { idiom: "be liable to V", m: "~하기 쉽다, ~하는 경향이 있다 (= prone to)", w: "liable", d: "26일차" },
     { idiom: "prompt A to V", m: "A가 ~하도록 촉발하다, 유도하다", w: "prompt", d: "26일차" },
     { idiom: "yearn for", m: "~을 간절히 원하다, 갈망하다", w: "yearn", d: "26일차" }
+    ,
+    // 💡 27일차 필수 문법/숙어 표현
+    { idiom: "yield to N", m: "~에 굴복하다, 항복하다 (= surrender to, give way to)", w: "yield", d: "27일차" },
+    { idiom: "be endowed with", m: "(태어날 때부터) ~을 부여받다, ~한 재능을 갖추다", w: "endow", d: "27일차" },
+    { idiom: "take ~ for granted", m: "~을 당연하게 여기다 (감사할 줄 모르다)", w: "grant", d: "27일차" },
+    { idiom: "be exempt from", m: "~에서 면제되다 (세금, 의무 등)", w: "exempt", d: "27일차" }
     
 ];
