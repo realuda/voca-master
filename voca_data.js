@@ -719,7 +719,36 @@ const fullDB = [
     {w:"blueprint", m:["청사진"], core:"*코어 이미지(뉘앙스): 파란 종이에 흰 선으로 그린 [매우 상세하고 기술적이며 희망적인 설계도/계획]", d:"27일차"},
     {w:"scheme", m:["계획", "음모"], core:"*코어 이미지(뉘앙스): [단순한 계획을 넘어, 목적 달성을 위해 치밀하게 짜인 교활한 '책략이나 음모' (부정적 뉘앙스)]", d:"27일차"},
     {w:"streamline", m:["간소화하다", "능률화하다"], core:"*코어 이미지: 물이나 공기의 저항을 줄이는 유선형(streamline)으로 만들다 [불필요한 과정을 없애 '간소화'하다]", d:"27일차"}
-
+,
+    // --- 28일차 (27단어, 심리적 뉘앙스 및 필수 전치사 반영) ---
+    {w:"muse", m:["명상하다", "곰곰이 생각하다"], core:"*코어 이미지(뉘앙스): 예술의 여신(Muse)처럼 [즐거운 공상이나 옛 회상에 잠겨 여유롭게 생각하는 모습]", d:"28일차"},
+    {w:"contemplate", m:["심사숙고하다"], core:"*코어 이미지(뉘앙스): 신전(temple)에서 점을 치듯 [진지한 태도로 어떤 문제나 앞날을 오랫동안 깊이 생각하다]", d:"28일차"},
+    {w:"ponder", m:["숙고하다"], core:"*코어 이미지(뉘앙스): 저울에 무게(pond)를 달아보듯 [문제의 무게를 재며 신중하게 이리저리 따져보는 것]", d:"28일차"},
+    {w:"irrespective", m:["~와 상관없는"], core:"*코어 이미지: 뒤돌아보지(respective) 않는(ir) [※기출 짝꿍: irrespective of (~와 상관없이 = regardless of)]", d:"28일차"},
+    {w:"sturdy", m:["튼튼한", "견고한"], core:"*코어 이미지(뉘앙스): [주로 가구나 건물 등 사물의 물리적 구조가 단단해 잘 부서지지 않는 튼튼함]", d:"28일차"},
+    {w:"robust", m:["튼튼한", "강건한"], core:"*코어 이미지(뉘앙스): 참나무(robur)처럼 단단한 [사람이나 경제 시스템 등에 내적인 힘과 건강함이 넘치는 튼튼함]", d:"28일차"},
+    {w:"generous", m:["관대한", "풍부한"], core:"*코어 이미지(뉘앙스): 태생(gen)이 귀족인 [사람의 성격이 너그럽거나, 음식의 양이나 보상이 아주 넉넉하고 푸짐한]", d:"28일차"},
+    {w:"tranquil", m:["고요한", "평온한"], core:"*코어 이미지(뉘앙스): [바람 한 점 없는 호수처럼 외부의 소음이나 방해가 전혀 없는 평온함]", d:"28일차"},
+    {w:"serene", m:["평온한", "맑게 갠"], core:"*코어 이미지(뉘앙스): [날씨가 아주 맑고 화창하며, 사람의 내면에 불안이나 걱정이 없는 맑은 평온함]", d:"28일차"},
+    {w:"aesthetic", m:["심미적인", "미학의"], core:"*코어 이미지: 감각적으로 아름다움(미)을 느끼고 추구하는", d:"28일차"},
+    {w:"municipal", m:["시의", "지방 자치의"], core:"*코어 이미지: 국가 전체가 아니라 지역 주민의 의무(mun)를 잡고(cip) 있는 동네 단위의 행정", d:"28일차"},
+    {w:"prestige", m:["위신", "명성"], core:"*코어 이미지(뉘앙스): 마술사의 눈속임에서 유래 [사람들이 우러러보고 환상을 가질 만큼 대단한 위엄과 신망]", d:"28일차"},
+    {w:"renown", m:["명성"], core:"*코어 이미지: 이름(nown)이 계속해서(re) 불릴 정도로 널리 알려진 유명세", d:"28일차"},
+    {w:"oval", m:["타원형", "달걀 모양의"], core:"*코어 이미지: 달걀(ovum)처럼 길쭉하고 둥근 모양", d:"28일차"},
+    {w:"spiral", m:["나선형의", "소용돌이"], core:"*코어 이미지: 용수철이나 소용돌이처럼 빙글빙글 돌면서 올라가거나 내려가는 모양", d:"28일차"},
+    {w:"eloquent", m:["웅변의", "유창한"], core:"*코어 이미지: 밖으로(e) 말을 잘 쏟아내는(loqu) [청중의 마음을 움직일 만큼 말을 아주 조리 있고 유창하게 하는]", d:"28일차"},
+    {w:"colloquial", m:["구어체의", "일상 회화의"], core:"*코어 이미지: 함께(col) 말하는(loqu) [딱딱한 격식체가 아니라 일상 대화에서 편하게 쓰는 말의]", d:"28일차"},
+    {w:"dialect", m:["사투리", "방언"], core:"*코어 이미지: 특정 지역 사람들끼리(dia) 주고받는(lect) 고유한 언어", d:"28일차"},
+    {w:"verbal", m:["구두의", "말의"], core:"*코어 이미지: 단어(verb)로 이루어진 [글이 아니라 입으로 하는 '말의' (※예: verbal agreement 구두 계약)]", d:"28일차"},
+    {w:"loquacious", m:["수다스러운"], core:"*코어 이미지: 말(loqu)이 아주 꽉 차 있는(ous) [말이 엄청나게 많은 (= talkative, garrulous)]", d:"28일차"},
+    {w:"cite", m:["인용하다", "언급하다", "소환하다"], core:"*코어 이미지: 사람이나 증거를 불러내다 [남의 글을 인용하거나, 이유를 '언급'하거나, 법정에 부름]", d:"28일차"},
+    {w:"recite", m:["암송하다", "낭독하다"], core:"*코어 이미지: 다시(re) 불러내다(cite) [외워둔 시나 글을 사람들 앞에서 소리 내어 다시 줄줄 읽는 것]", d:"28일차"},
+    {w:"pronounce", m:["발음하다", "선언하다"], core:"*코어 이미지: 앞으로(pro) 널리 알리다(nounce) [소리 내어 발음하거나, 판사가 판결을 공식적으로 선언함]", d:"28일차"},
+    {w:"homogeneous", m:["동질의", "같은 종류의"], core:"*코어 이미지: 같은(homo) 종류(gen)로 이루어진 [※반의어: heterogeneous(이질적인)]", d:"28일차"},
+    {w:"equivalent", m:["동등한", "맞먹는"], core:"*코어 이미지: 가치(val)가 똑같은(equi) [※기출 짝꿍: equivalent to (~와 동등한)]", d:"28일차"},
+    {w:"akin", m:["유사한", "친족의"], core:"*코어 이미지: 같은 친척(kin) 쪽에(a) 속하는 [※기출 짝꿍: akin to (~와 유사한)]", d:"28일차"},
+    {w:"analogy", m:["유사", "유추"], core:"*코어 이미지: 비슷한(ana) 논리(logy)를 끌어옴 [비슷한 점을 바탕으로 다른 것을 미루어 짐작하는 비유나 유추]", d:"28일차"}
+    
 ];
 
 
@@ -821,6 +850,12 @@ const examData = [
     { w: "appropriate", s: "The politician was accused of attempting to <span class='underlined'>appropriate</span> public funds for his personal use.", c: "embezzle / steal" },
     { w: "render", s: "The sudden and heavy snowstorm was enough to <span class='underlined'>render</span> the mountain roads completely impassable.", c: "make / cause to become" },
     { w: "harness", s: "Engineers are continuously looking for new ways to effectively <span class='underlined'>harness</span> solar energy.", c: "utilize / make use of" }
+,
+    // Day 28 동의어/전치사 기출 예문 추가
+    { w: "loquacious", s: "The usually quiet student became surprisingly <span class='underlined'>loquacious</span> after having a few drinks.", c: "talkative / garrulous" },
+    { w: "cite", s: "In her presentation, she decided to <span class='underlined'>cite</span> recent statistics to support her argument.", c: "mention / quote" },
+    { w: "equivalent", s: "A distance of one mile is roughly <span class='underlined'>equivalent</span> to 1.6 kilometers.", c: "equal / comparable" },
+    { w: "robust", s: "The country's economy remains <span class='underlined'>robust</span> despite the global financial crisis.", c: "strong / healthy" }
 
 ];
 
@@ -923,5 +958,11 @@ const idiomData = [
     { idiom: "be endowed with", m: "(태어날 때부터) ~을 부여받다, ~한 재능을 갖추다", w: "endow", d: "27일차" },
     { idiom: "take ~ for granted", m: "~을 당연하게 여기다 (감사할 줄 모르다)", w: "grant", d: "27일차" },
     { idiom: "be exempt from", m: "~에서 면제되다 (세금, 의무 등)", w: "exempt", d: "27일차" }
-    
+    ,
+    // 💡 28일차 필수 문법/숙어 표현
+    { idiom: "irrespective of", m: "~와 상관없이, ~을 무시하고 (= regardless of)", w: "irrespective", d: "28일차" },
+    { idiom: "equivalent to N", m: "~와 동등한, ~와 맞먹는", w: "equivalent", d: "28일차" },
+    { idiom: "akin to N", m: "~와 유사한, ~에 가까운 (= similar to)", w: "akin", d: "28일차" },
+    { idiom: "verbal agreement", m: "구두 계약, 말로 한 약속 (※ 글이 아님을 강조)", w: "verbal", d: "28일차" }
+
 ];
