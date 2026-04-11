@@ -748,6 +748,32 @@ const fullDB = [
     {w:"equivalent", m:["동등한", "맞먹는"], core:"*코어 이미지: 가치(val)가 똑같은(equi) [※기출 짝꿍: equivalent to (~와 동등한)]", d:"28일차"},
     {w:"akin", m:["유사한", "친족의"], core:"*코어 이미지: 같은 친척(kin) 쪽에(a) 속하는 [※기출 짝꿍: akin to (~와 유사한)]", d:"28일차"},
     {w:"analogy", m:["유사", "유추"], core:"*코어 이미지: 비슷한(ana) 논리(logy)를 끌어옴 [비슷한 점을 바탕으로 다른 것을 미루어 짐작하는 비유나 유추]", d:"28일차"}
+    ,
+    // --- 29일차 (24단어, 스펠링 함정 및 고난도 다의어 반영) ---
+    {w:"plausible", m:["그럴듯한", "타당한"], core:"*코어 이미지(뉘앙스): 박수(plaud) 칠 만한 [사실 여부는 몰라도 겉보기에는 논리적이고 꽤 그럴듯하게 들리는]", d:"29일차"},
+    {w:"accredit", m:["간주하다", "공을 돌리다"], core:"*코어 이미지: 믿음(credit)을 주다 [※기출 짝꿍: accredit A with B (A가 B를 했다고 믿고 공을 돌리다)]", d:"29일차"},
+    {w:"discredit", m:["의심하다", "불명예"], core:"*코어 이미지: 믿음(credit)을 없애다(dis) [남의 평판이나 이론의 신빙성을 떨어뜨리고 의심하다]", d:"29일차"},
+    {w:"divulge", m:["폭로하다", "누설하다"], core:"*코어 이미지(뉘앙스): 대중(vulg)에게 퍼뜨리다 [비밀처럼 묻혀있어야 할 것을 의도적으로 밖으로 까발리다]", d:"29일차"},
+    {w:"compliment", m:["칭찬하다", "찬사"], core:"*코어 이미지: [※스펠링 함정: 중간이 'i'. \"I(나)를 칭찬해!\" / complement(보충하다)와 구별]", d:"29일차"},
+    {w:"complement", m:["보충하다", "보완물"], core:"*코어 이미지: [※스펠링 함정: 중간이 'e'. 부족한 요소(element)를 꽉 채워(ple) 완전하게 만들다]", d:"29일차"},
+    {w:"replenish", m:["다시 채우다", "보충하다"], core:"*코어 이미지: 다시(re) 가득 채우다(plen) [다 써버린 물이나 식량, 자원 등을 원래대로 꽉 채워 놓다]", d:"29일차"},
+    {w:"assert", m:["주장하다", "단언하다"], core:"*코어 이미지: 강력하게 손을 뻗어(sert) [자신의 권리나 의견을 강하고 분명하게 내세우다]", d:"29일차"},
+    {w:"splendid", m:["훌륭한", "화려한"], core:"*코어 이미지: 빛이 날(splend) 정도로 매우 아름답고 찬란하며 훌륭한", d:"29일차"},
+    {w:"esteem", m:["존경하다", "존경"], core:"*코어 이미지(뉘앙스): 가치를 높게 매기다 [업적이나 훌륭한 성품을 바탕으로 한 이성적이고 높은 평가의 존경]", d:"29일차"},
+    {w:"adore", m:["매우 좋아하다", "흠모하다"], core:"*코어 이미지(뉘앙스): [감정적으로 무척 따뜻하고 대상의 매력에 푹 빠져 사랑하고 아끼는 상태]", d:"29일차"},
+    {w:"worship", m:["숭배하다", "예배하다"], core:"*코어 이미지(뉘앙스): 가치(worth) 있는 존재로 모시다 [신적인 존재로 대하듯 완벽하다고 믿고 맹목적으로 숭배함]", d:"29일차"},
+    {w:"ritual", m:["의식", "의례"], core:"*코어 이미지: 종교적이나 전통적으로 정해진 순서와 규칙에 따라 행해지는 공식적인 행사", d:"29일차"},
+    {w:"chapel", m:["예배당", "예배"], core:"*코어 이미지: 교회나 병원, 학교 안에 마련된 비교적 작은 규모의 예배 장소", d:"29일차"},
+    {w:"choir", m:["성가대", "합창단"], core:"*코어 이미지: 교회나 공연에서 함께 노래를 부르도록 조직된 가수들의 무리", d:"29일차"},
+    {w:"secular", m:["세속적인"], core:"*코어 이미지: 한 세기/시대(secular)에 속하는 [종교나 영적인 것이 아닌, 현실 세계와 물질적인 것 (※반의어: sacred)]", d:"29일차"},
+    {w:"skeptical", m:["회의적인", "의심하는"], core:"*코어 이미지(뉘앙스): [덮어놓고 안 믿는 게 아니라, 합리적인 근거를 따져보며 진짜인지 의심하는 상태]", d:"29일차"},
+    {w:"beware", m:["조심하다", "경계하다"], core:"*코어 이미지: 주의(ware)를 기울이다(be) [※기출 짝꿍: beware of (~을 조심하다)]", d:"29일차"},
+    {w:"belittle", m:["경시하다", "과소평가하다"], core:"*코어 이미지: 대상을 작고(little) 하찮게 만들다(be) [남의 업적이나 노력을 깎아내리다 (= downplay)]", d:"29일차"},
+    {w:"befall", m:["일어나다", "닥치다"], core:"*코어 이미지: 위로 떨어지다(fall) [주로 불행이나 안 좋은 일, 재난 등이 사람에게 발생하다]", d:"29일차"},
+    {w:"merge", m:["합병하다", "융합되다"], core:"*코어 이미지: 물속으로 푹 담가 섞이다 [회사나 조직, 사상 등이 하나로 합쳐지다 (※기출: merge with)]", d:"29일차"},
+    {w:"patent", m:["특허", "명백한"], core:"*코어 이미지: 겉으로 활짝 열려있는(pat) [※기출 다의어: 숨길 수 없을 정도로 '명백하고 뻔한' (= obvious)]", d:"29일차"},
+    {w:"manifest", m:["나타내다", "분명한"], core:"*코어 이미지: 손(mani)에 잡힐 듯이 [행동이나 외양으로 숨김없이 분명하게 드러내다, 혹은 그런 상태]", d:"29일차"},
+    {w:"plain", m:["분명한", "평범한", "평원"], core:"*코어 이미지: 평평하고 가려진 게 없는 [그래서 뜻이 분명하고, 꾸밈이 없어 평범하고, 평평한 땅을 뜻함]", d:"29일차"}
     
 ];
 
@@ -856,6 +882,12 @@ const examData = [
     { w: "cite", s: "In her presentation, she decided to <span class='underlined'>cite</span> recent statistics to support her argument.", c: "mention / quote" },
     { w: "equivalent", s: "A distance of one mile is roughly <span class='underlined'>equivalent</span> to 1.6 kilometers.", c: "equal / comparable" },
     { w: "robust", s: "The country's economy remains <span class='underlined'>robust</span> despite the global financial crisis.", c: "strong / healthy" }
+,
+    // Day 29 스펠링/다의어 기출 예문 추가
+    { w: "complement", s: "The new spicy sauce is designed to perfectly <span class='underlined'>complement</span> the flavor of the grilled chicken.", c: "complete / enhance (※ compliment와 구별)" },
+    { w: "patent", s: "It was a <span class='underlined'>patent</span> lie, but surprisingly, many people still believed his speech.", c: "obvious / clear" },
+    { w: "secular", s: "The country's constitution strictly guarantees the separation of religious institutions and <span class='underlined'>secular</span> government.", c: "non-religious / worldly" },
+    { w: "belittle", s: "You should never <span class='underlined'>belittle</span> her achievements just because you disagree with her methods.", c: "make light of / downplay" }
 
 ];
 
@@ -964,5 +996,11 @@ const idiomData = [
     { idiom: "equivalent to N", m: "~와 동등한, ~와 맞먹는", w: "equivalent", d: "28일차" },
     { idiom: "akin to N", m: "~와 유사한, ~에 가까운 (= similar to)", w: "akin", d: "28일차" },
     { idiom: "verbal agreement", m: "구두 계약, 말로 한 약속 (※ 글이 아님을 강조)", w: "verbal", d: "28일차" }
+,
+    // 💡 29일차 필수 문법/숙어 표현
+    { idiom: "accredit A with B", m: "A가 B를 했다고 간주하다, A에게 B의 공을 돌리다", w: "accredit", d: "29일차" },
+    { idiom: "beware of", m: "~을 주의하다, 조심하다", w: "beware", d: "29일차" },
+    { idiom: "make light of", m: "~을 경시하다, 가볍게 여기다 (= belittle, downplay)", w: "belittle", d: "29일차" },
+    { idiom: "hold ~ in high esteem", m: "~을 깊이 존경하다, 높이 평가하다", w: "esteem", d: "29일차" }
 
 ];
