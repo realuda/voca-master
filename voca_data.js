@@ -774,7 +774,38 @@ const fullDB = [
     {w:"patent", m:["특허", "명백한"], core:"*코어 이미지: 겉으로 활짝 열려있는(pat) [※기출 다의어: 숨길 수 없을 정도로 '명백하고 뻔한' (= obvious)]", d:"29일차"},
     {w:"manifest", m:["나타내다", "분명한"], core:"*코어 이미지: 손(mani)에 잡힐 듯이 [행동이나 외양으로 숨김없이 분명하게 드러내다, 혹은 그런 상태]", d:"29일차"},
     {w:"plain", m:["분명한", "평범한", "평원"], core:"*코어 이미지: 평평하고 가려진 게 없는 [그래서 뜻이 분명하고, 꾸밈이 없어 평범하고, 평평한 땅을 뜻함]", d:"29일차"}
-    
+    ,
+    // --- 30일차 (29단어, 방해/눈에 띄는 동의어 뉘앙스 및 다의어 반영) ---
+    {w:"feeble", m:["연약한", "미약한"], core:"*코어 이미지(뉘앙스): [힘이 쫙 빠져서 육체적, 정신적으로 매우 연약하고 기력이 없는 상태]", d:"30일차"},
+    {w:"delicate", m:["연약한", "섬세한"], core:"*코어 이미지(뉘앙스): [유리 공예품처럼 아주 섬세하고 세심하여 다치거나 부서지기 쉬운 상태]", d:"30일차"},
+    {w:"infirm", m:["병약한", "허약한"], core:"*코어 이미지(뉘앙스): 단단하지(firm) 않은(in) [주로 노화나 오랜 병으로 인해 체력이 약해진 상태]", d:"30일차"},
+    {w:"faint", m:["희미한", "기절하다"], core:"*코어 이미지: [빛, 소리, 냄새 등이 아주 약하고 희미하거나, 의식이 흐려져 기절함]", d:"30일차"},
+    {w:"overcast", m:["흐린", "음침한"], core:"*코어 이미지: 구름이 하늘을 덮어(cast) [날씨가 우중충하고 몹시 흐린]", d:"30일차"},
+    {w:"pale", m:["창백한", "옅은"], core:"*코어 이미지: [핏기가 가셔서 얼굴이 하얗게 질리거나 색깔이 옅은 창백함]", d:"30일차"},
+    {w:"fade", m:["바래다", "사라지다"], core:"*코어 이미지: [색깔이나 소리, 기억 등이 시간이 지나면서 서서히 바래고 희미해지며 사라짐]", d:"30일차"},
+    {w:"vulnerable", m:["취약한", "상처받기 쉬운"], core:"*코어 이미지: 방패가 없는 [※기출 짝꿍: vulnerable to N (~에 취약한, 공격받기 쉬운)]", d:"30일차"},
+    {w:"wither", m:["시들다", "말라 죽다"], core:"*코어 이미지: [식물이나 피부 등이 수분을 잃고 쭈글쭈글하게 시들다]", d:"30일차"},
+    {w:"wane", m:["수그러들다", "약해지다"], core:"*코어 이미지: [달이 이지러지듯, 권력이나 세력, 달의 크기 등이 점점 줄어들고 쇠퇴하다]", d:"30일차"},
+    {w:"groan", m:["신음하다", "불평하다"], core:"*코어 이미지: [고통이나 짜증 때문에 '으으' 하고 낮게 신음하거나 앓는 소리]", d:"30일차"},
+    {w:"weary", m:["지친", "싫증 난"], core:"*코어 이미지(뉘앙스): [육체적으로 완전히 피곤하여 지치거나, 어떤 일에 진저리가 나고 싫증 난 상태]", d:"30일차"},
+    {w:"ache", m:["아프다", "통증"], core:"*코어 이미지: [날카로운 상처(pain)와 달리, 둔하고 지속적으로 욱신거리는 아픔]", d:"30일차"},
+    {w:"gauge", m:["측정하다", "평가하다"], core:"*코어 이미지: 눈금을 재다 [도구로 수치를 정확히 재거나, 비유적으로 남의 기분이나 반응을 가늠함]", d:"30일차"},
+    {w:"magnitude", m:["규모", "진도", "중대성"], core:"*코어 이미지: 거대함(magni) [크기나 규모, 지진의 진도, 문제의 엄청난 중요성]", d:"30일차"},
+    {w:"barometer", m:["기압계", "척도"], core:"*코어 이미지: 기압계 [비유적으로 여론이나 경제 상황의 변화를 보여주는 '지표'나 '척도']", d:"30일차"},
+    {w:"breathtaking", m:["놀랄 만한", "숨 막히는"], core:"*코어 이미지: 숨(breath)을 멎게(take) 할 만큼 [너무 아름답거나 놀라워서 압도적인]", d:"30일차"},
+    {w:"prodigious", m:["비범한", "거대한"], core:"*코어 이미지(뉘앙스): [크기, 양, 능력이 보통을 아득히 뛰어넘어 입이 떡 벌어지는 '거대한/비범한']", d:"30일차"},
+    {w:"salient", m:["눈에 띄는", "핵심적인"], core:"*코어 이미지: 밖으로 튀어나오는 [여러 특징 중 가장 중요해서 눈에 확 띄는 '핵심적인']", d:"30일차"},
+    {w:"striking", m:["인상적인", "눈에 띄는"], core:"*코어 이미지: 뇌리를 꽝 때리는(strike) [사람의 외모나 차이점 등이 한 대 맞은 것처럼 강렬하게 인상적인]", d:"30일차"},
+    {w:"preeminent", m:["탁월한", "우위의"], core:"*코어 이미지: 남들보다 앞서서(pre) 우뚝 솟은 [특정 분야에서 다른 누구보다 '가장 탁월한']", d:"30일차"},
+    {w:"prominent", m:["두드러진", "저명한"], core:"*코어 이미지: 앞으로(pro) 툭 튀어나온 [물리적으로 두드러지거나, 사회적으로 '저명하고 중요한']", d:"30일차"},
+    {w:"noticeable", m:["눈에 띄는", "뚜렷한"], core:"*코어 이미지: 알아차릴(notice) 수 있는 [가장 중립적인 뉘앙스로, 남의 눈에 띌 만한 변화나 특징]", d:"30일차"},
+    {w:"hamper", m:["방해하다", "지연시키다"], core:"*코어 이미지(뉘앙스): 무거운 바구니(hamper)를 지우다 [움직임이나 일의 진행 속도를 늦추고 방해하다]", d:"30일차"},
+    {w:"hinder", m:["방해하다", "막다"], core:"*코어 이미지(뉘앙스): 뒤(hind)에서 잡아끌다 [※기출: hinder A from -ing (A가 ~하는 것을 방해하다)]", d:"30일차"},
+    {w:"impede", m:["방해하다", "지연시키다"], core:"*코어 이미지(뉘앙스): 발(ped)에 족쇄를 채우다 [진행이나 발전을 물리적/구조적으로 심각하게 어렵게 하다]", d:"30일차"},
+    {w:"turbulent", m:["휘몰아치는", "사나운"], core:"*코어 이미지: 빙글빙글 요동치는 [파도, 공기, 혹은 시대적 상황이 걷잡을 수 없이 휘몰아치고 혼란스러운]", d:"30일차"},
+    {w:"address", m:["다루다", "연설하다", "주소"], core:"*코어 이미지: 똑바로 향하다 [※독해 빈출 다의어: (문제나 상황을 회피하지 않고) 정면으로 다루다, 해결하려 하다]", d:"30일차"},
+    {w:"content", m:["만족하는", "내용물"], core:"*코어 이미지: 안에 담긴 것 [※기출 다의어: 명사로는 내용물, 형용사로는 '만족하는' (be content with)]", d:"30일차"}
+
 ];
 
 
@@ -888,6 +919,12 @@ const examData = [
     { w: "patent", s: "It was a <span class='underlined'>patent</span> lie, but surprisingly, many people still believed his speech.", c: "obvious / clear" },
     { w: "secular", s: "The country's constitution strictly guarantees the separation of religious institutions and <span class='underlined'>secular</span> government.", c: "non-religious / worldly" },
     { w: "belittle", s: "You should never <span class='underlined'>belittle</span> her achievements just because you disagree with her methods.", c: "make light of / downplay" }
+,
+    // Day 30 필수 다의어 및 전치사 기출 예문 추가
+    { w: "address", s: "The government must take immediate action to <span class='underlined'>address</span> the growing problem of youth unemployment.", c: "deal with / tackle" },
+    { w: "vulnerable", s: "Older people and young children are particularly <span class='underlined'>vulnerable</span> to the flu during the winter season.", c: "susceptible / open to attack" },
+    { w: "hinder", s: "Heavy rain and extremely strong winds will seriously <span class='underlined'>hinder</span> the rescue team's search efforts.", c: "impede / hamper" },
+    { w: "prominent", s: "She is a <span class='underlined'>prominent</span> scientist who has won several international awards for her medical research.", c: "well-known / distinguished" }
 
 ];
 
@@ -1002,5 +1039,11 @@ const idiomData = [
     { idiom: "beware of", m: "~을 주의하다, 조심하다", w: "beware", d: "29일차" },
     { idiom: "make light of", m: "~을 경시하다, 가볍게 여기다 (= belittle, downplay)", w: "belittle", d: "29일차" },
     { idiom: "hold ~ in high esteem", m: "~을 깊이 존경하다, 높이 평가하다", w: "esteem", d: "29일차" }
+,
+    // 💡 30일차 필수 문법/숙어 표현
+    { idiom: "be vulnerable to N", m: "~에 취약하다, ~에 공격/상처받기 쉽다", w: "vulnerable", d: "30일차" },
+    { idiom: "address the issue (problem)", m: "문제를 다루다, 해결하려고 노력하다 (= deal with, tackle)", w: "address", d: "30일차" },
+    { idiom: "hinder A from -ing", m: "A가 ~하는 것을 방해하다, 막다", w: "hinder", d: "30일차" },
+    { idiom: "be content with", m: "~에 만족하다 (= be satisfied with)", w: "content", d: "30일차" }
 
 ];
