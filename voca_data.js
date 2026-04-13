@@ -805,7 +805,34 @@ const fullDB = [
     {w:"turbulent", m:["휘몰아치는", "사나운"], core:"*코어 이미지: 빙글빙글 요동치는 [파도, 공기, 혹은 시대적 상황이 걷잡을 수 없이 휘몰아치고 혼란스러운]", d:"30일차"},
     {w:"address", m:["다루다", "연설하다", "주소"], core:"*코어 이미지: 똑바로 향하다 [※독해 빈출 다의어: (문제나 상황을 회피하지 않고) 정면으로 다루다, 해결하려 하다]", d:"30일차"},
     {w:"content", m:["만족하는", "내용물"], core:"*코어 이미지: 안에 담긴 것 [※기출 다의어: 명사로는 내용물, 형용사로는 '만족하는' (be content with)]", d:"30일차"}
-
+,
+    // --- 31일차 (25단어, from 짝꿍 및 스펠링 함정 반영) ---
+    {w:"aisle", m:["통로"], core:"*코어 이미지: 좌석(기차, 비행기, 극장)이나 마트 진열대 사이의 길쭉한 통로 (※발음주의: 아일)", d:"31일차"},
+    {w:"stray", m:["길을 잃은", "벗어나다"], core:"*코어 이미지: 정해진 길이나 무리에서 벗어나 [헤매고 길을 잃은 상태 (예: stray dog 유기견)]", d:"31일차"},
+    {w:"deviate", m:["벗어나다", "일탈하다"], core:"*코어 이미지: 길(via)에서 벗어나다(de) [※기출 짝꿍: deviate from (규칙이나 정상 궤도에서 벗어나다)]", d:"31일차"},
+    {w:"deflect", m:["방향을 바꾸다", "모면하다"], core:"*코어 이미지: 날아오는 것을 옆으로 쳐내어 꺾다(flect) [공격을 튕겨내거나, 비판을 교묘하게 피하다]", d:"31일차"},
+    {w:"scorn", m:["경멸하다", "경멸"], core:"*코어 이미지(뉘앙스): [상대방의 행동이 도덕적으로 나쁘다고 생각하여 '분노가 섞인' 강한 경멸]", d:"31일차"},
+    {w:"contempt", m:["경멸", "무시"], core:"*코어 이미지(뉘앙스): [대상이 너무 열등해서 아예 신경 쓸 가치조차 없다고 여기는 '차갑고 오만한' 감정]", d:"31일차"},
+    {w:"refuge", m:["피난처", "도피"], core:"*코어 이미지: 뒤로(re) 도망치다(fug) [위험이나 폭풍우를 피해 숨을 수 있는 안전한 곳 (※take refuge in)]", d:"31일차"},
+    {w:"spontaneous", m:["자발적인", "자연스러운"], core:"*코어 이미지(뉘앙스): [외부의 강요 없이 내면의 충동이나 자연스러운 감정으로 '우러나와서' 하는 (긍정적)]", d:"31일차"},
+    {w:"impromptu", m:["즉석의", "준비 없는"], core:"*코어 이미지(뉘앙스): 준비 없이(prompt) [대본이나 사전 준비 없이 그 자리에서 바로 하는 (예: 즉흥 연설)]", d:"31일차"},
+    {w:"causal", m:["인과 관계의"], core:"*코어 이미지: 원인(cause)의 [※스펠링 함정 1순위: casual(우연한, 평상복의)과 절대 헷갈리지 말 것!]", d:"31일차"},
+    {w:"stem", m:["유래하다", "줄기"], core:"*코어 이미지(뉘앙스): [※기출 짝꿍: stem from (식물 줄기가 뿌리에서 나오듯, 직접적인 원인/기원이 ~이다)]", d:"31일차"},
+    {w:"derive", m:["유래하다", "이끌어내다"], core:"*코어 이미지(뉘앙스): 강물이 흘러나오다(riv) [※기출: derive from (~에서 유래하다), derive A from B (B에서 A를 얻다)]", d:"31일차"},
+    {w:"locate", m:["위치를 찾다", "위치시키다"], core:"*코어 이미지: 장소(loc)를 알아내다 [※문법 기출: 능동태(찾아내다) vs 수동태 be located in (~에 위치하다)]", d:"31일차"},
+    {w:"deploy", m:["배치하다", "효율적으로 사용하다"], core:"*코어 이미지: 접힌 것을 쫙 펴다(ploy) [군대나 무기를 실전에 배치하거나, 자원을 효율적으로 쓰다]", d:"31일차"},
+    {w:"outlook", m:["전망", "관점", "경치"], core:"*코어 이미지: 밖을(out) 내다봄(look) [※독해 빈출: 앞날에 대한 예측 (예: economic outlook 경제 전망)]", d:"31일차"},
+    {w:"standpoint", m:["관점", "입장"], core:"*코어 이미지: 내가 서 있는(stand) 지점(point) [특정 문제를 바라보는 나의 구체적인 입장]", d:"31일차"},
+    {w:"docile", m:["유순한", "다루기 쉬운"], core:"*코어 이미지: 가르치기(doc) 쉬운 [사람이나 동물이 고집을 부리지 않고 말을 아주 잘 듣는]", d:"31일차"},
+    {w:"holistic", m:["전체론적인", "종합적인"], core:"*코어 이미지: 전체(whole)를 아우르는 [부분만 보지 않고 전체적인 연결성을 강조하는 (예: holistic medicine 전인 의학)]", d:"31일차"},
+    {w:"organism", m:["유기체", "생물"], core:"*코어 이미지: 여러 기관(organ)이 모여 하나의 생명 활동을 하는 독립된 생명체", d:"31일차"},
+    {w:"meadow", m:["초원", "목초지"], core:"*코어 이미지: 풀과 야생화가 자라도록 주로 강가에 자연스럽게 형성된 아름다운 풀밭", d:"31일차"},
+    {w:"pasture", m:["목장", "방목장"], core:"*코어 이미지: 소나 양 같은 가축을 먹이기 위해(past) 인간이 관리하는 풀밭", d:"31일차"},
+    {w:"prairie", m:["대초원"], core:"*코어 이미지: 북미 대륙 등에 끝없이 넓게 펼쳐진 나무 없는 거대한 초원", d:"31일차"},
+    {w:"gravel", m:["자갈"], core:"*코어 이미지: 모래보다는 크고 바위보다는 작은, 길에 깔려 있는 굵은 돌멩이들", d:"31일차"},
+    {w:"livestock", m:["가축"], core:"*코어 이미지: 살아있는(live) 재산(stock) [소, 돼지, 닭 등 농장에서 기르는 동물 전체를 묶어 부르는 말]", d:"31일차"},
+    {w:"barn", m:["헛간", "외양간"], core:"*코어 이미지: 농장에서 곡식을 보관하거나 가축을 기르기 위해 지어놓은 큰 창고 건물", d:"31일차"}
+    
 ];
 
 
@@ -925,6 +952,12 @@ const examData = [
     { w: "vulnerable", s: "Older people and young children are particularly <span class='underlined'>vulnerable</span> to the flu during the winter season.", c: "susceptible / open to attack" },
     { w: "hinder", s: "Heavy rain and extremely strong winds will seriously <span class='underlined'>hinder</span> the rescue team's search efforts.", c: "impede / hamper" },
     { w: "prominent", s: "She is a <span class='underlined'>prominent</span> scientist who has won several international awards for her medical research.", c: "well-known / distinguished" }
+,
+    // Day 31 스펠링 함정 및 전치사 기출 예문 추가
+    { w: "causal", s: "The researchers found a direct <span class='underlined'>causal</span> link between smoking and lung cancer.", c: "relating to a cause (※ casual 아님)" },
+    { w: "spontaneous", s: "The crowd broke into <span class='underlined'>spontaneous</span> applause when the singer suddenly appeared on stage.", c: "unplanned / natural" },
+    { w: "deviate", s: "The flight had to <span class='underlined'>deviate</span> from its original route due to the severe thunderstorm.", c: "turn away / stray" },
+    { w: "stem", s: "Most of her current psychological problems seem to <span class='underlined'>stem</span> from her traumatic childhood.", c: "arise / originate" }
 
 ];
 
@@ -1045,5 +1078,11 @@ const idiomData = [
     { idiom: "address the issue (problem)", m: "문제를 다루다, 해결하려고 노력하다 (= deal with, tackle)", w: "address", d: "30일차" },
     { idiom: "hinder A from -ing", m: "A가 ~하는 것을 방해하다, 막다", w: "hinder", d: "30일차" },
     { idiom: "be content with", m: "~에 만족하다 (= be satisfied with)", w: "content", d: "30일차" }
+,
+    // 💡 31일차 필수 문법/숙어 표현
+    { idiom: "deviate from", m: "~에서 벗어나다, 일탈하다", w: "deviate", d: "31일차" },
+    { idiom: "stem from", m: "~에서 유래하다, 기인하다 (= arise from)", w: "stem", d: "31일차" },
+    { idiom: "derive from", m: "~에서 유래하다 (능동태 derive A from B: B에서 A를 얻다)", w: "derive", d: "31일차" },
+    { idiom: "be located in (at/on)", m: "~에 위치하다 (수동태 주의)", w: "locate", d: "31일차" }
 
 ];
