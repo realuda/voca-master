@@ -832,6 +832,32 @@ const fullDB = [
     {w:"gravel", m:["자갈"], core:"*코어 이미지: 모래보다는 크고 바위보다는 작은, 길에 깔려 있는 굵은 돌멩이들", d:"31일차"},
     {w:"livestock", m:["가축"], core:"*코어 이미지: 살아있는(live) 재산(stock) [소, 돼지, 닭 등 농장에서 기르는 동물 전체를 묶어 부르는 말]", d:"31일차"},
     {w:"barn", m:["헛간", "외양간"], core:"*코어 이미지: 농장에서 곡식을 보관하거나 가축을 기르기 위해 지어놓은 큰 창고 건물", d:"31일차"}
+  ,
+    // 💡 32일차 필수 문법/숙어 표현
+    { idiom: "on the spur of the moment", m: "충동적으로, 얼떨결에, 즉석에서", w: "spur", d: "32일차" },
+    { idiom: "arouse vs arise", m: "arouse(불러일으키다-타동사) / arise(발생하다-자동사) 구별", w: "arouse", d: "32일차" },
+    { idiom: "vicious circle", m: "악순환 (원인과 결과가 서로 꼬리를 물고 상황이 악화됨)", w: "vicious", d: "32일차" },
+    { idiom: "mingle with", m: "~와 어울리다, 교제하다", w: "mingle", d: "32일차" }
+,
+    // --- 32일차 (18단어, 자극 테마 및 필수 문법/다의어 반영) ---
+    {w:"porch", m:["현관", "베란다"], core:"*코어 이미지: 집 밖으로 지붕이 튀어나와 있는 입구 현관", d:"32일차"},
+    {w:"equator", m:["적도"], core:"*코어 이미지: 지구를 남북으로 똑같이(equa) 반으로 가르는 선", d:"32일차"},
+    {w:"latitude", m:["위도", "위도 지방"], core:"*코어 이미지: 넓은(lat) 선 [지구의 가로선 (※혼동주의: longitude 경도, altitude 고도, aptitude 적성)]", d:"32일차"},
+    {w:"terrestrial", m:["지구의", "육지의"], core:"*코어 이미지: 땅(terr)에 속하는 [지구의, 혹은 수생태계와 대비되는 '육지의' (※반의어: extraterrestrial 외계의)]", d:"32일차"},
+    {w:"vice", m:["악덕", "범죄"], core:"*코어 이미지: 도덕적으로 타락하고 나쁜 행위 [※기출 숙어: vicious circle (악순환)]", d:"32일차"},
+    {w:"vicious", m:["잔인한", "사나운", "악의적인"], core:"*코어 이미지(뉘앙스): 악덕(vice)이 꽉 찬(ous) [적극적으로 남을 공격하고 해를 끼치려는 사나운 상태]", d:"32일차"},
+    {w:"sinister", m:["사악한", "불길한"], core:"*코어 이미지(뉘앙스): 왼쪽(불길함)에서 유래 [무언가 나쁜 일이 일어날 것만 같이 어둡고 사악한 느낌]", d:"32일차"},
+    {w:"relentless", m:["가차 없는", "수그러들지 않는"], core:"*코어 이미지(뉘앙스): 누그러지지(relent) 않는(less) [무자비하게, 쉴 틈 없이 계속해서 밀어붙이는]", d:"32일차"},
+    {w:"gleam", m:["번뜩임", "반짝 빛나다"], core:"*코어 이미지(뉘앙스): [어둠 속에서 금속이나 눈빛이 순간적으로 날카롭고 희미하게 반사되는 빛]", d:"32일차"},
+    {w:"radiate", m:["방사하다", "뿜어내다"], core:"*코어 이미지: 태양이나 난로처럼 중심에서 바깥으로 빛, 열, 감정 등을 사방으로 뿜어내는 모습", d:"32일차"},
+    {w:"spur", m:["박차", "자극하다"], core:"*코어 이미지(뉘앙스): 말의 배를 차는 뾰족한 톱니 [외부에서 콕 찔러서 움직이게 자극함 (※on the spur of the moment 충동적으로)]", d:"32일차"},
+    {w:"arouse", m:["불러일으키다", "자극하다"], core:"*코어 이미지: 잠든 것을 깨우다 [감정, 호기심, 반응 등을 일깨움 (※문법 함정: 타동사이므로 자동사 arise와 구별!)]", d:"32일차"},
+    {w:"stir", m:["휘젓다", "자극하다"], core:"*코어 이미지: 숟가락으로 휘휘 저어 섞거나, 잠잠하던 감정이나 여론을 뒤흔들어 자극함", d:"32일차"},
+    {w:"mingle", m:["섞다", "어울리다"], core:"*코어 이미지: 사람들 사이를 돌아다니며 자연스럽게 섞임 [※기출 짝꿍: mingle with (~와 어울려 교제하다)]", d:"32일차"},
+    {w:"catalyst", m:["촉매", "기폭제"], core:"*코어 이미지: 화학 반응을 돕는 물질 [비유적으로 어떤 중대한 변화나 사건을 시작하게 만드는 결정적 자극]", d:"32일차"},
+    {w:"impetus", m:["자극", "추동력"], core:"*코어 이미지(뉘앙스): 안으로(im) 향하다(pet) [시작된 움직임이 계속해서 앞으로 나아가게 밀어주는 힘/가속도]", d:"32일차"},
+    {w:"illuminate", m:["비추다", "분명히 설명하다"], core:"*코어 이미지: 빛(lumin)을 비추다 [어두운 곳을 밝히거나, 이해하기 어려운 문제를 '명확하게 해명/설명하다' (= clarify)]", d:"32일차"},
+    {w:"incentive", m:["장려금", "자극", "동기"], core:"*코어 이미지(뉘앙스): 사람을 움직이게 만드는 실질적인 보상 [주로 경제적인 보너스나 혜택을 뜻함]", d:"32일차"}
     
 ];
 
@@ -958,6 +984,12 @@ const examData = [
     { w: "spontaneous", s: "The crowd broke into <span class='underlined'>spontaneous</span> applause when the singer suddenly appeared on stage.", c: "unplanned / natural" },
     { w: "deviate", s: "The flight had to <span class='underlined'>deviate</span> from its original route due to the severe thunderstorm.", c: "turn away / stray" },
     { w: "stem", s: "Most of her current psychological problems seem to <span class='underlined'>stem</span> from her traumatic childhood.", c: "arise / originate" }
+,
+    // Day 32 필수 다의어 및 문맥 기출 예문 추가
+    { w: "illuminate", s: "The professor used a clear historical example to <span class='underlined'>illuminate</span> the complex economic theory.", c: "clarify / explain clearly" },
+    { w: "relentless", s: "Despite the <span class='underlined'>relentless</span> pressure from the media, the politician refused to resign.", c: "continuous / unstoppable" },
+    { w: "arouse", s: "His mysterious behavior was enough to <span class='underlined'>arouse</span> the suspicion of the local police.", c: "awaken / stimulate (※ arise 아님)" },
+    { w: "catalyst", s: "The invention of the smartphone acted as a <span class='underlined'>catalyst</span> for profound changes in human communication.", c: "stimulus / initiator" }
 
 ];
 
