@@ -852,6 +852,37 @@ const fullDB = [
     {w:"impetus", m:["자극", "추동력"], core:"*코어 이미지(뉘앙스): 안으로(im) 향하다(pet) [시작된 움직임이 계속해서 앞으로 나아가게 밀어주는 힘/가속도] / 🔗[Link] 임피터스. 등 뒤에서 누군가 팍! 밀어줘서 자전거 페달(pet) 밟고 속도 붙어서 언덕까지 쭉 치고 올라가는 뒷바람 부스트", d:"32일차"},
     {w:"illuminate", m:["비추다", "분명히 설명하다"], core:"*코어 이미지: 빛(lumin)을 비추다 [어두운 곳을 밝히거나, 이해하기 어려운 문제를 '명확하게 해명/설명하다' (= clarify)] / 🔗[Link] 일루미네이트. 일루미나티(Illuminati, 계몽주의)나 일루미네이션 조명 축제처럼, 미궁에 빠진 살인 사건에 서치라이트(빛)를 딱 비춰서 진실을 밝혀냄", d:"32일차"},
     {w:"incentive", m:["장려금", "자극", "동기"], core:"*코어 이미지(뉘앙스): 사람을 움직이게 만드는 실질적인 보상 [주로 경제적인 보너스나 혜택을 뜻함] / 🔗[Link] 인센티브. 월급 외에 '이번 달 영업 1등 하면 100만 원 더 줄게!' 하고 내 눈 뒤집혀서 야근하게 만드는 금융 치료 보너스", d:"32일차"}
+,
+    // --- 33일차 (29단어, 게임/IT/경제/영화 테마 맞춤형 링크 반영) ---
+    {w:"stagnant", m:["고여 있는", "침체된"], core:"*코어 이미지: 움직이지 않고 고여서 썩어가는 상태 / 🔗[Link] 스태그넌트. 경제 용어 '스태그플레이션(Stagflation)'의 어원. 시장에 돈이 안 돌고 늪처럼 고여서 썩어가는 지독한 경제 침체기", d:"33일차"},
+    {w:"stubborn", m:["고집 센", "완고한"], core:"*코어 이미지: 마음을 바꾸기를 거부하는 태도. 변화에 저항하는 고집 / 🔗[Link] 스터번. 게임에서 아무리 딜을 꽂아도 넉백 안 당하는 방어력 몰빵 탱커처럼, 타협 1도 없이 꿋꿋하게 버티는 똥고집", d:"33일차"},
+    {w:"stiff", m:["뻣뻣한", "경직된"], core:"*코어 이미지: 원래는 구부러져야 하는데 잘 구부러지지 않는 상태 / 🔗[Link] 스티프. 골프나 야구 스윙할 때 어깨와 손목에 힘이 잔뜩 들어가서 폼이 '스티프'하게 굳어 삐걱거리는 경직된 자세", d:"33일차"},
+    {w:"rigid", m:["융통성 없는", "단단한"], core:"*코어 이미지: 아예 구부러지지 않는 단단함 / 🔗[Link] 리지드. 게임 물리 엔진의 '리지드 바디(Rigid Body, 강체)'처럼, 1mm도 안 휘어지고 튕겨 나가는 쇠파이프 같은 융통성 제로의 규정", d:"33일차"},
+    {w:"stern", m:["엄격한", "단호한"], core:"*코어 이미지: 웃음기 없이 매우 진지하고 엄격한 태도나 표정 / 🔗[Link] 스턴. 영화 속 해군 제독이 군함의 선미(stern)에 꼿꼿이 서서, 병사들을 군기 잡으며 웃음기 싹 빼고 쳐다보는 각 잡힌 표정", d:"33일차"},
+    {w:"strict", m:["엄격한", "엄밀한"], core:"*코어 이미지: 규칙을 예외 없이 정확하게 적용하고 따르는 것 / 🔗[Link] 스트릭트. 야구 심판이 스트라이크(strike) 존을 봐주는 것 없이 규정의 모서리 끝까지 칼같이 적용하는 숨 막히는 엄격함", d:"33일차"},
+    {w:"variable", m:["변하기 쉬운", "변수"], core:"*코어 이미지: 변할 수 있는. 가장 중립적 단어 / 🔗[Link] 베리어블. 프로그래밍 코딩할 때 변수 선언(var) 쳐놓듯, 상황에 따라 값이 시시각각 이리저리 변할 수 있는 중립적인 변수", d:"33일차"},
+    {w:"capricious", m:["변덕스러운"], core:"*코어 이미지: 일관성이나 이유 없이 기분에 따라 쉽게 변하는 것. 예측 불가능한 / 🔗[Link] 카프리셔스. 잼민이 유저가 게임 직업을 하루에 3번씩 바꾸듯, 뚜렷한 이유 없이 기분에 따라 휙휙 바뀌는 종잡을 수 없는 변덕", d:"33일차"},
+    {w:"volatile", m:["변동성이 큰", "휘발성의", "변덕스러운"], core:"*코어 이미지: 폭발할 것처럼 감정이나 상황이 빠르고 격렬하게 변하는 것. 위험함 / 🔗[Link] 볼러틸. 비트코인 차트의 미친 '변동성(Volatility)'처럼, 떡상과 상폐를 오가며 언제 펑 터질지 모르는 폭발/휘발 위험", d:"33일차"},
+    {w:"exalt", m:["승격시키다", "칭찬하다"], core:"*코어 이미지: 지위나 명예를 높이 끌어올려 칭송함 / 🔗[Link] 이그졸트. RPG 게임 캐릭터 등급을 EX(Extra)급으로 승격시켜 올려주고, 서버 전체에 전설의 유저라고 알림을 띄워 칭송함", d:"33일차"},
+    {w:"soar", m:["치솟다", "날아오르다"], core:"*코어 이미지: 우아하고 지속적으로 높이 올라가는 그림 / 🔗[Link] 소어. 우량주 주식 차트가 매끄러운 우상향 곡선을 그리며, 독수리가 날개 펴고 하늘로 우아하게 '투 더 문(To the moon)' 치솟음", d:"33일차"},
+    {w:"surge", m:["쇄도하다", "급등하다"], core:"*코어 이미지: 빠르고 강력한 힘으로 갑자기 밀려들거나 급증하는 그림 / 🔗[Link] 서지. 서버 오픈 날, 대기열 인파가 스타크래프트 저그 떼(swarm/surge)처럼 한꺼번에 쾅! 하고 물밀듯 밀려들어 트래픽이 폭주함", d:"33일차"},
+    {w:"swamp", m:["늪", "밀려들다"], core:"*코어 이미지: 늪지대, 혹은 감당하기 힘들 정도로 쏟아져 들어옴 / 🔗[Link] 스웜프. 월요일 아침 출근했더니 처리해야 할 에러 버그나 이메일이 늪(swamp)처럼 밀려들어서 발이 푹푹 빠져 꼼짝도 못 하는 헬파티", d:"33일차"},
+    {w:"flock", m:["무리", "떼 지어 모이다", "털"], core:"*코어 이미지: 주로 새나 양 같은 동물들이 우르르 몰려다니는 떼 / 🔗[Link] 플록. 히치콕 감독의 공포 영화 '새(The Birds)'의 한 장면처럼, 징그럽게 하늘을 까맣게 뒤덮으며 한 방향으로 떼 지어 몰려다니는 조류 무리", d:"33일차"},
+    {w:"herd", m:["떼", "무리"], core:"*코어 이미지: 주로 소나 코끼리 같은 큰 포유류 무리 / 🔗[Link] 허드. 주식/코인판에서 남들 다 사니까 뇌 빼고 '허드(Herd) 멘탈리티(군중 심리)'로 소 떼처럼 우르르 몰려가서 상투 잡고 물리는 흑우 떼", d:"33일차"},
+    {w:"multitude", m:["다수", "군중"], core:"*코어 이미지: 매우 많은 수의 사람이나 사물 / 🔗[Link] 멀티튜드. 멀티(multi, 여러 개) 플레이어 모드처럼, 화면 프레임 드랍이 걸릴 정도로 광장을 가득 채우는 헤아릴 수 없이 빽빽한 대규모 군중", d:"33일차"},
+    {w:"intrigue", m:["흥미를 불러일으키다", "음모를 꾸미다"], core:"*코어 이미지: 남의 호기심을 강하게 자극하거나 몰래 음모를 꾸밈 / 🔗[Link] 인트리그. 스릴러 영화의 뒤통수치는 반전 음모(plot)로, 관객의 뇌 도파민을 팍 터뜨려 다음 화를 안 보고는 못 배기게 흥미를 끄는 것", d:"33일차"},
+    {w:"contrive", m:["고안하다", "억지로 꾸미다"], core:"*코어 이미지: 머리를 굴려 장치를 고안해 내거나(긍정), 부자연스럽게 조작함(부정) / 🔗[Link] 컨트라이브. 영화 속 지능캐 빌런이 주인공을 함정에 빠뜨리려고, 억지로 상황을 컨트롤(con)해서 작위적이고 교묘하게 짜낸 트릭", d:"33일차"},
+    {w:"furnish", m:["제공하다", "비치하다"], core:"*코어 이미지: 필요한 물건을 제공하여 채워 넣는 것 / 🔗[Link] 퍼니시. 심즈(Sims) 게임에서 텅 빈 집에 퍼니처(furniture, 가구) 아이템을 카탈로그에서 사서 구석구석 생활 가능하게 완벽하게 세팅하고 비치함", d:"33일차"},
+    {w:"adorn", m:["장식하다"], core:"*코어 이미지: 보통 보석이나 아름다운 것으로 더 돋보이게 꾸미다 / 🔗[Link] 어돈. MMORPG 무기 소켓에 전설급 반짝이는 보석 장식(어돈)을 박아 넣어, 원래도 좋은 무기를 삐까뻔쩍하게 튜닝하고 아름답게 꾸밈", d:"33일차"},
+    {w:"ornament", m:["장식품", "장식하다"], core:"*코어 이미지: 보통 장식품으로 외관을 아름답게 꾸미다 / 🔗[Link] 오너먼트. 연말에 크리스마스트리 나뭇가지마다 주렁주렁 매다는 오너먼트(ornament) 방울 아이템처럼, 본체에 덧붙여 예쁘게 꾸미는 장식품", d:"33일차"},
+    {w:"garment", m:["의복", "옷"], core:"*코어 이미지: 겉으로 입는 한 벌의 옷 / 🔗[Link] 가먼트. RPG 게임 캐릭터 장비 창에 방어력 스탯용이 아니라 룩딸용으로 덧입히는 코스튬 가먼트(의복) 스킨 겉옷 세트", d:"33일차"},
+    {w:"tailor", m:["재단사", "맞추다"], core:"*코어 이미지: 옷을 재단하듯 특정 목적이나 요구에 딱 맞게 조정하다 / 🔗[Link] 테일러. IT 업계의 '테일러메이드(Tailor-made)' 솔루션처럼, 찍어낸 기성품이 아니라 고객사 입맛과 핏에 딱 맞게 코딩을 짜서 맞춤 정장처럼 제공함", d:"33일차"},
+    {w:"utensil", m:["도구", "기구"], core:"*코어 이미지: 가정이나 부엌에서 쓰는 작은 도구 / 🔗[Link] 유텐실. 캠핑장 갈 때 큰 기계 말고 손에 쥐고 쓱싹 쓰는 숟가락, 포크, 집게, 뒤집개 같은 작고 실용적인 주방/생활 조리 도구(유텐실) 팩", d:"33일차"},
+    {w:"apparatus", m:["장치", "기구", "기계"], core:"*코어 이미지: 특정한 목적을 위해 복잡하게 조립된 기계나 장비 세트 / 🔗[Link] 어패러터스. 올림픽 기계체조(Apparatus) 종목의 도마, 링 같은 묵직한 장비나, 화학 실험실에 유리관 여러 개가 얽히고설킨 복잡한 기계 세팅", d:"33일차"},
+    {w:"alternate", m:["번갈아 하는", "교대하다"], core:"*코어 이미지: 순서를 바꿔가며 교대로 일어나는 / 🔗[Link] 얼터네이트. 컴퓨터 키보드의 Alt(얼터네이트) 키를 꾹 눌러 활성화된 윈도우 창을 이쪽저쪽으로 휙휙 번갈아 가며 스위칭(교체)함", d:"33일차"},
+    {w:"alienate", m:["소원하게 만들다", "멀어지게 하다"], core:"*코어 이미지: 사람을 외계인이나 이방인처럼 취급하여 멀어지게 하다 / 🔗[Link] 에일리언네이트. SF 영화 '에일리언(Alien, 외계인)'처럼, 우리 편 사람을 돌연변이 이방인 취급해서 무리에서 겉돌고 왕따당하게 멘탈을 찢어놓음", d:"33일차"},
+    {w:"altruism", m:["이타주의", "이타심"], core:"*코어 이미지: 나보다 타인의 이익을 먼저 생각하는 마음 / 🔗[Link] 알트루이즘. 내 랭크 점수 깎이고 KDA 망가지는데도, 고의 트롤 대신 우리 팀 원딜러 살리려고 힐 주고 대신 죽어주는 서포터의 눈물 나는 찐 이타심", d:"33일차"},
+    {w:"doze", m:["졸다", "잠깐 잠"], core:"*코어 이미지: 깊은 잠이 아니라 가볍게 꾸벅꾸벅 조는 상태 / 🔗[Link] 도즈. 지루한 다큐멘터리 심야 영화 보다가 도즈(doze) 타임 와서, 눈꺼풀이 10톤처럼 무거워지고 나도 모르게 꾸벅꾸벅 램수면 1단계로 가볍게 졸음", d:"33일차"}
 
 ];
 
@@ -984,6 +1015,12 @@ const examData = [
     { w: "relentless", s: "Despite the <span class='underlined'>relentless</span> pressure from the media, the politician refused to resign.", c: "continuous / unstoppable" },
     { w: "arouse", s: "His mysterious behavior was enough to <span class='underlined'>arouse</span> the suspicion of the local police.", c: "awaken / stimulate (※ arise 아님)" },
     { w: "catalyst", s: "The invention of the smartphone acted as a <span class='underlined'>catalyst</span> for profound changes in human communication.", c: "stimulus / initiator" }
+,
+    // Day 33 뉘앙스/문법 기출 예문 추가
+    { w: "volatile", s: "Investors should be extremely careful because the cryptocurrency market is highly <span class='underlined'>volatile</span>.", c: "unstable / explosive" },
+    { w: "intrigue", s: "Many historical researchers have long been <span class='underlined'>intrigued</span> by the unsolved mysteries of ancient Egypt.", c: "fascinated / interested" },
+    { w: "tailor", s: "The software company can <span class='underlined'>tailor</span> the application to meet the specific security needs of your business.", c: "customize / adapt" },
+    { w: "surge", s: "The website's server crashed momentarily due to a sudden <span class='underlined'>surge</span> in web traffic after the advertisement aired.", c: "sudden increase / rush" }
 
 ];
 
@@ -1116,4 +1153,11 @@ const idiomData = [
     { idiom: "arouse vs arise", m: "arouse(불러일으키다-타동사) / arise(발생하다-자동사) 구별", w: "arouse", d: "32일차" },
     { idiom: "vicious circle", m: "악순환 (원인과 결과가 서로 꼬리를 물고 상황이 악화됨)", w: "vicious", d: "32일차" },
     { idiom: "mingle with", m: "~와 어울리다, 교제하다", w: "mingle", d: "32일차" }
+    ,
+    // 💡 33일차 필수 문법/숙어 표현
+    { idiom: "be intrigued by", m: "~에 흥미를 느끼다, 매료되다 (※수동태 주의)", w: "intrigue", d: "33일차" },
+    { idiom: "tailor-made", m: "맞춤의, 특별 주문의 (= customized)", w: "tailor", d: "33일차" },
+    { idiom: "surge in N", m: "~의 급증, 쇄도 (예: surge in demand 수요 급증)", w: "surge", d: "33일차" },
+    { idiom: "alienate A from B", m: "A를 B로부터 소외시키다, 멀어지게 하다", w: "alienate", d: "33일차" }
+    
 ];
