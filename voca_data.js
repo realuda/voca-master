@@ -883,7 +883,36 @@ const fullDB = [
     {w:"alienate", m:["소원하게 만들다", "멀어지게 하다"], core:"*코어 이미지: 사람을 외계인이나 이방인처럼 취급하여 멀어지게 하다 / 🔗[Link] 에일리언네이트. SF 영화 '에일리언(Alien, 외계인)'처럼, 우리 편 사람을 돌연변이 이방인 취급해서 무리에서 겉돌고 왕따당하게 멘탈을 찢어놓음", d:"33일차"},
     {w:"altruism", m:["이타주의", "이타심"], core:"*코어 이미지: 나보다 타인의 이익을 먼저 생각하는 마음 / 🔗[Link] 알트루이즘. 내 랭크 점수 깎이고 KDA 망가지는데도, 고의 트롤 대신 우리 팀 원딜러 살리려고 힐 주고 대신 죽어주는 서포터의 눈물 나는 찐 이타심", d:"33일차"},
     {w:"doze", m:["졸다", "잠깐 잠"], core:"*코어 이미지: 깊은 잠이 아니라 가볍게 꾸벅꾸벅 조는 상태 / 🔗[Link] 도즈. 지루한 다큐멘터리 심야 영화 보다가 도즈(doze) 타임 와서, 눈꺼풀이 10톤처럼 무거워지고 나도 모르게 꾸벅꾸벅 램수면 1단계로 가볍게 졸음", d:"33일차"}
-
+,
+    // --- 34일차 (27단어, 게임/영화/IT/스포츠 테마 맞춤형 링크 반영) ---
+    {w:"nod", m:["고개를 끄덕이다", "꾸벅꾸벅 졸다"], core:"*코어 이미지: 위아래로 머리를 까딱거리다 / 🔗[Link] 노드. 긍정의 의미로 고개를 끄덕(nod)거리거나, 지루한 회의 중 램수면을 못 이기고 NPC처럼 꾸벅꾸벅 조는 모습", d:"34일차"},
+    {w:"dormant", m:["휴면기의", "활동을 중단한"], core:"*코어 이미지: 잠자는(dorm) 상태 / 🔗[Link] 도먼트. 화산이 폭발하기 전이거나, 디아블로 보스몹이 유저가 오기 전까지 석상처럼 굳어서 잠들어 있는(dormant) 대기/휴면 상태", d:"34일차"},
+    {w:"nocturnal", m:["야행성의"], core:"*코어 이미지: 밤(nocturn)에 활동하는 / 🔗[Link] 녹터널. 배트맨이나 뱀파이어처럼 낮에는 관짝에서 자고, 해 지는 밤에만 템 파밍하러 눈에 불을 켜고 돌아다니는 올빼미족", d:"34일차"},
+    {w:"grin", m:["활짝 웃다"], core:"*코어 이미지: 입꼬리를 양옆으로 당겨 치아를 드러내며 크게 웃다 / 🔗[Link] 그린. 배트맨의 조커(Joker)가 입꼬리를 귀에 걸고 치아를 다 드러내며 씨익~ 하고 소름 돋게 넓고 활짝 웃는 표정", d:"34일차"},
+    {w:"chuckle", m:["낄낄 웃다"], core:"*코어 이미지: 입을 다물고 속으로 억누르며 조용히 웃다 / 🔗[Link] 처클. 게임에서 상대방 트롤링하는 거 보고 마이크 끄고 속으로 '크큭' 하며 얄밉게 낄낄거리는 소리", d:"34일차"},
+    {w:"numb", m:["마비된", "멍한"], core:"*코어 이미지: 감각이나 감정을 잃어버린 상태 / 🔗[Link] 넘. 롤(LoL)에서 스턴(기절) 스킬 맞고 키보드 마우스 아무리 눌러도 캐릭터가 반응 없이 얼음 땡 감각 마비(numb) 온 멍한 상태", d:"34일차"},
+    {w:"tardy", m:["지체된", "지각한"], core:"*코어 이미지: 정해진 시간보다 늦은 (late보다 격식 있는 표현) / 🔗[Link] 타디. 회사 출근 카드 찍는데 9시 1분 지각해서, 인사과 평가 기록부에 격식 있게 '근태 지체(tardiness)'로 빨간 줄 그이는 뼈아픈 지각", d:"34일차"},
+    {w:"procrastinate", m:["질질 끌다", "미루다"], core:"*코어 이미지: 내일(cras)을 향해 앞으로(pro) 계속 미루다 / 🔗[Link] 프로크래스티네이트. 마감일 전날까지 넷플릭스 보고 롤 랭겜 돌리면서 '내일의 내가 하겠지' 하고 과제 제출을 꾸물꾸물 질질 끄는 게으른 핑계", d:"34일차"},
+    {w:"orthodox", m:["정통의", "보수적인"], core:"*코어 이미지: 올바른(ortho) 신념이나 원칙(dox)을 따르는 / 🔗[Link] 오서독스. e스포츠에서 꼼수나 변칙 안 쓰고, 테란 황제 임요환처럼 교과서적인 정석(orthodox) 빌드 트리만 뚝심 있게 고수하는 찐 정통파", d:"34일차"},
+    {w:"amend", m:["수정하다", "개정하다"], core:"*코어 이미지: 글이나 법안에서 잘못된 것을 빼고 더 좋게 고치다 / 🔗[Link] 어멘드. 국가의 헌법(Constitution)을 시대에 맞게 업그레이드(수정)하거나, 개발자가 패치 노트(Patch)로 버그 코드를 더 좋게 뜯어고침", d:"34일차"},
+    {w:"rectify", m:["바로잡다"], core:"*코어 이미지: 잘못된 것을 올바른(rect) 상태로 고쳐 놓다 / 🔗[Link] 렉티파이. 엑셀 수식에 에러(Error) 난 삑사리 값을 찾아내서, 올바른(rect/right) 데이터로 팩트 체크하고 정확하게 바로잡아버림", d:"34일차"},
+    {w:"redress", m:["바로잡다", "보상하다"], core:"*코어 이미지: 억울하거나 부당한 사회적 문제, 피해를 다시(re) 똑바로 세우다(dress) / 🔗[Link] 리드레스. 시스템 오류로 억울하게 영정(영구정지) 당한 내 계정이나 아이템 피해를 고객센터에 눕방 항의해서 정당하게 복구받고 바로잡음", d:"34일차"},
+    {w:"meddle", m:["참견하다"], core:"*코어 이미지: 부를 때도 안 했는데 한가운데(med) 툭 끼어들어 방해함 (부정적) / 🔗[Link] 메들. 봇 듀오 1:1 영혼의 맞다이 뜨며 킬 각 잡고 있는데, 정글러가 눈치 없이 툭 끼어들어 킬 뺏어 먹고 주제넘게 참견하는 트롤링", d:"34일차"},
+    {w:"pushy", m:["지나치게 밀어붙이는"], core:"*코어 이미지: 남의 의사를 무시하고 자기주장만 강하게 미는(push) / 🔗[Link] 푸시. 폰팔이나 다단계 영업사원이 '호갱님 이거 무조건 사야 돼!' 하고 멱살 잡고 등 떠밀며(push) 선 넘고 강압적으로 들이대는 진상", d:"34일차"},
+    {w:"heedless", m:["부주의한"], core:"*코어 이미지: 경고나 조언에 주의(heed)를 기울이지 않는(less) / 🔗[Link] 히드리스. 보스방 바닥에 빨간색 헬파이어 경고(heed) 장판 깔렸는데, 1도 신경 안 쓰고(less) 말뚝 딜 넣다가 한 방에 즉사하는 부주의한 유저", d:"34일차"},
+    {w:"trait", m:["특성"], core:"*코어 이미지: 끌어내진 선이나 유전적으로 물려받은 뚜렷한 특징 / 🔗[Link] 트레이트. RPG 게임 캐릭터 생성할 때 고르는 패시브 '특성(Trait)' 스탯. (예: 엘프 종족의 민첩성 몰빵 고유 특성)", d:"34일차"},
+    {w:"portrait", m:["초상화", "인물 사진"], core:"*코어 이미지: 사람의 얼굴이나 모습을 끌어내어(trait) 그린 그림 / 🔗[Link] 포트레이트. 해리포터 호그와트 기숙사 복도에 걸려있는 움직이는 마법 초상화(portrait)나 아이폰 카메라의 배경 날아가는 '인물 사진' 모드", d:"34일차"},
+    {w:"preliminary", m:["예비의", "준비의"], core:"*코어 이미지: 본 게임의 문지방(limin)을 넘기 전(pre)에 미리 하는 단계 / 🔗[Link] 프리리미너리. 월드컵 본선 무대 가기 전에 몸 풀기로 뛰는 지역 '예선전(preliminary)'이나, 본 게임 스토리 들어가기 전 튜토리얼 퀘스트", d:"34일차"},
+    {w:"initiative", m:["주도권", "계획", "선도"], core:"*코어 이미지: 처음으로(initi) 시작하여 이끌고 나가는 주도적 행위 / 🔗[Link] 이니셔티브. 턴제 보드게임에서 주사위 굴려 선공(initiative) 잡고 먼저 때릴 주도권을 쥐거나, 회사에서 새 프로젝트 깃발 들고 총대 멤", d:"34일차"},
+    {w:"threshold", m:["입구", "출발점", "한계점"], core:"*코어 이미지: 문을 열고 들어가는 바로 그 경계선 / 🔗[Link] 쓰레시홀드. 던전 입구 문지방(threshold)을 딱 밟는 순간, BGM 바뀌면서 몬스터가 튀어나오며 본격적인 헬파티가 시작되는 한계점/출발선", d:"34일차"},
+    {w:"vanguard", m:["선구자", "선봉장"], core:"*코어 이미지: 군대의 맨 앞(van)에서 경계하고(guard) 나아가는 부대 / 🔗[Link] 뱅가드. FPS 게임 '발로란트 뱅가드' 로고나 전쟁 영화에서 쉴드 들고 맨 앞장서서 총알받이 하며 적진을 뚫고 들어가는 돌격대장 선구자", d:"34일차"},
+    {w:"triumph", m:["승리", "대성공"], core:"*코어 이미지: 거대한 위업을 달성한 후의 영광스러운 승리나 환희 / 🔗[Link] 트라이엄프. 롤(LoL) 한타에서 다 죽고 나 혼자 딸피로 살아남아 적 넥서스 깨부수고 화면에 '승리(Victory/Triumph)' 텍스트가 찬란하게 뜨는 대역전극", d:"34일차"},
+    {w:"relinquish", m:["포기하다", "양도하다"], core:"*코어 이미지: 꽉 쥐고 있던 권리나 소유물을 뒤로(re) 두고 떠나다 / 🔗[Link] 릴린퀴시. 왕좌의 게임에서 전쟁 패배한 왕이, 자신의 왕관과 영토 소유권을 눈물을 머금고 적에게 완전히 넘겨주고(양도) 씁쓸하게 손 뗌", d:"34일차"},
+    {w:"servile", m:["굽실거리는", "비굴한"], core:"*코어 이미지: 노예(servant)처럼 자신의 존엄성을 버리고 맹목적으로 복종하는 / 🔗[Link] 서바일. 영화 속 간신배나 서번트(servant, 하인)처럼, 돈 많은 회장님이나 악당 보스 앞에서 척추뼈 접고 바닥에 엎드려 딸랑딸랑 비굴하게 굽실거림", d:"34일차"},
+    {w:"flatter", m:["아첨하다"], core:"*코어 이미지: 상대방을 평평하게(flat) 눕혀 쓰다듬듯 기분을 맞추고 과장되게 칭찬함 / 🔗[Link] 플래터. 부장님 골프 헛스윙 쳤는데 '와우! 나이스 샷! 타이거 우즈 뺨치십니다!' 하고 속에도 없는 비행기 태우며 영혼 1도 없이 싹싹 비비고 아첨함", d:"34일차"},
+    {w:"partial", m:["부분적인", "불공평한", "편애하는"], core:"*코어 이미지: 전체가 아닌 일부분(part)만 보고 판단하여 한쪽으로 치우침 / 🔗[Link] 파셜. 팩트 전체를 안 보고 파트(part, 내 편)만 챙겨서, 축구 심판이 홈팀한테만 파울 안 불고 유리하게 편파(partial) 판정 내리는 킹받는 불공평", d:"34일차"},
+    {w:"compartment", m:["칸", "구획"], core:"*코어 이미지: 공간을 함께(com) 여러 부분(part)으로 나눈 작은 방이나 칸막이 / 🔗[Link] 컴파트먼트. 해리포터 호그와트 급행열차의 문 닫히는 객실 칸(compartment)이나, KTX 위쪽 수하물 보관함처럼 딱딱 나뉘어 벽 쳐진 구획", d:"34일차"}
+    
 ];
 
 
@@ -1021,6 +1050,12 @@ const examData = [
     { w: "intrigue", s: "Many historical researchers have long been <span class='underlined'>intrigued</span> by the unsolved mysteries of ancient Egypt.", c: "fascinated / interested" },
     { w: "tailor", s: "The software company can <span class='underlined'>tailor</span> the application to meet the specific security needs of your business.", c: "customize / adapt" },
     { w: "surge", s: "The website's server crashed momentarily due to a sudden <span class='underlined'>surge</span> in web traffic after the advertisement aired.", c: "sudden increase / rush" }
+,
+    // Day 34 뉘앙스/문법 기출 예문 추가
+    { w: "relinquish", s: "After the scandal, the CEO was forced to <span class='underlined'>relinquish</span> control of the company to the board of directors.", c: "give up / surrender" },
+    { w: "amend", s: "The developers promised to <span class='underlined'>amend</span> the software bugs in the next patch update.", c: "modify / revise" },
+    { w: "procrastinate", s: "If you <span class='underlined'>procrastinate</span> until the day before the deadline, the quality of your work will suffer.", c: "delay / put off" },
+    { w: "initiative", s: "She took the <span class='underlined'>initiative</span> in organizing the new project when no one else wanted to step up.", c: "lead / first step" }
 
 ];
 
@@ -1159,5 +1194,11 @@ const idiomData = [
     { idiom: "tailor-made", m: "맞춤의, 특별 주문의 (= customized)", w: "tailor", d: "33일차" },
     { idiom: "surge in N", m: "~의 급증, 쇄도 (예: surge in demand 수요 급증)", w: "surge", d: "33일차" },
     { idiom: "alienate A from B", m: "A를 B로부터 소외시키다, 멀어지게 하다", w: "alienate", d: "33일차" }
-    
+    ,
+    // 💡 34일차 필수 문법/숙어 표현
+    { idiom: "take the initiative", m: "주도권을 잡다, 솔선수범하다", w: "initiative", d: "34일차" },
+    { idiom: "relinquish one's rights", m: "권리를 포기하다, 양도하다", w: "relinquish", d: "34일차" },
+    { idiom: "amend the constitution", m: "헌법을 개정하다", w: "amend", d: "34일차" },
+    { idiom: "be partial to N", m: "~을 편애하다, ~을 특히 좋아하다", w: "partial", d: "34일차" }
+
 ];
