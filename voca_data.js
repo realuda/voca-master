@@ -912,7 +912,41 @@ const fullDB = [
     {w:"flatter", m:["아첨하다"], core:"*코어 이미지: 상대방을 평평하게(flat) 눕혀 쓰다듬듯 기분을 맞추고 과장되게 칭찬함 / 🔗[Link] 플래터. 부장님 골프 헛스윙 쳤는데 '와우! 나이스 샷! 타이거 우즈 뺨치십니다!' 하고 속에도 없는 비행기 태우며 영혼 1도 없이 싹싹 비비고 아첨함", d:"34일차"},
     {w:"partial", m:["부분적인", "불공평한", "편애하는"], core:"*코어 이미지: 전체가 아닌 일부분(part)만 보고 판단하여 한쪽으로 치우침 / 🔗[Link] 파셜. 팩트 전체를 안 보고 파트(part, 내 편)만 챙겨서, 축구 심판이 홈팀한테만 파울 안 불고 유리하게 편파(partial) 판정 내리는 킹받는 불공평", d:"34일차"},
     {w:"compartment", m:["칸", "구획"], core:"*코어 이미지: 공간을 함께(com) 여러 부분(part)으로 나눈 작은 방이나 칸막이 / 🔗[Link] 컴파트먼트. 해리포터 호그와트 급행열차의 문 닫히는 객실 칸(compartment)이나, KTX 위쪽 수하물 보관함처럼 딱딱 나뉘어 벽 쳐진 구획", d:"34일차"}
-    
+    ,
+    // --- 35일차 (32단어, IT/게임/경제/영화 테마 맞춤형 링크 반영) ---
+    {w:"calamity", m:["재앙", "재난"], core:"*코어 이미지: 끔찍한 파괴와 손실을 가져오는 대재앙 / 🔗[Link] 캘래미티. 심시티(SimCity) 게임에서 도시 한복판에 운석이 쾅 떨어져서 인프라가 싹 다 날아가는 억까 대재앙", d:"35일차"},
+    {w:"insulate", m:["단열 처리를 하다", "보호하다"], core:"*코어 이미지: 열, 소리, 충격이 통하지 않게 섬(insula)처럼 고립시켜 보호하다 / 🔗[Link] 인슐레이트. 전선 피복(insulator)으로 전기를 막거나, 내 투자 포트폴리오를 인플레이션 타격으로부터 섬처럼 분리해 방어함", d:"35일차"},
+    {w:"quarantine", m:["격리하다", "격리"], core:"*코어 이미지: 전염병을 막기 위해 40일(quarant) 동안 차단하는 것 / 🔗[Link] 쿼런틴. 백신 프로그램(V3, 알약)이 내 PC에 몰래 들어온 트로이목마 바이러스를 쿼런틴(격리) 폴더에 가둬서 꼼짝 못 하게 함", d:"35일차"},
+    {w:"segregate", m:["분리하다", "차별하다"], core:"*코어 이미지: 무리(greg)에서 떼어내다(se) / 🔗[Link] 세그리게이트. IT 보안에서 외부망과 내부망 네트워크 트래픽을 섞이지 않게 칼같이 분리(세그멘테이션)해서 차별/격리함", d:"35일차"},
+    {w:"cram", m:["벼락치기 공부를 하다", "쑤셔 넣다"], core:"*코어 이미지: 좁은 공간에 무언가를 터질 듯이 억지로 밀어 넣다 / 🔗[Link] 크램. 시험 전날 밤 핫식스 빨고 뇌의 램(RAM) 용량 초과할 때까지 억지로 데이터를 쑤셔 박는 눈물 나는 벼락치기", d:"35일차"},
+    {w:"overbearing", m:["고압적인", "거만한"], core:"*코어 이미지: 남의 위(over)에서 무겁게 짓누르는(bearing) 태도 / 🔗[Link] 오버베어링. 길드장이 완장 차고 자기 맘대로 오버(over)해서 뉴비들 짓누르며 꼰대질하고 명령하는 고압적인 마인드", d:"35일차"},
+    {w:"haughty", m:["오만한", "거만한"], core:"*코어 이미지: 자기가 남들보다 높다(high)고 생각하여 깔보는 태도 / 🔗[Link] 호티. 롤(LoL) 챌린저 티어 유저가 브론즈들 보면서 코웃음 치며 턱 치켜들고 '어딜 감히 벌레들이' 하고 쳐다보는 오만함", d:"35일차"},
+    {w:"feast", m:["잔치", "맘껏 먹다"], core:"*코어 이미지: 상다리 부러지게 차려놓고 즐기는 성대한 식사 / 🔗[Link] 피스트. 와우(WoW) 레이드 뛰기 전에 공대원 40명이 삥 둘러앉아 버프 빵빵하게 채워주는 고기 만찬(피스트)을 맘껏 뜯음", d:"35일차"},
+    {w:"feat", m:["공적", "위업"], core:"*코어 이미지: 엄청난 기술이나 용기가 필요한 대단한 성취 / 🔗[Link] 피트. 스팀(Steam) 게임에서 극악의 난이도 미션을 피 터지게 깨고 화면에 띠링! 뜨는 달성률 0.1%짜리 전설의 업적(feat)", d:"35일차"},
+    {w:"sovereign", m:["군주", "주권이 있는"], core:"*코어 이미지: 다른 누구의 간섭도 받지 않는 절대적인 통치 권력 / 🔗[Link] 소버린. 경제 용어 '소버린 리스크(Sovereign Risk, 국가 부도 위험)'처럼, 국가가 자체적으로 쥐고 흔드는 절대적인 1짱 주권", d:"35일차"},
+    {w:"monarch", m:["군주"], core:"*코어 이미지: 혼자(mono) 통치하는(arch) 세습 통치자 / 🔗[Link] 모나크. 영화 '고질라' 시리즈에서 타이탄들을 감시하는 비밀 정부 기관 이름(Monarch)처럼 피가 이어지는 왕족 군주", d:"35일차"},
+    {w:"tyranny", m:["폭정", "독재"], core:"*코어 이미지: 주권(sovereign)이 잔인하게 남용되는 상태나 시스템 / 🔗[Link] 티러니. 마블의 타노스나 롤의 독재자 모데카이저처럼 반대파는 가차 없이 숙청해버리는 피도 눈물도 없는 폭군의 공포 정치", d:"35일차"},
+    {w:"autocratic", m:["독재의"], core:"*코어 이미지: 혼자서(auto) 모든 권력(cratic)을 틀어쥔 통치 방식 / 🔗[Link] 오토크래틱. 민주주의 투표 없이 길드장 오토(auto, 혼자)로 길드 자금 분배랑 강퇴 권한 100% 다 틀어쥔 독재 시스템", d:"35일차"},
+    {w:"arbitrary", m:["독단적인", "임의적인"], core:"*코어 이미지: 뚜렷한 규칙이나 이유 없이 자기 맘대로 정하는 / 🔗[Link] 아비트러리. 코딩할 때 난수(RNG) 돌리듯, 아무 룰 없이 관리자 맘대로 임의(랜덤)의 기준을 들이대는 킹받는 독단적 판정", d:"35일차"},
+    {w:"unruly", m:["제멋대로 하는", "통제 불능의"], core:"*코어 이미지: 규칙(rule)을 전혀 따르지 않는(un) / 🔗[Link] 언룰리. 축구장 훌리건들처럼 룰(rule) 싹 다 무시하고 화염병 던지며 깽판 치는 경찰도 못 말리는 제멋대로인 몹들", d:"35일차"},
+    {w:"autonomy", m:["자치권", "자율성"], core:"*코어 이미지: 스스로(auto) 법(nomy)을 정해 다스리는 권리 / 🔗[Link] 오토노미. 테슬라의 오토노머스 드라이빙(Autonomous Driving, 자율주행)처럼 인간 개입 없이 AI가 스스로 판단하는 자치/자율성", d:"35일차"},
+    {w:"dignity", m:["존엄", "위엄"], core:"*코어 이미지: 인간으로서 마땅히 존중받아야 할 가치나 기품 / 🔗[Link] 디그니티. 올림픽 결승전에서 졌지만 변명 안 하고 승자에게 박수 쳐주며 챔피언의 품격을 잃지 않는 고귀한 존엄성", d:"35일차"},
+    {w:"majesty", m:["위엄", "장엄함"], core:"*코어 이미지: 왕이나 대자연이 뿜어내는 거대하고 압도적인 웅장함 / 🔗[Link] 매저스티. 반지의 제왕 아라곤 왕 앞에서 \"폐하(Your Majesty)\"라고 부르듯, 쳐다만 봐도 지리는 거대한 드래곤의 장엄함", d:"35일차"},
+    {w:"sanction", m:["승인", "제재"], core:"*코어 이미지: [※기출 다의어: 공식적 허락(승인) vs 국가 간의 경제적 처벌(제재)] / 🔗[Link] 생크션. UN이 러시아 은행을 스위프트(SWIFT)망에서 쫓아내는 '경제 제재' 펀치를 날리거나, 대회를 공식 '승인'해 줄 때 씀", d:"35일차"},
+    {w:"endorse", m:["보증하다", "지지하다"], core:"*코어 이미지: 등(dorse) 뒤에서 밀어주며 공개적으로 팍팍 지지하는 행위 / 🔗[Link] 엔도스. 나이키가 마이클 조던에게 거액의 스폰서를 붙여(endorsement) 상품성을 보증하거나, 수표 뒷면에 확인 싸인 갈기는 행위", d:"35일차"},
+    {w:"exasperate", m:["몹시 화나게 하다"], core:"*코어 이미지: 인내심을 바닥나게 하여 격분하게 하다 [※스펠링 함정: exacerbate(악화시키다)와 완벽 구별!] / 🔗[Link] 이그재스퍼레이트. 랭겜에서 0/10/0 박고 우물 잠수 타는 패드립 트롤러 때문에 인내심 한계 돌파해서 엑스퍼(폭발)하게 개빡침", d:"35일차"},
+    {w:"offend", m:["불쾌하게 하다", "위반하다"], core:"*코어 이미지: 무례한 말이나 행동으로 상대방의 감정 방어선(fend)을 툭 쳐서 무너뜨림 / 🔗[Link] 오펜드. 스포츠 경기에서 오펜스(Offense, 공격/파울)하듯, 팩트 폭행이랍시고 선 넘는 말로 상대방 심기를 긁어서 맘상하게 함", d:"35일차"},
+    {w:"inflammatory", m:["선동적인", "염증을 일으키는"], core:"*코어 이미지: 불(flame)을 확 지피는 / 🔗[Link] 인플래머토리. 커뮤니티나 인스타 댓글창에 대놓고 쌈구경 하려고 불(flame) 지르는 어그로성 선동 글이나, 내 몸에 불나는 염증", d:"35일차"},
+    {w:"edible", m:["먹을 수 있는", "식용의"], core:"*코어 이미지: 독이 없어서 입으로 먹을(ed) 수 있는(ible) / 🔗[Link] 에디블. 생존 서바이벌 게임에서 길가에 난 버섯을 스캔했을 때 피 깎이는 독버섯이 아니라 먹어서 HP 채우는 '식용' 템", d:"35일차"},
+    {w:"savor", m:["음미하다", "풍미"], core:"*코어 이미지: 맛이나 냄새, 혹은 기분 좋은 감정을 천천히 깊게 즐기다 / 🔗[Link] 세이버. 챔피언스리그 결승전에서 우승 트로피를 들어 올리며, 그 달콤한 뽕맛과 승리의 순간을 눈 감고 천천히 세포 단위로 음미함", d:"35일차"},
+    {w:"potable", m:["마셔도 되는", "음료"], core:"*코어 이미지: 컵(pot)에 담아 마실 수 있는 [※스펠링 함정: portable(휴대용의) 아님!] / 🔗[Link] 포터블. 포션(Potion)처럼 마시면 피 차오르는, 흙탕물이 아니라 인간이 벌컥벌컥 들이켜도 배탈 안 나는 깨끗한 식수", d:"35일차"},
+    {w:"fragrant", m:["향기로운"], core:"*코어 이미지: 꽃이나 허브에서 나는 기분 좋고 달콤한 냄새 / 🔗[Link] 프래그런트. 백화점 1층 향수 코너(Fragrance) 지나갈 때 코끝을 싹 감싸는 달달하고 고급스러운 샤넬, 조말론 향기", d:"35일차"},
+    {w:"odor", m:["(좋지 못한)냄새", "악취"], core:"*코어 이미지: 주로 기분 나쁘고 불쾌한 냄새 / 🔗[Link] 오더. 한여름 축구 뛰고 온 라커룸의 홀아비 땀 쩐내(odor)를 싹 지워주기 위해 겨드랑이에 칙칙 뿌리는 데오도란트(De-odor-ant)", d:"35일차"},
+    {w:"ferment", m:["발효되다", "발효", "소동"], core:"*코어 이미지: 미생물이 끓어오르며 화학적으로 숙성되거나, 사회가 부글부글 끓어오름 / 🔗[Link] 퍼먼트. 밀이나 포도가 효모를 만나 뽀글뽀글 거품(ferment)을 내며 알코올(맥주/와인)로 기가 막히게 숙성/발효되는 과정", d:"35일차"},
+    {w:"swell", m:["부풀리다", "팽창하다"], core:"*코어 이미지: 물을 머금거나 염증이 생겨 크기가 빵빵하게 커짐 / 🔗[Link] 스웰. 인플레이션으로 빚이 눈덩이처럼 스웰(swell) 팽창하거나, 모기에 물린 자리가 땡땡하게 부어오르는 붓기", d:"35일차"},
+    {w:"germ", m:["병균", "세균", "싹"], core:"*코어 이미지: 질병을 일으키는 아주 작은 미생물이나 씨앗의 배아 / 🔗[Link] 점. 좀비 영화에서 연구소 유리가 깨지며 공기 중으로 쫙 퍼져나가는, 인간을 감염시키는 치명적인 바이러스 병균(germ)", d:"35일차"},
+    {w:"sprout", m:["싹이 트다", "새싹"], core:"*코어 이미지: 씨앗이 껍질을 뚫고 세상 밖으로 파릇파릇하게 솟아 나옴 / 🔗[Link] 스프라우트. 스타크래프트 저그의 스포닝 풀처럼 징그럽게 튀어나오거나, 봄날 화분 흙을 뚫고 연두색 새싹이 뿅 하고 움트는 모습", d:"35일차"}
+
 ];
 
 
@@ -1056,6 +1090,12 @@ const examData = [
     { w: "amend", s: "The developers promised to <span class='underlined'>amend</span> the software bugs in the next patch update.", c: "modify / revise" },
     { w: "procrastinate", s: "If you <span class='underlined'>procrastinate</span> until the day before the deadline, the quality of your work will suffer.", c: "delay / put off" },
     { w: "initiative", s: "She took the <span class='underlined'>initiative</span> in organizing the new project when no one else wanted to step up.", c: "lead / first step" }
+,
+    // Day 35 뉘앙스/문법/스펠링 기출 예문 추가
+    { w: "sanction", s: "The international community decided to impose heavy economic <span class='underlined'>sanctions</span> against the country for its illegal actions.", c: "penalties / restrictions (※문맥에 따라 '승인'도 됨)" },
+    { w: "exasperate", s: "The customer's constant complaints began to seriously <span class='underlined'>exasperate</span> the usually patient store manager.", c: "irritate / infuriate (※exacerbate 악화시키다와 구별)" },
+    { w: "potable", s: "After the earthquake, the government quickly supplied <span class='underlined'>potable</span> water to the victims in the disaster area.", c: "drinkable / safe to drink" },
+    { w: "arbitrary", s: "The boss made an <span class='underlined'>arbitrary</span> decision to cancel the project without consulting any of the team members.", c: "random / dictatorial" }
 
 ];
 
@@ -1200,5 +1240,11 @@ const idiomData = [
     { idiom: "relinquish one's rights", m: "권리를 포기하다, 양도하다", w: "relinquish", d: "34일차" },
     { idiom: "amend the constitution", m: "헌법을 개정하다", w: "amend", d: "34일차" },
     { idiom: "be partial to N", m: "~을 편애하다, ~을 특히 좋아하다", w: "partial", d: "34일차" }
-
+,
+    // 💡 35일차 필수 문법/숙어 표현
+    { idiom: "impose sanctions against", m: "~에 제재를 가하다 (※경제 지문 단골)", w: "sanction", d: "35일차" },
+    { idiom: "exasperate vs exacerbate", m: "exasperate(몹시 화나게 하다) / exacerbate(악화시키다) 구별", w: "exasperate", d: "35일차" },
+    { idiom: "cram for an exam", m: "벼락치기 공부를 하다", w: "cram", d: "35일차" },
+    { idiom: "potable vs portable", m: "potable(마실 수 있는) / portable(휴대용의) 구별", w: "potable", d: "35일차" }
+    
 ];
