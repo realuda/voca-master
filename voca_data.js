@@ -946,7 +946,37 @@ const fullDB = [
     {w:"swell", m:["부풀리다", "팽창하다"], core:"*코어 이미지: 물을 머금거나 염증이 생겨 크기가 빵빵하게 커짐 / 🔗[Link] 스웰. 인플레이션으로 빚이 눈덩이처럼 스웰(swell) 팽창하거나, 모기에 물린 자리가 땡땡하게 부어오르는 붓기", d:"35일차"},
     {w:"germ", m:["병균", "세균", "싹"], core:"*코어 이미지: 질병을 일으키는 아주 작은 미생물이나 씨앗의 배아 / 🔗[Link] 점. 좀비 영화에서 연구소 유리가 깨지며 공기 중으로 쫙 퍼져나가는, 인간을 감염시키는 치명적인 바이러스 병균(germ)", d:"35일차"},
     {w:"sprout", m:["싹이 트다", "새싹"], core:"*코어 이미지: 씨앗이 껍질을 뚫고 세상 밖으로 파릇파릇하게 솟아 나옴 / 🔗[Link] 스프라우트. 스타크래프트 저그의 스포닝 풀처럼 징그럽게 튀어나오거나, 봄날 화분 흙을 뚫고 연두색 새싹이 뿅 하고 움트는 모습", d:"35일차"}
-
+,
+    // --- 36일차 (28단어, 법정/감정/IT/게임/영화 테마 맞춤형 링크 반영) ---
+    {w:"choke", m:["질식시키다", "목을 조르다"], core:"*코어 이미지: 내부의 장애물로 숨 막힘 / 🔗[Link] 초크. UFC 격투기에서 리어 네이키드 초크(Choke)로 목을 졸라 기도를 막거나, 인절미 먹다 목구멍 안이 콱 막혀 켁켁거리는 내부 질식", d:"36일차"},
+    {w:"smother", m:["숨 막히게 하다", "덮어 끄다"], core:"*코어 이미지: 외부의 무언가가 덮어 숨을 못 쉬게 하는 것 / 🔗[Link] 스마더. 암살 영화에서 자는 사람 얼굴에 베개를 꾹 눌러 덮어 외부 공기를 차단하거나, 불난 프라이팬에 담요를 덮어 산소를 차단해 끄는 것", d:"36일차"},
+    {w:"irritate", m:["짜증 나게 하다", "자극하다"], core:"*코어 이미지: 일시적이고 표면적인 불쾌감을 유발하는 것 / 🔗[Link] 이리테이트. 피부에 안 맞는 화장품 발라서 두드러기(자극) 나거나, 모기가 귓가에 앵앵거려서 순간적으로 킹받고 신경 쓰이게 하는 표면적 짜증", d:"36일차"},
+    {w:"afflict", m:["괴롭히다", "피해를 입히다"], core:"*코어 이미지: 심각한 문제가 지속적으로 사람을 괴롭히고 고통을 주는 것 / 🔗[Link] 어플릭트. 와우(WoW) 흑마법사의 '고통(Affliction)' 저주 스킬처럼, 낫지 않는 만성 질환이나 가난이 사람의 HP를 도트 딜로 갉아먹으며 징글징글하게 괴롭힘", d:"36일차"},
+    {w:"menace", m:["위협하다", "위협적인 존재"], core:"*코어 이미지: 다가오는 두려움이나 위협 / 🔗[Link] 메니스. '스타워즈: 보이지 않는 위협(The Phantom Menace)' 제목처럼, 다스몰이 쌍날 광선검 들고 다가올 때 느껴지는 등골 서늘한 살기와 위협", d:"36일차"},
+    {w:"discipline", m:["규율", "징벌", "학문", "훈련"], core:"*코어 이미지: 규칙에 따라 엄격하게 통제함 [※다의어 주의!] / 🔗[Link] 디서플린. 디스패치 뜨기 전 아이돌 빡세게 구르는 얼차려(징벌/규율)이거나, 대학교 상아탑 안에서 철저한 룰로 훈련받는 전공 '학문' 분야", d:"36일차"},
+    {w:"condemn", m:["규탄하다", "선고하다"], core:"*코어 이미지: 공개적으로 강력하게 어떤 행위가 도덕적으로 매우 잘못되었다고 비난 / 🔗[Link] 컨뎀. 마녀사냥할 때 광장에 묶어놓고 '저놈은 악마다!'라며 온 동네 사람이 돌 던지고 강력하게 댐(damn, 젠장) 하고 정죄하며 규탄함", d:"36일차"},
+    {w:"reprimand", m:["질책하다"], core:"*코어 이미지: 상급자가 하급자에게 공식적으로 잘못을 꾸짖는 것 / 🔗[Link] 리프리맨드. 부장님이 회의실에 대리 불러다 놓고 시말서(document) 던지면서 문서로 공식적으로 팩트 폭행하며 각 잡고 내리는 징계성 질책", d:"36일차"},
+    {w:"rebuke", m:["꾸짖다", "비난하다"], core:"*코어 이미지: reprimand보다 덜 공식적이고 더 즉각적인 느낌. 짧고 날카롭게 꾸짖는 느낌 / 🔗[Link] 리뷰크. 롤(LoL) 하다가 원딜이 뇌절해서 죽자마자, 서포터가 생존 핑 100번 찍으면서 채팅창으로 날카롭고 즉각적으로 쏘아붙이는 꾸짖음", d:"36일차"},
+    {w:"reprehend", m:["비난하다", "꾸짖다"], core:"*코어 이미지: 남의 결점을 잡아내어 비난하다 / 🔗[Link] 리프리헨드. 상대방의 잘못된 멱살(hend, 잡다)을 뒤에서(re) 확 잡아채며 '너 똑바로 안 해?' 하고 윤리적으로 맹비난함", d:"36일차"},
+    {w:"reproach", m:["책망하다", "비난"], core:"*코어 이미지: 비난에 슬픔, 실망이 섞인 것 / 🔗[Link] 리프로치. 엄마가 성적표 보고 등짝 때리는 게 아니라, 한숨 푹 쉬며 다가와서(approach) '내가 널 어떻게 키웠는데..' 하고 실망 100% 섞인 눈빛으로 책망함", d:"36일차"},
+    {w:"criterion", m:["기준", "표준"], core:"*코어 이미지: 결정이나 판단을 내리기 위해 사용되는 구체적인 항목이나 도구 [※복수형: criteria] / 🔗[Link] 크라이테리언. 쇼미더머니 심사위원(Critic)들이 참가자 합격/불합격을 가르기 위해 손에 들고 체크하는 정확한 보컬, 댄스 채점표 잣대", d:"36일차"},
+    {w:"mock", m:["조롱하다", "가짜의"], core:"*코어 이미지: 상대를 흉내 내어 놀리는 것 / 🔗[Link] 목. SNL 개그맨들이 정치인 목소리나 표정을 똑같이 카피(mock-up)해서 우스꽝스럽게 성대모사하며 킹받게 놀려먹음 (예: mock test 모의고사)", d:"36일차"},
+    {w:"ridicule", m:["비웃다", "조롱하다"], core:"*코어 이미지: mock보다 더 강하고 경멸적임. 상대를 우스꽝스럽고 어리석게 만드는 행위 / 🔗[Link] 리디큘. 해리포터 보가트 퇴치 주문 '리디큘러스(Ridiculous)!'처럼, 상대를 우스꽝스러운 광대로 만들어서 바닥까지 깎아내리며 경멸적으로 비웃음", d:"36일차"},
+    {w:"impeach", m:["탄핵하다", "의문을 제기하다"], core:"*코어 이미지: 고위 공직자의 범죄를 고발하여 직위에서 끌어내리다 / 🔗[Link] 임피치. 대통령이나 고위 공직자가 헌법을 어겨서 국회에서 '너 방 빼!' 하고 합법적으로 권좌에서 끌어내리는(탄핵) 헌법 재판소 청문회", d:"36일차"},
+    {w:"allege", m:["혐의를 제기하다", "주장하다"], core:"*코어 이미지: 아직 증거 없이 단언하다 / 🔗[Link] 얼레지. 증거는 아직 없는데 유튜브 렉카나 뉴스에서 '어느 연예인이 마약했다고 하더라(allegedly)' 하고 썰(혐의)을 제기하며 카더라 통신으로 주장함", d:"36일차"},
+    {w:"jury", m:["배심원", "배심원단"], core:"*코어 이미지: 재판에서 유/무죄를 판단하기 위해 선서한 사람들 / 🔗[Link] 주리. 미국 법정 영화에서 판사석 옆에 12명의 일반인 아저씨 아줌마들이 옹기종기 모여 앉아 다수결로 '유죄/무죄' 투표하는 배심원단", d:"36일차"},
+    {w:"judicial", m:["사법의", "재판의"], core:"*코어 이미지: 법이나 재판과 관련된 / 🔗[Link] 주디셜. 져지(Judge, 판사)가 망치 땅땅 치는 법원이나, 국가 삼권분립(행정, 입법, 사법) 중 한 축인 대법원의 사법 시스템 전체를 아우르는 단어", d:"36일차"},
+    {w:"testify", m:["증언하다", "증명하다"], core:"*코어 이미지: 법정에서 선서하고 사실을 말하다 / 🔗[Link] 테스티파이. 법정 증인석에 앉아 성경책에 손 얹고 '제가 그날 밤 12시에 봤습니다!' 하고 사실을 테스트(test)받으며 공식적으로 증명함", d:"36일차"},
+    {w:"testimony", m:["증언", "증거"], core:"*코어 이미지: 법정에서 증인(testify)이 하는 말 / 🔗[Link] 테스티모니. 범죄 다큐멘터리 '그것이 알고싶다'에서 얼굴 모자이크하고 음성 변조한 목격자가 털어놓는 결정적인 녹취록 증언 데이터", d:"36일차"},
+    {w:"verify", m:["입증하다", "확인하다"], core:"*코어 이미지: 진실(ver)인지 아닌지 증거를 통해 확인하다 / 🔗[Link] 베리파이. 트위터(X)나 인스타 이름 옆의 파란색 V마크(Verified) 뱃지처럼, 이 계정이 짭이 아니라 찐 본인이라는 걸 시스템이 팩트 체크하고 입증해 줌", d:"36일차"},
+    {w:"verdict", m:["평결", "판단"], core:"*코어 이미지: 배심원단이 내리는 최종 결정 / 🔗[Link] 버딕트. 역전재판 게임에서 배심원들이 회의 끝에 만장일치로 '길티(Guilty, 유죄)!' 하고 최종 결론을 진실(ver)의 입(dict)으로 뱉어내는 묵직한 최종 평결", d:"36일차"},
+    {w:"clause", m:["조항", "절"], core:"*코어 이미지: 계약서의 개별 조목이거나 문법에서의 주어+동사 덩어리 / 🔗[Link] 클로즈. 애플 회원가입 할 때 스크롤 10분 내려야 하는 깨알 같은 계약서 조항(clause)들이나, 문법 시간에 배우는 주어+동사가 있는 닫힌(close) '절'", d:"36일차"},
+    {w:"convict", m:["유죄 판결을 내리다", "죄인"], core:"*코어 이미지: 재판에서 죄를 증명하여 죄인으로 만들다 [※기출: be convicted of] / 🔗[Link] 컨빅트. 재판에서 빼박 CCTV 증거 나와서 판사가 '너 범인 맞아!' 하고 망치 쳐서 감옥으로 보내버리는(유죄 판결), 주황색 죄수복 입은 기결수", d:"36일차"},
+    {w:"repent", m:["후회하다", "회개하다"], core:"*코어 이미지: 지은 죄를 깊이 뉘우치다 / 🔗[Link] 리펜트. 감옥 독방에 앉아 차가운 벽에 머리 박으며 '내가 왜 그딴 짓을 했을까' 하고 과거의 죄를 피눈물 흘리며 십자가 앞에서 참회하고 회개함", d:"36일차"},
+    {w:"endeavor", m:["애쓰다", "노력", "노력하다"], core:"*코어 이미지: 목표를 달성하기 위해 오랜 기간 진지하게 노력하는 것을 의미하는 격식 있는 단어 / 🔗[Link] 인데버. 스페이스X의 인데버(Endeavour) 우주선처럼, 인류의 우주 개척이라는 원대한 목표를 위해 수조 원을 쏟아부으며 진지하고 숭고하게 헌신하는 노력", d:"36일차"},
+    {w:"strive", m:["노력하다", "투쟁하다"], core:"*코어 이미지: 어려움이나 저항에 맞서 안간힘 쓰며 노력하는 역동적이고 투쟁적인 느낌 / 🔗[Link] 스트라이브. 복싱 챔피언이 되려고 헝그리 정신으로 영하 10도에 땀복 입고 산길 뛰며, 한계의 스트레스(stress)와 싸우며 악으로 깡으로 투쟁하듯 발악함", d:"36일차"},
+    {w:"sentence", m:["문장", "선고", "선고하다"], core:"*코어 이미지: 생각의 단위를 마침표로 끝내는 글, 또는 판사의 최종 결정 [※기출 다의어!] / 🔗[Link] 센텐스. 판사가 긴 판결문(sentence/문장)을 엄숙하게 읽으며 마지막에 '징역 10년에 처한다' 하고 범죄자 인생에 마침표 찍듯 법적 형량을 때려 박는 선고", d:"36일차"}
+    
 ];
 
 
@@ -1096,6 +1126,12 @@ const examData = [
     { w: "exasperate", s: "The customer's constant complaints began to seriously <span class='underlined'>exasperate</span> the usually patient store manager.", c: "irritate / infuriate (※exacerbate 악화시키다와 구별)" },
     { w: "potable", s: "After the earthquake, the government quickly supplied <span class='underlined'>potable</span> water to the victims in the disaster area.", c: "drinkable / safe to drink" },
     { w: "arbitrary", s: "The boss made an <span class='underlined'>arbitrary</span> decision to cancel the project without consulting any of the team members.", c: "random / dictatorial" }
+,
+    // Day 36 법률/다의어 기출 예문 추가
+    { w: "sentence", s: "The serial killer was finally <span class='underlined'>sentenced</span> to life in prison without the possibility of parole.", c: "condemned / punished (※'문장' 아님)" },
+    { w: "discipline", s: "Sociology is a fascinating academic <span class='underlined'>discipline</span> that studies human social behavior and society.", c: "field of study (※'규율/징벌' 아님)" },
+    { w: "convict", s: "He was officially <span class='underlined'>convicted</span> of armed robbery and sent to a maximum-security federal prison.", c: "found guilty" },
+    { w: "allege", s: "The prosecutor <span class='underlined'>alleged</span> that the politician had accepted bribes, but no solid evidence was presented.", c: "claimed without proof" }
 
 ];
 
@@ -1246,5 +1282,11 @@ const idiomData = [
     { idiom: "exasperate vs exacerbate", m: "exasperate(몹시 화나게 하다) / exacerbate(악화시키다) 구별", w: "exasperate", d: "35일차" },
     { idiom: "cram for an exam", m: "벼락치기 공부를 하다", w: "cram", d: "35일차" },
     { idiom: "potable vs portable", m: "potable(마실 수 있는) / portable(휴대용의) 구별", w: "potable", d: "35일차" }
-    
+    ,
+    // 💡 36일차 필수 문법/숙어 표현
+    { idiom: "be convicted of N", m: "~의 죄로 유죄 판결을 받다", w: "convict", d: "36일차" },
+    { idiom: "be sentenced to N", m: "~의 형을 선고받다 (예: be sentenced to death 사형 선고를 받다)", w: "sentence", d: "36일차" },
+    { idiom: "strive to V / strive for N", m: "~하려고 고군분투하다, 애쓰다", w: "strive", d: "36일차" },
+    { idiom: "criterion vs criteria", m: "criterion(단수) / criteria(복수) 수일치 주의", w: "criterion", d: "36일차" }
+
 ];
