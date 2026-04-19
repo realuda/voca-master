@@ -976,7 +976,36 @@ const fullDB = [
     {w:"endeavor", m:["애쓰다", "노력", "노력하다"], core:"*코어 이미지: 목표를 달성하기 위해 오랜 기간 진지하게 노력하는 것을 의미하는 격식 있는 단어 / 🔗[Link] 인데버. 스페이스X의 인데버(Endeavour) 우주선처럼, 인류의 우주 개척이라는 원대한 목표를 위해 수조 원을 쏟아부으며 진지하고 숭고하게 헌신하는 노력", d:"36일차"},
     {w:"strive", m:["노력하다", "투쟁하다"], core:"*코어 이미지: 어려움이나 저항에 맞서 안간힘 쓰며 노력하는 역동적이고 투쟁적인 느낌 / 🔗[Link] 스트라이브. 복싱 챔피언이 되려고 헝그리 정신으로 영하 10도에 땀복 입고 산길 뛰며, 한계의 스트레스(stress)와 싸우며 악으로 깡으로 투쟁하듯 발악함", d:"36일차"},
     {w:"sentence", m:["문장", "선고", "선고하다"], core:"*코어 이미지: 생각의 단위를 마침표로 끝내는 글, 또는 판사의 최종 결정 [※기출 다의어!] / 🔗[Link] 센텐스. 판사가 긴 판결문(sentence/문장)을 엄숙하게 읽으며 마지막에 '징역 10년에 처한다' 하고 범죄자 인생에 마침표 찍듯 법적 형량을 때려 박는 선고", d:"36일차"}
-    
+    ,
+    // --- 37일차 (27단어, 게임/IT/경제/영화 테마 맞춤형 링크 반영) ---
+    {w:"reconcile", m:["화해시키다", "조화시키다"], core:"*코어 이미지: 틀어진 관계나 어긋난 장부를 다시(re) 딱 맞게 끼워 맞추는 것 / 🔗[Link] 레콘사일. 회계 장부의 안 맞는 차변/대변 숫자를 딱 맞아떨어지게(조화) 맞추거나, 이혼 직전 부부를 '우리 화해하자'며 다시 이어줌 (※reconcile A with B)", d:"37일차"},
+    {w:"pacify", m:["진정시키다", "평화롭게 하다"], core:"*코어 이미지: 화나거나 우는 상대를 평화(pacific)롭게 만드는 것 / 🔗[Link] 패시파이. 롤(LoL)에서 패시브(Passive) 스킬처럼 은은하게, 엉엉 우는 아기 입에 고무젖개(pacifier)를 물려 분노 게이지를 0으로 평화롭게 쿨다운시킴", d:"37일차"},
+    {w:"compromise", m:["타협하다", "손상시키다", "위태롭게 하다"], core:"*코어 이미지: [※기출 다의어 주의!] 양보해서 합의점에 도달하거나, 나의 원칙이나 보안을 굽히고 훼손당함 / 🔗[Link] 컴프로마이즈. 노조와 사측이 임금 '타협'을 보거나, 해커에게 백도어가 뚫려 회사 시스템 보안이 치명적으로 '손상/타협' 당해 털려버림", d:"37일차"},
+    {w:"council", m:["의회", "협의회"], core:"*코어 이미지: 중요한 결정을 내리기 위해 모인 대표자들의 공식 모임 / 🔗[Link] 카운슬. 제다이 마스터들이 둥글게 모여 앉아 은하계 평화를 논의하는 스타워즈의 제다이 의회(Jedi Council)나 시청의 시의회", d:"37일차"},
+    {w:"diplomacy", m:["외교", "외교적 수완"], core:"*코어 이미지: 국가 간의 관계를 맺고 협상하는 기술 / 🔗[Link] 디플로머시. 문명(Civilization) 게임에서 전쟁 안 하고 스파이 보내고 평화 조약 맺으면서 말빨로 국가 간의 이득을 챙기는 피 말리는 외교전", d:"37일차"},
+    {w:"cunning", m:["교활한", "정교한"], core:"*코어 이미지(뉘앙스): 목적 달성을 위해 속임수를 쓸 만큼 얍삽하고 머리가 잘 돌아가는 / 🔗[Link] 커닝. 시험 볼 때 책상 밑에 컨닝(cunning) 페이퍼 숨겨서 몰래 훔쳐보는, 여우처럼 머리 회전이 비상하고 얍삽하게 잔머리 굴리는 교활함", d:"37일차"},
+    {w:"oath", m:["맹세", "서약"], core:"*코어 이미지: 신이나 법정에서 하는 가장 무섭고 공식적인 맹세 / 🔗[Link] 오스. 법정 증인석에 서서 성경책 위에 손 얹고 '거짓말하면 천벌 받겠습니다' 하고 신과 법 앞에 목숨 걸고 치는 엄숙한 맹세 (※under oath 선서하고)", d:"37일차"},
+    {w:"pledge", m:["서약", "맹세하다"], core:"*코어 이미지: 대중이나 단체 앞에서 하는 공식적이고 진지한 약속 / 🔗[Link] 플레지. 킥스타터 크라우드 펀딩할 때 '이 프로젝트에 10만 원 후원하겠습니다!' 하고 대중 앞에서 공식적으로 서약(Pledge) 버튼을 쾅 누름", d:"37일차"},
+    {w:"vow", m:["서약", "맹세"], core:"*코어 이미지: 깊고 진지한 맹세로, oath보단 덜 법적이고 더 감정적인 약속 / 🔗[Link] 바우. 결혼식장 주례 앞에서 신랑 신부가 '검은 머리 파뿌리 될 때까지 사랑하겠다'고 진심을 다해 눈물 흘리며 읊는 혼인 서약(wedding vow)", d:"37일차"},
+    {w:"pinnacle", m:["정상", "정점"], core:"*코어 이미지: 경력, 성공, 업적에서 도달할 수 있는 최고의 지점 (추상적) / 🔗[Link] 피너클. 피겨여왕 김연아가 올림픽 금메달 목에 걸고 세계 신기록을 세운, 스포츠 커리어 역사상 두 번 다시 못 올 영광스러운 업적의 최고 정점", d:"37일차"},
+    {w:"summit", m:["정상", "정상 회담"], core:"*코어 이미지: 산의 물리적 꼭대기나 국가 1인자들의 모임 / 🔗[Link] 서밋. G20 정상회담(Summit)에서 각국 1짱 대통령들이 모이거나, 등산가가 에베레스트 물리적 꼭대기(정상)에 깃발 꽂고 야호! 외치는 곳", d:"37일차"},
+    {w:"lure", m:["유혹하다", "미끼"], core:"*코어 이미지: 미끼를 사용하여 속이거나 위험한 함정으로 끌어들임 / 🔗[Link] 루어. 낚시할 때 가짜 인조 미끼(루어/lure)를 찰랑거려서, 물고기가 진짜 밥인 줄 알고 덥석 물게 속여 바늘 훅으로 낚아채는 치명적 유혹", d:"37일차"},
+    {w:"allure", m:["유혹하다", "매력"], core:"*코어 이미지: 신비롭고 강력한 매력으로 상대를 홀려 끌어들이는 것 / 🔗[Link] 얼루어. 뱀파이어나 구미호가 치명적이고 신비로운 페로몬(매력)을 뿜어내서, 상대방이 넋을 잃고 눈 풀린 채 스스로 홀려 걸어오게 만듦", d:"37일차"},
+    {w:"tempt", m:["유혹하다", "부추기다"], core:"*코어 이미지: 도덕적으로 옳지 않거나 어리석은 줄 알면서도 하고 싶게 만드는 얄미운 유혹 / 🔗[Link] 템프트. 내일이 공무원 시험인데 롤(LoL) 승급전 딱 1판만 돌리고 자고 싶은, 하면 좆되는 거 알면서도 악마의 속삭임에 넘어가고 싶은 템테이션", d:"37일차"},
+    {w:"enchant", m:["매혹시키다", "마법을 걸다"], core:"*코어 이미지: 마법에 걸린 것처럼 넋을 잃을 정도로 완전히 매료시킴 / 🔗[Link] 인챈트. 마인크래프트에서 평범한 검에 '인챈트(Enchant/마법 부여)'를 발라 영롱하게 빛나게 하듯, 이성에게 매료 마법을 걸어 넋을 쏙 빼놓음", d:"37일차"},
+    {w:"tilt", m:["기울다", "기울기"], core:"*코어 이미지: 수평이 맞지 않고 한쪽으로 쏠리거나 삐딱하게 기울어진 상태 / 🔗[Link] 틸트. 핀볼 게임하다 열받아서 오락기를 쾅 쳐서 수평이 기울어지면(tilt) 에러 나듯, 롤 연패하고 멘탈이 확 기울어져서 샷건 치는 '틸트(멘탈) 나갔다'의 어원", d:"37일차"},
+    {w:"smuggle", m:["밀수하다", "밀반입하다"], core:"*코어 이미지: 세관 몰래 불법적인 물건을 숨겨서 국경을 넘나듦 / 🔗[Link] 스머글. 스머그(smug, 잘난 체하는) 표정으로 아무렇지 않게 관세청 세관원 눈 피해서, 가방 밑창에 금괴나 마약 숨겨서 국경 몰래 통과하는 밀수 범죄", d:"37일차"},
+    {w:"stalk", m:["뒤를 밟다", "줄기"], core:"*코어 이미지: 식물의 길쭉한 줄기나, 사냥감이 눈치채지 못하게 몰래 뒤를 쫓음 / 🔗[Link] 스톡. 옥수수 줄기(stalk)처럼 길게 자라거나, 스타크래프트 스토커(추적자)가 안 보이게 클로킹하고 뒤에서 그림자처럼 소름 돋게 집요하게 스토킹함", d:"37일차"},
+    {w:"carve", m:["조각하다", "썰다"], core:"*코어 이미지: 칼로 덩어리를 푹푹 깎아서 3차원의 형태를 만들거나 썰어냄 / 🔗[Link] 카브. 핼러윈 호박(펌프킨 카빙/Carving) 만들 때 거대한 호박 덩어리를 칼로 푹푹 파내고 깎아서 3D 입체적인 악마 얼굴 조각상을 파냄", d:"37일차"},
+    {w:"engrave", m:["새기다", "조각하다"], core:"*코어 이미지: 평평한 표면 위에 글자나 무늬를 얕게 파서 새겨넣음 / 🔗[Link] 인그레이브. 애플워치 뒷면이나 결혼 반지(커플링) 안쪽(en) 평평한 금속 표면에 '우리 사랑 영원히'라고 레이저나 조각칼로 글씨를 얕게 긁어 새김", d:"37일차"},
+    {w:"vicinity", m:["인근", "근처"], core:"*코어 이미지: 물리적으로 벽을 공유하진 않지만 지도상으로 같은 구역이나 바운더리 안 / 🔗[Link] 비시니티. 당근마켓 동네 인증할 때 내 아파트 바로 옆동은 아니어도 지도상 반경 2km 이내의 같은 동네 바운더리 '인근(in the vicinity of)'에 뜸", d:"37일차"},
+    {w:"adjacent", m:["인접한", "가까운"], core:"*코어 이미지: 중간에 띄엄띄엄 공간 없이 바로 나란히 옆에 붙어 있는 / 🔗[Link] 어드제이슨트. 영화관 좌석 예매할 때 A1과 A2처럼 중간에 통로 1도 없이 팔걸이 하나 두고 바로 옆에 나란히 딱 붙어있는 인접한 좌석 (※adjacent to)", d:"37일차"},
+    {w:"adjoin", m:["인접하다", "붙어 있다"], core:"*코어 이미지: 벽이나 경계선을 완벽히 공유하며 물리적으로 찰싹 맞붙어 있음 / 🔗[Link] 어드조인. 테트리스 블록 조인(join, 연결)하듯, 방음 안 돼서 코 고는 소리 다 들릴 정도로 옆집과 콘크리트 벽체 하나를 100% 딱 공유하며 맞붙어 있음", d:"37일차"},
+    {w:"stroll", m:["산책하다", "한가로이 거닐다"], core:"*코어 이미지: 즐거움이나 휴식을 목적으로 여유롭게 사부작사부작 걷는 산책 / 🔗[Link] 스트롤. 맑은 주말 아침 공원에서 댕댕이 유모차(stroller) 끌고 한 손엔 아아 들고 콧노래 흥얼거리며 목적 없이 사부작사부작 걷는 힐링 산책", d:"37일차"},
+    {w:"wander", m:["방황하다", "거닐다"], core:"*코어 이미지: 뚜렷한 목적지 없이 이리저리 발길 닿는 대로 헤매거나 걷는 것 [※스펠링 함정: wonder(궁금해하다)와 구별!] / 🔗[Link] 완더. RPG 게임 뉴비가 다음 퀘스트 장소가 어딘지 몰라 미니맵 끄고 필드 전체를 이리저리 빙빙 방황하고 헤매며 돌아다님 (a가 걷는 다리 모양)", d:"37일차"},
+    {w:"nomadic", m:["유목의", "방랑하는"], core:"*코어 이미지: 한곳에 정착하지 않고 물과 풀을 찾아 이동하며 사는 / 🔗[Link] 노매딕. 몽골 초원에 텐트(게르) 치고 양 떼 몰며 이동하는 칭기즈칸 유목민이나, 와이파이만 뚫리면 치앙마이 해변에서 노트북 켜고 일하는 디지털 노마드족", d:"37일차"},
+    {w:"itinerary", m:["여행 일정표"], core:"*코어 이미지: 오직 여행에만 사용되는 구체적인 일정 및 경로 / 🔗[Link] 이티너러리. 파워 J(계획형) 친구가 일본 여행 갈 때 엑셀로 '10시 공항, 12시 스시집, 2시 유니버셜 스튜디오' 하고 분 단위로 빡세게 짜놓은 완벽한 여행 스케줄표", d:"37일차"}
+
 ];
 
 
@@ -1132,6 +1161,12 @@ const examData = [
     { w: "discipline", s: "Sociology is a fascinating academic <span class='underlined'>discipline</span> that studies human social behavior and society.", c: "field of study (※'규율/징벌' 아님)" },
     { w: "convict", s: "He was officially <span class='underlined'>convicted</span> of armed robbery and sent to a maximum-security federal prison.", c: "found guilty" },
     { w: "allege", s: "The prosecutor <span class='underlined'>alleged</span> that the politician had accepted bribes, but no solid evidence was presented.", c: "claimed without proof" }
+,
+    // Day 37 다의어/전치사/스펠링 기출 예문 추가
+    { w: "compromise", s: "The whistleblower claimed that the intelligence agency's computer network was severely <span class='underlined'>compromised</span> by hackers.", c: "damaged / jeopardized (※'타협하다'가 아님!)" },
+    { w: "reconcile", s: "It is often very difficult to <span class='underlined'>reconcile</span> the demands of a busy career with the needs of a growing family.", c: "harmonize / balance" },
+    { w: "adjacent", s: "The newly built shopping mall is conveniently located <span class='underlined'>adjacent</span> to the central subway station.", c: "next to / neighboring" },
+    { w: "wander", s: "Having lost his map, he had to <span class='underlined'>wander</span> aimlessly through the dense forest for several hours.", c: "roam / stray (※wonder와 구별)" }
 
 ];
 
@@ -1288,5 +1323,12 @@ const idiomData = [
     { idiom: "be sentenced to N", m: "~의 형을 선고받다 (예: be sentenced to death 사형 선고를 받다)", w: "sentence", d: "36일차" },
     { idiom: "strive to V / strive for N", m: "~하려고 고군분투하다, 애쓰다", w: "strive", d: "36일차" },
     { idiom: "criterion vs criteria", m: "criterion(단수) / criteria(복수) 수일치 주의", w: "criterion", d: "36일차" }
-
+,
+    // 💡 37일차 필수 문법/숙어 표현
+    { idiom: "compromise one's principles/security", m: "원칙을 굽히다, 보안을 훼손하다/위태롭게 하다", w: "compromise", d: "37일차" },
+    { idiom: "reconcile A with B", m: "A와 B를 조화시키다, 양립하게 하다", w: "reconcile", d: "37일차" },
+    { idiom: "adjacent to N", m: "~에 인접한, ~바로 옆에", w: "adjacent", d: "37일차" },
+    { idiom: "in the vicinity of", m: "~의 부근에, 인근에", w: "vicinity", d: "37일차" },
+    { idiom: "under oath", m: "법정에서 선서하고 (위증을 하지 않겠다고)", w: "oath", d: "37일차" }
+    
 ];
