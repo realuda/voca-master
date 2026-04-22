@@ -1074,6 +1074,33 @@ const fullDB = [
     {w:"gloomy", m:["우울한", "어두침침한"], core:"*코어 이미지: 빛이 부족하여 어둡거나 그로 인해 기분이 우울한 상태 / 🔗[Link] 글루미. 월요일 아침 출근길 비 주룩주룩 오고 방안에 구름(gloom) 낀 듯 햇빛 1도 안 들어와서, 텐션 바닥 치고 한없이 다크하고 우울해지는 '글루미 선데이'", d:"39일차"},
     {w:"dismal", m:["암울한", "음울한"], core:"*코어 이미지: 상황이 너무 나빠서 희망이 보이지 않는 암울함. gloomy보다 절망적 / 🔗[Link] 디즈멀. 디스(dis/death) + 말(mal, 나쁜). 지옥의 밑바닥처럼 희망의 빛이라곤 0.1%도 안 보이고, 주식 청산당해 통장 잔고 0원에 빚만 10억 남은 처참하고 캄캄한 찐 암울", d:"39일차"},
     {w:"dismay", m:["실망", "낙담", "실망시키다"], core:"*코어 이미지: 예상치 못한 나쁜 결과로 인해 기운이 빠지고 실망하는 감정 / 🔗[Link] 디스메이. 내일이 5월(May) 달력 빨간 날 연휴인 줄 알고 설렜는데 알고 보니 일요일이랑 겹쳐서 '아 ㅆㅂ...' 하고 멘탈 툭 떨어지며 느끼는 깊은 빡침과 낙담", d:"39일차"}
+,
+    // --- 40일차 (25단어, 게임/IT/경제/스포츠 테마 맞춤형 링크 반영) ---
+    {w:"dreary", m:["음울한", "지루한"], core:"*코어 이미지: 날씨나 상황이 지루하고 칙칙해서 우울하게 만드는 것 / 🔗[Link] 드리어리. 디아블로 게임 1막 트리스트럼 마을처럼 빗방울 뚝뚝 떨어지고 BGM도 칙칙해서 사람 텐션 바닥으로 깎아 먹는 음울함", d:"40일차"},
+    {w:"solemn", m:["근엄한", "엄숙한"], core:"*코어 이미지: 매우 진지하고 웃음기가 없는 경건한 상태 / 🔗[Link] 쏠럼. 국립현충원 참배나 영국 왕의 즉위식처럼, 농담 1도 안 통하고 BGM 싹 꺼진 채 각 잡고 서 있는 숨 막히는 근엄함", d:"40일차"},
+    {w:"fuss", m:["야단법석", "호들갑"], core:"*코어 이미지: 별일 아닌 것에 쓸데없이 부산을 떠는 것 / 🔗[Link] 퍼스. 스타크래프트 본진에 정찰병 하나 들어왔다고 미니맵에 핑 100개 찍히면서 일꾼들 이리저리 도망치고 난리 나는 야단법석", d:"40일차"},
+    {w:"predominant", m:["우세한", "두드러진"], core:"*코어 이미지: 남들보다 앞서(pre) 지배하는(dominant) / 🔗[Link] 프리도미넌트. 롤(LoL) 랭크 게임에서 픽률과 승률을 완벽하게 지배하는 OP(Overpowered) 1티어 챔피언의 압도적인 우세함", d:"40일차"},
+    {w:"conjunction", m:["결합", "접속사"], core:"*코어 이미지: 두 개 이상의 것을 함께(con) 연결하는(junct) 것 / 🔗[Link] 컨정션. 우주 정거장과 우주선이 도킹(결합)하거나, 문법에서 문장과 문장 사이를 'And/But'으로 이어주는 접속사 (※in conjunction with ~와 함께)", d:"40일차"},
+    {w:"align", m:["정렬하다", "나란히 하다"], core:"*코어 이미지: 선(line)을 맞추다 / 🔗[Link] 얼라인. 엑셀에서 텍스트를 왼쪽/오른쪽 정렬(Align)하거나, 내 투자 포트폴리오를 미국 금리 인하 방향과 수평으로 결을 일치시킴 (※align with)", d:"40일차"},
+    {w:"subordinate", m:["부하", "종속된"], core:"*코어 이미지: 계급이나 순서상 아래(sub)에 위치하는 수직적 관계 / 🔗[Link] 서보디네이트. 컴퓨터 C드라이브 밑에 딸려 있는 하위 폴더처럼, 군대에서 대대장 밑에 절대복종해야 하는 종속된 부하 병사", d:"40일차"},
+    {w:"fidelity", m:["충실함", "정조"], core:"*코어 이미지: 믿음(fid)을 끝까지 저버리지 않고 지키는 태도 / 🔗[Link] 피델리티. 와이파이(Wi-Fi = Wireless Fidelity)가 원본 데이터 신호를 무선으로 충실하게 전달하듯, 배우자나 회사에 대한 꺾이지 않는 충성심", d:"40일차"},
+    {w:"fling", m:["내던지다"], core:"*코어 이미지: 팔을 크게 휘둘러 비교적 가볍게 휙 던지는 것 / 🔗[Link] 플링. 빡쳐서 책상 위에 있던 볼펜이나 마우스를 손목 스냅 이용해서 벽 쪽으로 가볍게 '휙~' 하고 신경질적으로 내던지는 모습", d:"40일차"},
+    {w:"hurl", m:["거칠게 내던지다"], core:"*코어 이미지: fling보다 훨씬 강한 힘과 폭력성을 가지고 멀리 냅다 던지는 것 / 🔗[Link] 헐. 마블의 헐크(Hulk)가 빡쳐서 2톤짜리 자동차를 두 손으로 번쩍 들어 온몸의 원심력을 이용해 적진으로 냅다 꽂아버리며 거칠게 내던짐", d:"40일차"},
+    {w:"saturate", m:["흠뻑 적시다", "포화시키다"], core:"*코어 이미지: 더 이상 흡수할 수 없을 정도로 액체나 물건이 100% 꽉 찬 상태 / 🔗[Link] 새츄레이트. 스펀지 꽉 짜면 물이 뚝뚝 떨어지게 흠뻑 젖었거나, 강남역 골목에 치킨집이 더 이상 들어갈 틈 없이 100% 꽉 찬 레드오션 '포화 상태'", d:"40일차"},
+    {w:"penetrate", m:["관통하다", "침투하다"], core:"*코어 이미지: 장애물이나 표면을 뚫고 안으로 깊숙이 들어가는 것 / 🔗[Link] 페네트레이트. 배그(PUBG)에서 스나이퍼 AWM 총알이 적의 3뚝(방탄조끼) 표면을 뚫고 들어가 피를 깎아 먹는 방어구 '방관(관통력)' 스탯", d:"40일차"},
+    {w:"irrigate", m:["관개하다", "물 대다"], core:"*코어 이미지: 대규모 농업을 위해 인공적인 파이프나 수로를 파서 농경지에 물을 대는 것 / 🔗[Link] 이리게이트. 문명(Civilization) 게임에서 사막 타일 옆에 인공 수로 '관개(Irrigation)' 시설을 지어서, 식량 생산량 펌핑하려고 물을 끌어옴", d:"40일차"},
+    {w:"pave", m:["도로를 포장하다"], core:"*코어 이미지: 흙길 위에 돌이나 아스팔트를 덮어 길을 평평하게 닦다 / 🔗[Link] 페이브. 스타크래프트 저그 크립(점막) 깔리듯, 울퉁불퉁한 흙바닥 위에 아스팔트 포장도로를 쫙 깔아 차가 씽씽 달리게 길을 터줌 (※pave the way 길을 열어주다)", d:"40일차"},
+    {w:"vendor", m:["노점상", "행상인", "판매업체"], core:"*코어 이미지: 거리에서 물건을 팔거나 특정 상품을 대주는 업체 / 🔗[Link] 벤더. RPG 게임 필드 구석에서 물약이랑 잡템 파는 '상인 NPC'이거나, 코카콜라 자판기(Vending Machine)처럼 내 돈 털어가는 판매자", d:"40일차"},
+    {w:"wholesaler", m:["도매업자"], core:"*코어 이미지: 물건을 전체(whole) 단위로 대량으로 떼다 파는 상인 / 🔗[Link] 홀세일러. 코스트코(Costco Wholesale)처럼 소매상들에게 박스와 파레트 단위로 뭉텅이 물건을 싸게 넘겨버리는 거대한 창고형 도매업자", d:"40일차"},
+    {w:"barter", m:["물물교환하다"], core:"*코어 이미지: 화폐(돈)를 쓰지 않고 물건과 물건을 직접 바꾸는 거래 / 🔗[Link] 바터. 디아블로 초창기 시절, 골드(돈) 가치 떡락해서 '조던링 1개 ↔ 샤코 1개'로 현금 없이 유저들끼리 템으로만 맞교환하던 리얼 물물교환", d:"40일차"},
+    {w:"secondhand", m:["중고의", "간접적인"], core:"*코어 이미지: 남의 손(hand)을 한 번 거친(second) / 🔗[Link] 세컨핸드. 당근마켓에서 박스 뜯고 남의 손을 한 번 타서 감가상각 쳐맞은 중고(second-hand) 글카나, 남한테 건너건너 들은 간접 흡연/간접 정보", d:"40일차"},
+    {w:"attain", m:["달성하다"], core:"*코어 이미지: 목표를 노력 끝에 손에 뻗어 쥐는 것 (목표 달성에 초점) / 🔗[Link] 어테인. 리니지에서 밤새 100마리 몬스터 잡기 퀘스트 노가다 뛴 끝에, 마침내 목표 경험치 도달해서 '레벨업(달성)!' 이펙트가 터지는 것", d:"40일차"},
+    {w:"fulfill", m:["이행하다", "실현하다", "완수하다"], core:"*코어 이미지: 텅 빈 것을 꽉 채우다(full) (약속, 의무, 조건, 꿈 등을 완수) / 🔗[Link] 풀필. 킥스타터 크라우드 펀딩 100% 꽉 채워서(full), 후원자들에게 약속했던 한정판 굿즈 제작과 배송 의무를 싹 다 완수하고 실현함", d:"40일차"},
+    {w:"implement", m:["시행하다", "도구", "수단"], core:"*코어 이미지: 존재하지 않던 계획, 정책, 시스템 등을 실제로 작동하도록 만들어 시작하는 것 / 🔗[Link] 임플리먼트. 개발자가 밤새워 짠 새 패치(계획) 코드를 본섭 서버에 업로드해서 유저들이 진짜로 플레이할 수 있게 시스템을 '시행/도입'함", d:"40일차"},
+    {w:"enforce", m:["집행하다", "강요하다"], core:"*코어 이미지: 이미 존재하는 법이나 규칙을 사람들이 따르도록 힘(force)으로 강제하는 것 / 🔗[Link] 인포스. 배틀그라운드 운영자가 핵(Hack) 쓴 유저 발견하면 자비 없이 밴(Ban) 때려서, 게임 약관과 룰을 무력(force)으로 집행하고 강제함", d:"40일차"},
+    {w:"sheer", m:["순전한", "순수한"], core:"*코어 이미지: 불순물이 섞이지 않고 오직 그것 하나뿐인 100%의 강조 / 🔗[Link] 시어. 주식 리딩방에서 '이거 무조건 10배 간다'는 찌라시에 논리 1도 없이 100% 순전한(sheer) 광기 하나만으로 전 재산 꼴아 박는 미친 텐션", d:"40일차"},
+    {w:"utter", m:["완전한", "말하다"], core:"*코어 이미지: 100%의 절대적인 상태이거나, 입 밖으로 소리를 내다 [※기출 다의어 주의!] / 🔗[Link] 어터. '어터(어이)가 없네.' 상식적으로 말(utter)도 안 나오는 100% 완전한(utter) 개소리. 형용사(완전한)와 동사(말하다) 두 얼굴을 가진 단어", d:"40일차"},
+    {w:"outright", m:["노골적인", "완전한"], core:"*코어 이미지: 숨기거나 망설임 없이 명백하고 바깥으로 다 드러난(out) / 🔗[Link] 아웃롸잇. 야구 투수가 맘에 안 드는 타자 담그려고, 미안한 기색도 없이 대놓고 롸잇나우 타자 몸쪽 밖(out)으로 대놓고 꽂아버리는 노골적인 빈볼", d:"40일차"}
 
 ];
 
@@ -1248,6 +1275,12 @@ const examData = [
     { w: "infringe", s: "The tech company sued its rival for attempting to <span class='underlined'>infringe</span> on its newly registered software patents.", c: "violate / trespass (※항상 on/upon과 함께 쓰임)" },
     { w: "exacerbate", s: "Applying the wrong ointment to the burn will only <span class='underlined'>exacerbate</span> the pain and delay the healing process.", c: "worsen / aggravate" },
     { w: "uphold", s: "The Supreme Court voted to <span class='underlined'>uphold</span> the lower court's ruling, ensuring that the law remained in effect.", c: "support / maintain" }
+,
+    // Day 40 다의어/동의어 기출 예문 추가
+    { w: "utter", s: "He sat in the corner in <span class='underlined'>utter</span> silence, refusing to <span class='underlined'>utter</span> a single word during the entire meeting.", c: "complete (형용사) / speak (동사)" },
+    { w: "implement", s: "The local government decided to <span class='underlined'>implement</span> the new recycling policy starting next month.", c: "put into effect / execute" },
+    { w: "enforce", s: "It is the duty of the police to <span class='underlined'>enforce</span> the law and maintain public order.", c: "apply firmly / compel" },
+    { w: "discipline", s: "In order to <span class='underlined'>attain</span> financial independence, one must carefully manage their budget and investments.", c: "achieve / accomplish" }
 
 ];
 
@@ -1423,5 +1456,11 @@ const idiomData = [
     { idiom: "deteriorate (문법)", m: "악화되다 (※타동사가 아님! 수동태 be deteriorated 불가)", w: "deteriorate", d: "39일차" },
     { idiom: "exacerbate vs aggravate", m: "둘 다 '악화시키다' (타동사, 목적어가 옴)", w: "exacerbate", d: "39일차" },
     { idiom: "infallible vs fallacy", m: "infallible(틀림없는, 완벽한) / fallacy(논리적 오류)", w: "infallible", d: "39일차" }
+    ,
+    // 💡 40일차 필수 문법/숙어 표현
+    { idiom: "in conjunction with", m: "~와 함께, ~와 연합하여", w: "conjunction", d: "40일차" },
+    { idiom: "align with", m: "~와 나란히 하다, 결을 같이 하다", w: "align", d: "40일차" },
+    { idiom: "implement vs enforce", m: "implement(새 정책을 시행하다) / enforce(기존 룰을 강제로 집행하다) 구별", w: "implement", d: "40일차" },
+    { idiom: "utter (다의어)", m: "형용사: 완전한 (예: utter failure) / 동사: 말하다, 소리내다", w: "utter", d: "40일차" }
     
 ];
