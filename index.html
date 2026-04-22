@@ -242,34 +242,84 @@
 
     // --- 즐겨찾기 동기화 (내보내기/불러오기) ---
     function exportFavorites() {
-        const favs = localStorage.getItem('vocaFavorites') || "[]";
-        if (favs === "[]" || favWords.length === 0) {
-            alert("내보낼 즐겨찾기 단어가 없습니다."); 
-            return;
-        }
-        // 코드를 복사하기 쉽게 창을 띄워줍니다.
-        prompt("👇 아래 코드를 복사해서 다른 기기의 '불러오기'에 붙여넣으세요:", favs);
+    // 1. 로컬 스토리지에서 즐겨찾기 데이터 가져오기 (이름은 유저님 세팅에 맞게 수정)
+    const savedFavorites = localStorage.getItem('favorites');
+    
+    if (!savedFavorites || savedFavorites === '[]') {
+        alert("텅~ 내보낼 즐겨찾기 단어가 없습니다!");
+        return;
     }
 
+    // 2. 데이터를 예쁘게 포맷팅 (짤림 원천 차단)
+    const favoritesArray = JSON.parse(savedFavorites);
+    const exportData = JSON.stringify(favoritesArray, null, 2);
+
+    // 3. Blob 객체 생성 (텍스트를 쪼개지지 않는 튼튼한 파일 덩어리로 만듦)
+    const blob = new Blob([exportData], { type: 'application/json;charset=utf-8' });
+
+    // 4. 가짜 <a> 태그를 만들어서 강제 다운로드 버튼 클릭 효과 내기
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "my_voca_favorites.json"; // 다운로드될 파일 이름 (원하는 대로 변경 가능)
+    
+    // 화면에 안 보이게 처리하고 클릭 실행
+    document.body.appendChild(link);
+    link.click();
+    
+    // 5. 다운로드 끝났으면 쓰레기 정리 (메모리 누수 방지)
+    document.body.removeChild(link);
+    URL.revokeObjectURL(link.href);
+    
+    alert("세이브 완료! 🎉 즐겨찾기가 안전하게 파일로 다운로드되었습니다.");
+}
+
     function importFavorites() {
-        const input = prompt("📥 복사해온 즐겨찾기 코드를 아래에 붙여넣으세요:");
-        if (!input) return;
+    // 1. 가짜 파일 선택(Input) 창 만들기
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'application/json'; // 엉뚱한 파일 못 고르게 .json 확장자만 허용
+
+    // 2. 유저가 파일을 선택했을 때 실행될 로드(Load) 이벤트
+    input.onchange = (event) => {
+        const file = event.target.files[0];
+        if (!file) return; // 취소 눌렀으면 종료
+
+        // 3. 파일 읽기 도구(FileReader) 소환
+        const reader = new FileReader();
         
-        try {
-            const parsed = JSON.parse(input);
-            if (Array.isArray(parsed)) {
-                // 기존 즐겨찾기와 덮어쓰기 (합치고 싶다면 로직 변경 가능)
-                localStorage.setItem('vocaFavorites', JSON.stringify(parsed));
-                favWords = parsed;
-                updateDashboard();
-                alert(`성공! ${parsed.length}개의 즐겨찾기 단어가 동기화되었습니다. 🎉`);
-            } else {
-                alert("코드가 올바르지 않습니다.");
+        reader.onload = (e) => {
+            try {
+                // 4. 텍스트로 읽어온 데이터를 다시 자바스크립트 배열(JSON)로 파싱(해독)
+                const importedData = JSON.parse(e.target.result);
+
+                // (옵션) 세이브 파일이 정상적인 배열 형태인지 팩트 체크
+                if (!Array.isArray(importedData)) {
+                    alert("🚨 잘못된 세이브 파일입니다! 데이터가 손상되었습니다.");
+                    return;
+                }
+
+                // 5. 로컬 스토리지에 데이터 덮어쓰기 (저장)
+                localStorage.setItem('favorites', JSON.stringify(importedData));
+                
+                alert("로드 완료! 🎉 즐겨찾기 데이터가 성공적으로 복구되었습니다.");
+                
+                // 6. 화면 새로고침하여 복구된 데이터 바로 보여주기
+                // (만약 화면 렌더링 함수가 따로 있다면 그걸 호출하는 것이 더 부드럽습니다. 예: renderFavorites())
+                location.reload(); 
+
+            } catch (error) {
+                // JSON 파일이 아닌 이상한 텍스트 파일 등을 넣었을 때의 에러 방어
+                alert("🚨 세이브 파일 파싱 에러! 정상적인 백업 파일이 아닙니다.");
             }
-        } catch (e) {
-            alert("오류가 발생했습니다. 코드를 처음부터 끝까지 정확히 복사했는지 확인해주세요.");
-        }
-    }
+        };
+
+        // 7. 선택한 파일을 텍스트 형태로 읽어들이기 시작
+        reader.readAsText(file);
+    };
+
+    // 8. 강제로 파일 선택 창 띄우기
+    input.click();
+}
     
     function updateDashboard() {
         document.getElementById('stat-total').innerText = fullDB.length;
