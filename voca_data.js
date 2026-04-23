@@ -1101,6 +1101,38 @@ const fullDB = [
     {w:"sheer", m:["순전한", "순수한"], core:"*코어 이미지: 불순물이 섞이지 않고 오직 그것 하나뿐인 100%의 강조 / 🔗[Link] 시어. 주식 리딩방에서 '이거 무조건 10배 간다'는 찌라시에 논리 1도 없이 100% 순전한(sheer) 광기 하나만으로 전 재산 꼴아 박는 미친 텐션", d:"40일차"},
     {w:"utter", m:["완전한", "말하다"], core:"*코어 이미지: 100%의 절대적인 상태이거나, 입 밖으로 소리를 내다 [※기출 다의어 주의!] / 🔗[Link] 어터. '어터(어이)가 없네.' 상식적으로 말(utter)도 안 나오는 100% 완전한(utter) 개소리. 형용사(완전한)와 동사(말하다) 두 얼굴을 가진 단어", d:"40일차"},
     {w:"outright", m:["노골적인", "완전한"], core:"*코어 이미지: 숨기거나 망설임 없이 명백하고 바깥으로 다 드러난(out) / 🔗[Link] 아웃롸잇. 야구 투수가 맘에 안 드는 타자 담그려고, 미안한 기색도 없이 대놓고 롸잇나우 타자 몸쪽 밖(out)으로 대놓고 꽂아버리는 노골적인 빈볼", d:"40일차"}
+,
+    // --- 41일차 (30단어, 게임/IT/경제/영화/스포츠 테마 맞춤형 링크 반영) ---
+    {w:"polish", m:["다듬다", "광내다"], core:"*코어 이미지: 표면을 문질러 매끄럽고 빛나게 하다. 비유적으로 글, 기술을 다듬다 / 🔗[Link] 폴리시. 출시 직전의 게임 버그를 잡고 UI/UX를 매끄럽게 깎고 다듬는(폴리싱) 작업이나, 볼링공을 기름칠해서 빤딱빤딱하게 광냄", d:"41일차"},
+    {w:"trim", m:["다듬다", "정돈하다"], core:"*코어 이미지: 가장자리나 끝부분을 잘라내어 깔끔하게 정돈하다 / 🔗[Link] 트림. 프리미어 프로 영상 편집할 때 쓸데없는 앞뒤 꼬투리 영상을 가위로 싹둑(트림) 잘라내서 숏츠 길이에 맞게 깔끔하게 정돈함", d:"41일차"},
+    {w:"weave", m:["천을 짜다", "엮다"], core:"*코어 이미지: 실을 교차시켜 천을 짜거나, 이야기나 계획을 복잡하게 얽어내다 / 🔗[Link] 위브. 영화 '인셉션'처럼 여러 겹의 꿈과 복잡한 떡밥 스토리를 베틀로 실을 짜듯(weave) 하나의 소름 돋는 명작으로 촘촘히 엮어냄", d:"41일차"},
+    {w:"sap", m:["약화시키다", "수액"], core:"*코어 이미지: 수액을 빼내듯 내부의 에너지를 천천히 고갈시키다 / 🔗[Link] 샙. RPG 게임에서 독이나 저주에 걸려 내 HP와 마나가 1초에 10씩 틱뎀으로 질질 새어 나가며 천천히 기력이 고갈되고 약화됨", d:"41일차"},
+    {w:"erode", m:["침식시키다", "약화시키다"], core:"*코어 이미지: 바위를 깎아내듯 신뢰, 권위, 가치 등의 기반을 서서히 무너뜨리다 / 🔗[Link] 이로드. 무서운 인플레이션이 내 월급의 실질 구매력을 바닷물이 바위 깎아내듯(침식) 매년 조금씩 소리 소문 없이 갉아먹음", d:"41일차"},
+    {w:"impair", m:["손상시키다", "해치다"], core:"*코어 이미지: 능력, 기능, 가치 등을 손상시켜 제 역할을 못하게 만들다 / 🔗[Link] 임페어. 롤(LoL)에서 시야 차단(실명) 디버프를 맞아서 내 캐릭터의 시야 기능이 심각하게 고장 나고(손상) 제대로 된 컨트롤이 안 됨", d:"41일차"},
+    {w:"adverse", m:["반대의", "불리한"], core:"*코어 이미지: 반대 방향으로 작용하여 불리한 영향을 미치는 것 / 🔗[Link] 애드버스. 주식 시장에 금리 인상이라는 거대한 역풍(adverse wind)이 불어닥쳐, 내 계좌 수익률에 치명적이고 불리한 영향을 줌", d:"41일차"},
+    {w:"invert", m:["뒤집다"], core:"*코어 이미지: 위아래나 순서를 정반대로 뒤집는 행동 / 🔗[Link] 인버트. FPS 총 게임할 때 마우스 Y축 '반전(Invert)' 옵션을 켜서, 마우스를 위로 올리면 시선이 아래로 내려가게 정반대로 뒤집음", d:"41일차"},
+    {w:"hollow", m:["속이 빈", "움푹 들어간"], core:"*코어 이미지: 물리적으로 속이 텅 비어 있는 / 🔗[Link] 할로우. 영화 '고질라 vs 콩'의 '할로우 어스(Hollow Earth, 지구 공동설)'처럼 겉은 멀쩡한데 지구 한가운데가 뻥 뚫려 속이 텅 비어 있음", d:"41일차"},
+    {w:"devoid", m:["결여된", "~이 전혀 없는"], core:"*코어 이미지: 추상적인 내용물이 없는 [※기출 짝꿍: devoid of] / 🔗[Link] 디보이드. 감정 모듈이 타버린 SF 영화 속 AI 로봇처럼 인간적인 슬픔이나 동정심이 1도 없이 텅텅 빈(void) 상태 (devoid of emotion)", d:"41일차"},
+    {w:"archaeology", m:["고고학"], core:"*코어 이미지: 고대의(archaeo) 유물이나 유적을 연구하는 학문 / 🔗[Link] 아키올로지. 영화 '인디아나 존스'나 게임 '툼 레이더'처럼 고대 이집트 피라미드와 유물을 파헤치고 흙먼지 마시며 탐구하는 고고학", d:"41일차"},
+    {w:"physician", m:["내과 의사", "의사"], core:"*코어 이미지: 수술(외과)보다는 약물과 진단으로 병을 치료하는 의사 / 🔗[Link] 피지션. 프리미어리그 축구팀 벤치에 대기하다가 선수들 햄스트링 올라오면 뛰어나가서 상태 진단하고 응급처치해 주는 팀 주치의(의사)", d:"41일차"},
+    {w:"physiology", m:["생리학"], core:"*코어 이미지: 생명체의 구조들이 어떻게 작동하는지 그 기능을 다루는 학문 / 🔗[Link] 피지올로지. 헬스창들이 근육 성장과 단백질 흡수가 몸속에서 어떤 메커니즘으로 돌아가는지 빡세게 공부하는 '스포츠 생리학'", d:"41일차"},
+    {w:"anatomy", m:["해부학"], core:"*코어 이미지: 생물체의 구조를 잘라서(tomy) 연구하는 학문 / 🔗[Link] 어내토미. 미드 '그레이 아나토미(Grey's Anatomy)'처럼 수술실에서 메스로 인체를 열어서 뼈와 내장 구조를 직접 눈으로 보는 해부학", d:"41일차"},
+    {w:"hygiene", m:["위생"], core:"*코어 이미지: 개인이 건강을 지키기 위해 실천하는 청결 습관 / 🔗[Link] 하이진. PC 해킹 안 당하게 비밀번호 자주 바꾸고 쿠키 삭제하는 '사이버 위생(Cyber hygiene)'이나 밥 먹기 전 손 씻는 개인 청결 습관", d:"41일차"},
+    {w:"sanitary", m:["위생의", "위생적인"], core:"*코어 이미지: 세균이 없는 깨끗한 환경이나 설비의 상태 / 🔗[Link] 새니터리. 삼성전자 반도체 클린룸(Clean Room)처럼 먼지 한 톨, 세균 한 마리 안 들어오게 방진복 입고 들어가는 완벽한 환경적 위생 상태", d:"41일차"},
+    {w:"fetch", m:["가져오다", "데리고 오다"], core:"*코어 이미지: A 지점에서 B지점으로 가서 물건을 갖고 다시 A로 돌아오는 왕복 / 🔗[Link] 페치. 컴퓨터 CPU가 램(RAM)에 있는 데이터를 쏙 뽑아서 다시 CPU로 가져오거나(Fetch), 원반 던지면 댕댕이가 물어오는 '왕복' 개념", d:"41일차"},
+    {w:"convey", m:["전달하다", "나르다"], core:"*코어 이미지: A에서 B로 물건이나 메시지를 나르는 편도의 개념 / 🔗[Link] 컨베이. 팩토리오 게임의 컨베이어 벨트(Conveyor belt)처럼 공장 라인을 타고 철광석을 목적지까지 쭉 한 방향(편도)으로 실어 나름", d:"41일차"},
+    {w:"cease", m:["그만두다", "중지하다"], core:"*코어 이미지: stop의 격식 있는 표현으로 어떤 상태나 행동이 끝남 / 🔗[Link] 시즈. 스타크래프트에서 총알 빗발치는 교전을 멈추고 '시즈파이어(Ceasefire, 휴전/사격 중지)' 깃발 올려서 전쟁을 띡 하고 그만둠", d:"41일차"},
+    {w:"siege", m:["포위하다", "포위 작전"], core:"*코어 이미지: 군대가 적의 성이나 도시를 둥글게 둘러싸서 항복을 받아내는 것 / 🔗[Link] 시즈. 게임 '레인보우 식스 시즈(Siege)'나 스타크래프트 '시즈 탱크'처럼 특정 구역에 알박고 적진을 뺑 둘러싸서 숨통을 조이는 포위 공격", d:"41일차"},
+    {w:"apprehend", m:["체포하다", "파악하다"], core:"*코어 이미지: 범인이나 개념의 윤곽을 확 잡아채다(prehend) / 🔗[Link] 애프리헨드. GTA 게임에서 별 5개 뜨고 경찰들이 내 캐릭터 뒷덜미를 콱 잡아채서 수갑 채우고 철창으로 끌고 가는(체포) 물리적 억압", d:"41일차"},
+    {w:"comprehend", m:["이해하다", "파악하다"], core:"*코어 이미지: 주제의 모든 부분을 완벽하고 깊이 있게 이해하다 / 🔗[Link] 컴프리헨드. 영어 시험 RC(Reading Comprehension) 영역처럼, 그냥 글씨만 읽는 게 아니라 작가의 찐 의도까지 100% 뇌로 흡수해서 이해함", d:"41일차"},
+    {w:"ingest", m:["섭취하다", "삼키다"], core:"*코어 이미지: 음식이나 약, 혹은 대량의 데이터를 몸이나 시스템 안으로 집어넣다 / 🔗[Link] 인제스트. 빅데이터 IT 시스템에서 매초 쏟아지는 수백만 개의 로그 데이터를 서버 입 벌리고 블랙홀처럼 꿀꺽꿀꺽 삼켜서(섭취) 수집함", d:"41일차"},
+    {w:"immerse", m:["몰두하다", "담그다"], core:"*코어 이미지: 액체 속에 푹 담그거나, 비유적으로 어떤 활동에 완전히 빠져드는 것 / 🔗[Link] 이머스. 머리에 VR 기기 쓰자마자 방구석 잊어버리고 완벽한 가상 현실 세계관 속으로 내 영혼이 푹 담겨서(이머시브) 미친 듯이 몰두함", d:"41일차"},
+    {w:"circumscribe", m:["제한하다", "경계를 정하다"], core:"*코어 이미지: 주변(circum)에 선을 긋다(scribe) / 🔗[Link] 서컴스크라이브. 체스나 장기에서 폰과 나이트로 선을 쫙 그어서, 적 킹이 꼼짝도 못 하게 활동 반경을 컴퍼스 원처럼 둘러치고 좁게 제한함", d:"41일차"},
+    {w:"regime", m:["정권", "제도"], core:"*코어 이미지: 국가를 지배하는 정치 체제나 통치 방식 / 🔗[Link] 리짐. 영화 '매트릭스'에서 기계들이 인간을 배터리로 쓰며 지배하는 살벌한 통치 체제나, 쿠데타로 엎어진 군사 독재 정권", d:"41일차"},
+    {w:"snatch", m:["강탈하다", "와락 붙잡다"], core:"*코어 이미지: 빠르고 갑작스럽게, 종종 폭력적/불법적으로 무언가를 채가는 행위 / 🔗[Link] 스내치. 역도의 '인상(Snatch)' 종목처럼 바벨을 순식간에 낚아채듯, 롤에서 정글러가 강타(스마이트)로 상대 바론 피 1 남은 걸 순식간에 강탈함", d:"41일차"},
+    {w:"consolidate", m:["강화하다", "합병하다"], core:"*코어 이미지: 단단하게(solid) 만들다. 흩어진 것을 모아 튼튼하게 하거나 기업을 합침 / 🔗[Link] 컨솔리데이트. 경제 위기에 파산 직전인 쪼렙 은행 3개를 하나로 합병(통합)해서, 방어력 짱짱한 메이저 거대 은행으로 덩치를 키우고 강화함", d:"41일차"},
+    {w:"dissolve", m:["녹다", "해산시키다"], core:"*코어 이미지: 고체가 액체에 녹아 사라지거나, 비유적으로 단체나 관계가 해체되는 것 / 🔗[Link] 디졸브. 뜨거운 아메리카노에 각설탕이 흔적도 없이 사르르 녹거나(용해), 게임 길드 마스터가 길드원 다 강퇴시키고 길드를 공중분해(해산)시킴", d:"41일차"},
+    {w:"soluble", m:["녹는", "용해성의"], core:"*코어 이미지: 물리적으로 액체에 녹을 수 있는 상태나 성질 / 🔗[Link] 솔루블. 비타민C처럼 몸에 물만 마시면 소변으로 다 녹아서 배출되는 '수용성(water-soluble)' 비타민의 성질", d:"41일차"}
 
 ];
 
@@ -1281,6 +1313,12 @@ const examData = [
     { w: "implement", s: "The local government decided to <span class='underlined'>implement</span> the new recycling policy starting next month.", c: "put into effect / execute" },
     { w: "enforce", s: "It is the duty of the police to <span class='underlined'>enforce</span> the law and maintain public order.", c: "apply firmly / compel" },
     { w: "discipline", s: "In order to <span class='underlined'>attain</span> financial independence, one must carefully manage their budget and investments.", c: "achieve / accomplish" }
+,
+    // Day 41 뉘앙스/문법/다의어 기출 예문 추가
+    { w: "devoid", s: "The robot's response was completely <span class='underlined'>devoid</span> of any human emotion or empathy.", c: "lacking / without (※항상 of와 함께 쓰임)" },
+    { w: "impair", s: "Drinking alcohol can severely <span class='underlined'>impair</span> your judgment and reaction time while driving.", c: "damage / weaken (기능 손상)" },
+    { w: "apprehend", s: "The police finally managed to <span class='underlined'>apprehend</span> the suspect after a lengthy car chase.", c: "arrest / capture (체포하다)" },
+    { w: "consolidate", s: "To reduce costs, the CEO decided to <span class='underlined'>consolidate</span> the three separate branch offices into one main headquarters.", c: "merge / combine (합병하다)" }
 
 ];
 
@@ -1462,5 +1500,11 @@ const idiomData = [
     { idiom: "align with", m: "~와 나란히 하다, 결을 같이 하다", w: "align", d: "40일차" },
     { idiom: "implement vs enforce", m: "implement(새 정책을 시행하다) / enforce(기존 룰을 강제로 집행하다) 구별", w: "implement", d: "40일차" },
     { idiom: "utter (다의어)", m: "형용사: 완전한 (예: utter failure) / 동사: 말하다, 소리내다", w: "utter", d: "40일차" }
+    ,
+    // 💡 41일차 필수 문법/숙어 표현
+    { idiom: "be devoid of N", m: "~이 전혀 없는, ~이 결여된", w: "devoid", d: "41일차" },
+    { idiom: "immerse oneself in", m: "~에 몰두하다, 푹 빠지다", w: "immerse", d: "41일차" },
+    { idiom: "apprehend vs comprehend", m: "apprehend(체포하다, 파악하다) / comprehend(완전히 이해하다)", w: "apprehend", d: "41일차" },
+    { idiom: "sap / erode / impair", m: "sap(기력을 빼다), erode(서서히 갉아먹다), impair(기능을 망가뜨리다)", w: "erode", d: "41일차" }
     
 ];
