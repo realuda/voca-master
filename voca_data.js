@@ -1133,7 +1133,29 @@ const fullDB = [
     {w:"consolidate", m:["강화하다", "합병하다"], core:"*코어 이미지: 단단하게(solid) 만들다. 흩어진 것을 모아 튼튼하게 하거나 기업을 합침 / 🔗[Link] 컨솔리데이트. 경제 위기에 파산 직전인 쪼렙 은행 3개를 하나로 합병(통합)해서, 방어력 짱짱한 메이저 거대 은행으로 덩치를 키우고 강화함", d:"41일차"},
     {w:"dissolve", m:["녹다", "해산시키다"], core:"*코어 이미지: 고체가 액체에 녹아 사라지거나, 비유적으로 단체나 관계가 해체되는 것 / 🔗[Link] 디졸브. 뜨거운 아메리카노에 각설탕이 흔적도 없이 사르르 녹거나(용해), 게임 길드 마스터가 길드원 다 강퇴시키고 길드를 공중분해(해산)시킴", d:"41일차"},
     {w:"soluble", m:["녹는", "용해성의"], core:"*코어 이미지: 물리적으로 액체에 녹을 수 있는 상태나 성질 / 🔗[Link] 솔루블. 비타민C처럼 몸에 물만 마시면 소변으로 다 녹아서 배출되는 '수용성(water-soluble)' 비타민의 성질", d:"41일차"}
-
+,
+    // --- 42일차 (20단어, 게임/IT/경제/영화 테마 맞춤형 링크 반영 - 최종장!) ---
+    {w:"aboriginal", m:["원주민의", "토착의"], core:"*코어 이미지: 기원(origin)부터 그 땅에 살았던 최초의 사람들 / 🔗[Link] 애보리지널. 호주 원주민(Aboriginal)의 부메랑이나, 서버 오픈 베타 시절부터 한 번도 닉변 안 하고 그 땅에 눌러앉은 태초의 고인물 유저들", d:"42일차"},
+    {w:"orient", m:["적응시키다", "동양", "맞추다"], core:"*코어 이미지: 동쪽(해 뜨는 방향)으로 방향을 잡다 [※기출: orient toward (~에 맞추다)] / 🔗[Link] 오리엔트. 대학교 오리엔테이션(OT)에서 신입생들이 캠퍼스 라이프에 '적응'하게 튜토리얼을 돌려주고 목표를 세팅해 줌", d:"42일차"},
+    {w:"primitive", m:["원시의", "원초적인"], core:"*코어 이미지: 기술이나 문명이 발전하기 이전의 단순하고 기본적인 상태 / 🔗[Link] 프리미티브. 프로그래밍의 원시 타입(Primitive type: int, char 등)처럼 가장 기초적이거나, 구석기 시대 돌도끼 드는 문명 1레벨 상태", d:"42일차"},
+    {w:"immemorial", m:["태고의", "먼 옛날의"], core:"*코어 이미지: 기억(memory)할 수 없을 만큼 역사 기록 이전의 아주 먼 옛날 / 🔗[Link] 이메모리얼. 인간의 뇌 메모리(memory) 용량을 아득히 초과해서 도저히 기억조차 안 나는 태초의 빅뱅 시절 (※from time immemorial 태고로부터)", d:"42일차"},
+    {w:"medieval", m:["중세의"], core:"*코어 이미지: 중간(medi) 시대(ev). 유럽의 중세시대 (약 5~15세기) / 🔗[Link] 미디벌. 명작 게임 '미디블 토탈워(Medieval: Total War)'처럼 십자군 기사들이 칼 차고 마녀사냥 하던 5~15세기 유럽 암흑기", d:"42일차"},
+    {w:"monument", m:["기념물", "기념비"], core:"*코어 이미지: 중요한 인물이나 사건을 기억하기 위해 세운 물리적 구조물 / 🔗[Link] 모뉴먼트. '문명(Civilization)' 게임에서 문화 승리 스탯 올리려고 턴(turn) 갈아 넣어서 짓는 거대한 피라미드나 스톤헨지 같은 웅장한 석상", d:"42일차"},
+    {w:"recollect", m:["회상하다", "기억해 내다"], core:"*코어 이미지: 잊고 있던 기억을 애써 다시(re) 모으는(collect) 의식적 행동 / 🔗[Link] 리콜렉트. 콜렉터(collector)가 도감 채우듯, 내 뇌세포 구석구석 흩어져 있던 첫사랑의 기억 조각들을 다시(re) 긁어모아(collect) 애써 회상함", d:"42일차"},
+    {w:"reminiscent", m:["연상시키는", "추억에 잠긴"], core:"*코어 이미지: 어떤 사물, 냄새 등이 과거의 특정 기억을 떠오르게 만드는 트리거 / 🔗[Link] 레미니슨트. 길 가다 우연히 맡은 옛날 향수 냄새가 스위치(트리거)가 되어 잊고 지낸 전 여친의 씁쓸한 추억을 짙게 연상시킴 (※reminiscent of)", d:"42일차"},
+    {w:"souvenir", m:["기념품"], core:"*코어 이미지: 기억(recollect)을 돕기 위해 사 온 물리적 물건 / 🔗[Link] 수버니어. 파리 에펠탑 구경하고 여행 퀘스트 완료 보상 아이템으로 냉장고에 붙이려고 사 온 5유로짜리 열쇠고리나 마그넷 기념품", d:"42일차"},
+    {w:"epoch", m:["시대", "신기원"], core:"*코어 이미지: 새로운 시작이나 중대한 변화를 가져온, 역사적으로 매우 중요한 시대 / 🔗[Link] 에폭. 딥러닝 AI가 학습 데이터를 한 번 다 도는 사이클(1 Epoch)이나, 스티브 잡스의 아이폰 발표 전후로 나뉘는 인류 역사의 거대한 한 획", d:"42일차"},
+    {w:"chronicle", m:["연대기", "기록"], core:"*코어 이미지: 역사적 사건들을 시간(chrono) 순서대로 사실을 기록한 글 / 🔗[Link] 크로니클. '나니아 연대기'나 리니지2 대규모 크로니클(Chronicle) 패치처럼, 시간의 흐름에 따라 굵직한 전쟁과 사건을 기록한 장엄한 역사책", d:"42일차"},
+    {w:"diploma", m:["졸업장", "학위증"], core:"*코어 이미지: 자격을 증명하는 공식적인 문서 / 🔗[Link] 디플로마. 대학교 4년 퀘스트 학점 다 채우고 보스전(졸업 논문) 깨면 총장님이 수여하는 빳빳하고 간지나는 양피지 수료증/졸업장", d:"42일차"},
+    {w:"bachelor", m:["학사", "미혼 남성"], core:"*코어 이미지: 대학의 첫 번째 학위를 딴 사람이나 아직 결혼하지 않은 남자 / 🔗[Link] 배철러. 미국 유명 예능 '배철러(The Bachelor)'에 나오는 능력 있는 킹카 솔로남이거나, 4년제 대학 졸업하고 딴 학사 학위(Bachelor's degree)", d:"42일차"},
+    {w:"unattended", m:["방치된", "주인이 없는"], core:"*코어 이미지: 주의(attend)를 기울이지 않은(un). 보살핌 없이 홀로 남겨진 / 🔗[Link] 언어텐디드. PC방 책상에 지갑 놔두고 화장실 가서, 시스템 보안망(주의/attend)이 완전히 풀린(un) 채 도둑한테 무방비로 방치된 템", d:"42일차"},
+    {w:"frontier", m:["국경", "미개척 분야"], core:"*코어 이미지: 미지의 세계로 나아가는 최전선(front) / 🔗[Link] 프론티어. 서부 개척 시대 무법지대나 화성 이주 프로젝트처럼, 아직 지도가 밝혀지지 않은 안개 낀 최전방(front) 미개척지", d:"42일차"},
+    {w:"displace", m:["쫓아내다", "대신하다"], core:"*코어 이미지: 원래 있던 장소(place)에서 밀어내어(dis) 그 자리를 대신 차지하는 것 / 🔗[Link] 디스플레이스. 스마트폰이 등장하면서 기존의 엠피쓰리, 디카를 시장(place) 밖으로(dis) 무자비하게 쫓아내고 생태계 1짱 자리를 대체함", d:"42일차"},
+    {w:"discern", m:["식별하다", "알아차리다"], core:"*코어 이미지: 차이점이 불분명한 것을 애써 알아차리거나 파악하는 행위 / 🔗[Link] 디슨. 화질구지 CCTV 영상 속이나 딥페이크 조작 사진에서, 미세한 픽셀 차이를 매의 눈으로 스캔해서 범인 얼굴인지 아닌지 정확하게 식별해 냄", d:"42일차"},
+    {w:"discrete", m:["별개의", "분리된"], core:"*코어 이미지: 서로 전혀 다른, 완전히 분리된 상태 [※스펠링 함정: discreet(신중한)과 구별!] / 🔗[Link] 디스크리트. 이산수학(Discrete math)처럼 1과 2 사이에 소수점이 없이 뚝뚝 끊어져, 너와 나는 1도 안 섞이는 완전 남남으로 분리된 덩어리", d:"42일차"},
+    {w:"depreciate", m:["가치가 하락하다", "평가절하하다"], core:"*코어 이미지: 가치(preci)가 시간 지남에 따라 바닥(de)으로 떨어지는 것 / 🔗[Link] 디프리시에이트. 벤츠 신차 뽑자마자 딜러샵 문턱 넘는 순간부터 중고차 가격(가치)이 수직 낙하하며 떡락하는 뼈아픈 감가상각", d:"42일차"},
+    {w:"grave", m:["무거운", "심각한", "무덤"], core:"*코어 이미지: 죽음(무덤)과 관련될 만큼 몹시 심각하고 장난기 없는 / 🔗[Link] 그레이브. 분위기가 무덤(grave)에 들어갈 정도로 답이 없어서, 사장님 표정이 장례식장처럼 한없이 딥(deep)하고 무겁고 심각하게 가라앉음", d:"42일차"}
+    
 ];
 
 
@@ -1319,6 +1341,12 @@ const examData = [
     { w: "impair", s: "Drinking alcohol can severely <span class='underlined'>impair</span> your judgment and reaction time while driving.", c: "damage / weaken (기능 손상)" },
     { w: "apprehend", s: "The police finally managed to <span class='underlined'>apprehend</span> the suspect after a lengthy car chase.", c: "arrest / capture (체포하다)" },
     { w: "consolidate", s: "To reduce costs, the CEO decided to <span class='underlined'>consolidate</span> the three separate branch offices into one main headquarters.", c: "merge / combine (합병하다)" }
+,
+    // Day 42 스펠링 함정 및 다의어 기출 예문 추가
+    { w: "orient", s: "It took the new employees a few weeks to <span class='underlined'>orient</span> themselves to the complex corporate culture.", c: "adapt / adjust (※'동양'이 아님!)" },
+    { w: "depreciate", s: "New cars usually <span class='underlined'>depreciate</span> in value by about 20% in their first year on the road.", c: "lose value / drop in price" },
+    { w: "reminiscent", s: "The architecture of the old library is strongly <span class='underlined'>reminiscent</span> of the medieval castles in Europe.", c: "evocative / suggestive of (※항상 of와 함께)" },
+    { w: "discrete", s: "The company was divided into six <span class='underlined'>discrete</span> departments, each with its own budget and manager.", c: "separate / distinct (※discreet와 구별!)" }
 
 ];
 
@@ -1506,5 +1534,11 @@ const idiomData = [
     { idiom: "immerse oneself in", m: "~에 몰두하다, 푹 빠지다", w: "immerse", d: "41일차" },
     { idiom: "apprehend vs comprehend", m: "apprehend(체포하다, 파악하다) / comprehend(완전히 이해하다)", w: "apprehend", d: "41일차" },
     { idiom: "sap / erode / impair", m: "sap(기력을 빼다), erode(서서히 갉아먹다), impair(기능을 망가뜨리다)", w: "erode", d: "41일차" }
-    
+    ,
+    // 💡 42일차 필수 문법/숙어 표현
+    { idiom: "discrete vs discreet", m: "discrete(별개의, e-t-e 분리됨) / discreet(신중한, 조심스러운)", w: "discrete", d: "42일차" },
+    { idiom: "orient oneself to N", m: "~에 적응하다, 방향을 맞추다", w: "orient", d: "42일차" },
+    { idiom: "be reminiscent of N", m: "~을 연상시키다, 떠올리게 하다", w: "reminiscent", d: "42일차" },
+    { idiom: "from time immemorial", m: "태고로부터, 아득한 옛날부터", w: "immemorial", d: "42일차" }
+
 ];
