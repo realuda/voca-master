@@ -1155,7 +1155,35 @@ const fullDB = [
     {w:"discrete", m:["별개의", "분리된"], core:"*코어 이미지: 서로 전혀 다른, 완전히 분리된 상태 [※스펠링 함정: discreet(신중한)과 구별!] / 🔗[Link] 디스크리트. 이산수학(Discrete math)처럼 1과 2 사이에 소수점이 없이 뚝뚝 끊어져, 너와 나는 1도 안 섞이는 완전 남남으로 분리된 덩어리", d:"42일차"},
     {w:"depreciate", m:["가치가 하락하다", "평가절하하다"], core:"*코어 이미지: 가치(preci)가 시간 지남에 따라 바닥(de)으로 떨어지는 것 / 🔗[Link] 디프리시에이트. 벤츠 신차 뽑자마자 딜러샵 문턱 넘는 순간부터 중고차 가격(가치)이 수직 낙하하며 떡락하는 뼈아픈 감가상각", d:"42일차"},
     {w:"grave", m:["무거운", "심각한", "무덤"], core:"*코어 이미지: 죽음(무덤)과 관련될 만큼 몹시 심각하고 장난기 없는 / 🔗[Link] 그레이브. 분위기가 무덤(grave)에 들어갈 정도로 답이 없어서, 사장님 표정이 장례식장처럼 한없이 딥(deep)하고 무겁고 심각하게 가라앉음", d:"42일차"}
-    
+    ,
+    // --- 43일차 (26단어, 실무 비즈니스 & IT/경제/게임 테마 융합 링크) ---
+    {w:"civil service", m:["공무", "행정 관청"], core:"*코어 이미지: 시민(civil)을 위한 서비스(service) / 🔗[Link] 시빌 서비스. 일반 사기업이 아니라 국가와 국민이라는 거대한 클라이언트를 위해 행정 업무를 처리하는 갓무원 퀘스트", d:"43일차"},
+    {w:"workforce", m:["노동자", "노동 인구"], core:"*코어 이미지: 일하는(work) 힘(force) / 🔗[Link] 워크포스. 스타크래프트 미네랄 캐는 SCV 총인구수처럼, 한 국가나 회사 프로젝트를 굴러가게 만드는 인적 자원과 톱니바퀴 노동력 총합", d:"43일차"},
+    {w:"workload", m:["업무량"], core:"*코어 이미지: 일(work)의 짐(load) / 🔗[Link] 워크로드. 퇴근 10분 전 부장님이 내 어깨 위(load)에 산더미처럼 던져놓고 간 처리해야 할 과부하 문서 짐짝들(업무량)", d:"43일차"},
+    {w:"quota", m:["몫", "할당량"], core:"*코어 이미지: 각자에게 배당된 분량 / 🔗[Link] 쿼터. 이번 달 영업팀이 무조건 채워야 하는 실적(목표액) 쿼터제이거나, 게임에서 보상받으려고 매일 뺑이 쳐야 하는 일일 퀘스트 할당량", d:"43일차"},
+    {w:"associated materials", m:["관련 자료"], core:"*코어 이미지: 특정 주제와 엮여(associated) 있는 자료들(materials) / 🔗[Link] 어소시에이티드 머터리얼즈. 기획안 결재 올릴 때 '이거 근거가 뭐야?' 하고 까일까 봐 이메일 첨부파일에 백업용으로 빵빵하게 끼워 넣는 관련 데이터 파일들", d:"43일차"},
+    {w:"commence", m:["시작하다", "개시하다"], core:"*코어 이미지: 공식적이고 격식 있게 시작함 (start의 초고급 버전) / 🔗[Link] 커멘스. 동네 조기축구 시작이 아니라, 챔피언스리그 결승전 주심 휘슬이 울리거나 국가 단위의 거대 토목 공사가 공식적으로 웅장하게 '개시'됨", d:"43일차"},
+    {w:"offset", m:["상쇄하다", "벌충하다"], core:"*코어 이미지: 반대 작용을 통해 플러스 마이너스 제로(0)를 맞추다 / 🔗[Link] 오프셋. 코인으로 천만 원 꼴았는데 주식으로 천만 원 벌어서 멘탈 타격을 '퉁치거나(상쇄)', 게임에서 받은 디버프를 물약 힐량으로 씹어버림", d:"43일차"},
+    {w:"audit", m:["회계감사", "감사하다"], core:"*코어 이미지: 장부가 제대로 쓰였는지 듣고(audio) 심사하다 / 🔗[Link] 오딧. 연말에 국세청이나 외부 회계법인(빅4)에서 들이닥쳐, 회사 법인카드 영수증 10원짜리 하나까지 삥땅 친 거 없나 영혼까지 탈탈 터는 무서운 심사", d:"43일차"},
+    {w:"demanding", m:["힘든", "요구가 많은"], core:"*코어 이미지: 요구(demand)하는 게 몹시 많아 빡세고 벅찬 / 🔗[Link] 디맨딩. 엘든링(프롬 게임) 보스전처럼 1초의 피지컬 실수도 안 봐주는 헬난이도 업무거나, 시안을 10번이나 빠꾸 내는 겁나 깐깐한 클라이언트", d:"43일차"},
+    {w:"in-depth", m:["심층적인", "상세한"], core:"*코어 이미지: 깊이(depth) 안으로(in) 파고드는 / 🔗[Link] 인뎁스. 수박 겉핥기식 네이버 검색 긁어오기가 아니라, 기업의 재무제표 10년 치를 바닥 끝까지 파헤친 애널리스트의 영혼 갈아 넣은 심층 분석 리포트", d:"43일차"},
+    {w:"proofread", m:["교정보다"], core:"*코어 이미지: 증거(proof)를 잡기 위해 읽다(read). 오타나 문법 오류를 잡아내다 / 🔗[Link] 프루프리드. 클라이언트한테 메일 쏘기 전, 부장님 빙의해서 맞춤법 검사기 돌리고 숫자 0 하나 덜 썼나 빨간펜 들고 눈알 빠지게 검수함", d:"43일차"},
+    {w:"have yet to RV", m:["아직 ~해야 한다 (아직 ~하지 않았다)"], core:"*코어 이미지: 해야 할 일(to RV)을 여전히(yet) 가지고 있다(have) = 아직 안 했다 / 🔗[Link] 해브 옛 투. \"팀장님 결재가 have yet to 떨어졌다\" = 결재를 해줘야 하는 상태로 남아있다 = 아직도 밍기적거리고 승인을 안 해줬다는 팩트", d:"43일차"},
+    {w:"inventory", m:["재고 조사", "재고", "물품 목록"], core:"*코어 이미지: 안(in)에 들어와 있는 물건(vent)들의 목록 / 🔗[Link] 인벤토리. RPG 게임에서 I 키 누르면 나오는 가방(인벤토리) 속 아이템 템창이거나, 쿠팡 물류 창고에 쌓여있는 아이폰 재고 엑셀 리스트", d:"43일차"},
+    {w:"setup", m:["구성", "설치", "설정"], core:"*코어 이미지: 위로(up) 세워(set) 작동 가능하게 만들다 / 🔗[Link] 셋업. 새 모니터랑 본체 사 와서 선 꼽고 윈도우 깔고 게이밍 데스크 '셋업' 맞추거나, 프로젝트 킥오프 전 팀원과 장비를 초기 세팅함", d:"43일차"},
+    {w:"lease", m:["임대하다", "임대차 계약"], core:"*코어 이미지: 일정 기간 돈을 내고 빌려 쓰는 계약 / 🔗[Link] 리스. 강남 오피스 사무실 보증금 내고 월세 계약 맺거나, 회사 법인 명의로 벤츠 '리스(Lease)' 뽑아서 세금 혜택받으며 임대해서 타고 다님", d:"43일차"},
+    {w:"timekeeping", m:["시간 엄수", "시간 기록"], core:"*코어 이미지: 시간(time)을 지키거나(keep) 출퇴근 기록을 관리함 / 🔗[Link] 타임키핑. 9시 출근 지문 인식기에 사원증 찍어서 근태 1분 단위로 빡세게 관리하거나, 육상 경기에서 스톱워치로 0.01초 칼같이 기록 재는 것", d:"43일차"},
+    {w:"follow up with", m:["~을 덧붙이다", "후속 조치하다"], core:"*코어 이미지: 앞에서 일어난 일을 따라가며(follow up) 무언가를 더하다(with) / 🔗[Link] 팔로우 업 위드. 미팅 끝나고 나서 \"자세한 단가표는 이메일로 팔로우업(후속 조치) 해드리겠습니다!\" 하고 추가 데이터를 매끄럽게 덧붙여 보냄", d:"43일차"},
+    {w:"credential", m:["자격증명서", "경력", "신용 증명이 되는"], core:"*코어 이미지: 믿을(cred) 수 있다는 증표 / 🔗[Link] 크레덴셜. AWS 클라우드 서버 접속할 때 쓰는 '암호 키(크레덴셜)'이거나, 이력서에 한 줄 박아넣는 토익 990점, 기사 자격증 같은 든든한 스펙 증명서", d:"43일차"},
+    {w:"publicity", m:["주목", "매스컴의 관심", "홍보"], core:"*코어 이미지: 대중(public)에게 알려지는 상태나 행위 / 🔗[Link] 퍼블리시티. 신작 영화 개봉 전에 배우들이 예능 돌고 유튜브 나가서 어그로 끌어 매스컴 '퍼블리시티(언론의 주목/홍보)' 쫙 뽑아내서 화제성 터뜨림", d:"43일차"},
+    {w:"census", m:["인구조사"], core:"*코어 이미지: 국가가 국민의 수와 상태를 조사하는 것 / 🔗[Link] 센서스. 5년마다 통계청에서 집집마다 우편물 보내거나 공무원이 직접 돌면서, 이 집에 몇 명 살고 직업은 뭔지 국가 스탯을 스캔하는 인구 총조사", d:"43일차"},
+    {w:"on-site inspection", m:["현장점검"], core:"*코어 이미지: 현장(on-site)에 직접 나가서 살펴보는(inspection) 것 / 🔗[Link] 온 사이트 인스펙션. 본사 책상에서 서류만 보지 않고, 안전모 쓰고 하청업체 공장 '현장(on-site)'에 들이닥쳐 불량률 직접 두 눈으로 실사 점검함", d:"43일차"},
+    {w:"resolution", m:["해상도", "해결", "결의안"], core:"*코어 이미지: 흐릿했던 것이 명확하게 풀리는(resolv) 것 / 🔗[Link] 레졸루션. 모니터 4K 화질의 선명한 '해상도'이거나, 1월 1일에 담배 끊겠다고 다이어리 첫 장에 적는 확고한 새해 목표(New Year's resolution)/결단", d:"43일차"},
+    {w:"markedly", m:["현저하게", "눈에 띄게"], core:"*코어 이미지: 마크(mark)가 찍힌 것처럼 확연히 드러나게 / 🔗[Link] 마키들리. 차트에 마커펜으로 동그라미 칠 만큼, 지난 분기 대비 영업 이익이 수직 상승하여 누가 봐도 '현저하고 뚜렷하게' 떡상한 상태", d:"43일차"},
+    {w:"overly", m:["지나치게", "너무"], core:"*코어 이미지: 적정선을 넘어(over) 과도하게 / 🔗[Link] 오벌리. 직장 동료한테 \"너 오늘 치마 너무(overly) 짧은 거 아니냐?\" 하고 굳이 안 해도 될 오지랖 선 씨게 넘어서 상대방 개빡치게 과하게 참견함", d:"43일차"},
+    {w:"given", m:["~을 고려해 볼 때 (전제 조건)"], core:"*코어 이미지: 이미 주어져(given) 픽스된 팩트(상수) / 🔗[Link] 기븐. 게임에서 '적 보스의 피통이 10만이라는 조건이 주어졌을 때(상수)', 우리가 낼 수 있는 최대 딜량을 어떻게 세팅할지 논의 시작할 때 까는 베이스", d:"43일차"},
+    {w:"in light of", m:["~을 고려하여 (새로운 정보)"], core:"*코어 이미지: 새로운 빛(light)에 비추어 상황을 다시 보다 / 🔗[Link] 인 라이트 오브. 금리 인상이라는 '최신 뉴스(새로운 빛/변수)'가 터졌기 때문에, 이 새로운 정보를 반영해서 어제 짰던 기획안을 전면 재검토하고 수정함", d:"43일차"}
+
 ];
 
 
@@ -1347,6 +1375,12 @@ const examData = [
     { w: "depreciate", s: "New cars usually <span class='underlined'>depreciate</span> in value by about 20% in their first year on the road.", c: "lose value / drop in price" },
     { w: "reminiscent", s: "The architecture of the old library is strongly <span class='underlined'>reminiscent</span> of the medieval castles in Europe.", c: "evocative / suggestive of (※항상 of와 함께)" },
     { w: "discrete", s: "The company was divided into six <span class='underlined'>discrete</span> departments, each with its own budget and manager.", c: "separate / distinct (※discreet와 구별!)" }
+,
+    // Day 43 비즈니스/문법 기출 예문 추가
+    { w: "commence", s: "Construction on the new data center is scheduled to officially <span class='underlined'>commence</span> next Monday.", c: "begin / start (※공식적이고 격식 있는 시작)" },
+    { w: "offset", s: "The sudden increase in fuel prices completely <span class='underlined'>offset</span> the company's profits for this quarter.", c: "cancel out / balance" },
+    { w: "have yet to RV", s: "Although the deadline is tomorrow, the management team <span class='underlined'>has yet to</span> approve the final budget.", c: "has not yet approved (※긍정문 형태지만 부정의 뜻!)" },
+    { w: "in light of", s: "<span class='underlined'>In light of</span> the recent security breach, we must update all employees' network credentials immediately.", c: "considering (new information)" }
 
 ];
 
@@ -1540,5 +1574,11 @@ const idiomData = [
     { idiom: "orient oneself to N", m: "~에 적응하다, 방향을 맞추다", w: "orient", d: "42일차" },
     { idiom: "be reminiscent of N", m: "~을 연상시키다, 떠올리게 하다", w: "reminiscent", d: "42일차" },
     { idiom: "from time immemorial", m: "태고로부터, 아득한 옛날부터", w: "immemorial", d: "42일차" }
-
+,
+    // 💡 43일차 필수 문법/숙어 표현
+    { idiom: "have yet to V", m: "아직 ~하지 않았다 (※형태는 긍정이지만 뜻은 부정, 문법 빈출)", w: "have yet to RV", d: "43일차" },
+    { idiom: "follow up with", m: "~을 덧붙이다, (메일/회의 등에서) 후속 조치를 하다", w: "follow up with", d: "43일차" },
+    { idiom: "in light of vs given", m: "in light of(새로운 변수 고려) / given(이미 정해진 기정사실 고려)", w: "in light of", d: "43일차" },
+    { idiom: "offset A against B", m: "A를 B로 상쇄하다, 벌충하다 (경제/비즈니스 지문 빈출)", w: "offset", d: "43일차" }
+    
 ];
