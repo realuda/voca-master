@@ -1183,6 +1183,31 @@ const fullDB = [
     {w:"overly", m:["지나치게", "너무"], core:"*코어 이미지: 적정선을 넘어(over) 과도하게 / 🔗[Link] 오벌리. 직장 동료한테 \"너 오늘 치마 너무(overly) 짧은 거 아니냐?\" 하고 굳이 안 해도 될 오지랖 선 씨게 넘어서 상대방 개빡치게 과하게 참견함", d:"43일차"},
     {w:"given", m:["~을 고려해 볼 때 (전제 조건)"], core:"*코어 이미지: 이미 주어져(given) 픽스된 팩트(상수) / 🔗[Link] 기븐. 게임에서 '적 보스의 피통이 10만이라는 조건이 주어졌을 때(상수)', 우리가 낼 수 있는 최대 딜량을 어떻게 세팅할지 논의 시작할 때 까는 베이스", d:"43일차"},
     {w:"in light of", m:["~을 고려하여 (새로운 정보)"], core:"*코어 이미지: 새로운 빛(light)에 비추어 상황을 다시 보다 / 🔗[Link] 인 라이트 오브. 금리 인상이라는 '최신 뉴스(새로운 빛/변수)'가 터졌기 때문에, 이 새로운 정보를 반영해서 어제 짰던 기획안을 전면 재검토하고 수정함", d:"43일차"}
+,
+    // --- 44일차 (23단어, HR/재무 비즈니스 테마 맞춤형 링크 반영) ---
+    {w:"job posting", m:["채용 공고"], core:"*코어 이미지: 사람인이나 잡코리아에 구인 글을 게시(posting)하는 것 / 🔗[Link] 잡 포스팅. 게임 길드 게시판에 '딜러/힐러 급구' 글 올리듯, 회사에서 '노예(신입/경력) 구함' 하고 채용 플랫폼에 올리는 공식 공고문", d:"44일차"},
+    {w:"cover letter", m:["자기소개서", "동봉 편지"], core:"*코어 이미지: 이력서(Resume) 위에 덮어서(cover) 보내는 자신을 소개하는 편지 / 🔗[Link] 커버 레터. 딱딱한 이력서 팩트만 보내기 뻘쭘하니까, '내가 이 회사에 얼마나 뼈를 묻고 싶은지' 영혼을 갈아 넣어 쓴 자소서", d:"44일차"},
+    {w:"reference letter", m:["추천서"], core:"*코어 이미지: 지원자의 인성이나 실력을 증명(reference)해 주는 사람의 편지 / 🔗[Link] 레퍼런스 레터. 이직할 때 전 직장 팀장님이나 교수님한테 '얘 일 잘하고 멘탈 좋습니다'라고 보증 서 달라고 싹싹 빌어서 받는 추천서", d:"44일차"},
+    {w:"onboarding", m:["신입 교육", "적응 과정"], core:"*코어 이미지: 새로운 배(board)에 탑승(on)하여 조직에 융화되는 과정 / 🔗[Link] 온보딩. 갓 입사한 뉴비한테 사원증 파주고, 사내 인트라넷 세팅해주고, 회사 룰 가르쳐주는 게임 극초반 튜토리얼 퀘스트", d:"44일차"},
+    {w:"OJT", m:["사내 교육", "직장 내 훈련"], core:"*코어 이미지: On-the-Job Training. 일하는 현장에서 직접 받는 훈련 / 🔗[Link] 오제이티. 연수원에서 책 펴고 공부하는 게 아니라, 실무 부서 배치돼서 사수 모니터 뒤에 졸졸 따라다니며 맨땅에 헤딩하며 배우는 실무 교육", d:"44일차"},
+    {w:"full-time", m:["정규직", "전임의"], core:"*코어 이미지: 규정된 주간 노동 시간(보통 40시간)을 꽉 채워서(full) 일하는 자리 / 🔗[Link] 풀타임. 파트타임(알바) 말고, 9 투 6로 영혼을 회사에 100% 묶어두고 4대 보험과 월급을 따박따박 받는 든든한 정규직", d:"44일차"},
+    {w:"paid position", m:["유급직"], core:"*코어 이미지: 일한 대가로 확실하게 돈(pay)이 지급되는(paid) 직책 / 🔗[Link] 페이드 포지션. '경험이 스펙이다'라며 열정페이 착취하는 무급 인턴(unpaid)이 아니라, 내 노동력에 비례해서 통장에 돈이 꽂히는 진짜 일자리", d:"44일차"},
+    {w:"employment agreement", m:["고용 계약서"], core:"*코어 이미지: 고용주와 노동자 사이의 합의(agreement)를 담은 법적 문서 / 🔗[Link] 임플로이먼트 어그리먼트. 입사 첫날 연봉, 연차, 퇴직금 조건 꼼꼼히 확인하고 피눈물 흘리며 내 영혼을 바치겠다고 사인하는 현대판 노비 문서", d:"44일차"},
+    {w:"unemployment", m:["실업", "실직"], core:"*코어 이미지: 고용(employment)되지 않은(un) 백수 상태 / 🔗[Link] 언임플로이먼트. 회사 짤리거나 취업 못 해서 강제로 백수(실업자)가 된 상태. (※unemployment benefits: 국가에서 타 먹는 실업 급여)", d:"44일차"},
+    {w:"turnover", m:["이직률", "총매상고", "거래액"], core:"*코어 이미지: [※기출 다의어!] 직원이 휙휙 뒤집혀 바뀌거나(이직률), 자본이 한 바퀴 도는 것(매출) / 🔗[Link] 턴오버. 회사가 ㅈ같아서 1년 만에 신입들이 짐 싸서 줄퇴사하는 '이직률'이거나, 카페에서 한 달 동안 빵 팔아서 회전시킨 짭짤한 '총매출액'", d:"44일차"},
+    {w:"attire", m:["복장", "옷차림"], core:"*코어 이미지: 특정 상황(TPO)에 맞게 격식을 갖춰 입은 옷 / 🔗[Link] 어타이어. 클라이언트 미팅 갈 때 후드티 입으면 짤리고, '비즈니스 캐주얼'이나 각 잡힌 정장(Business attire) 룩으로 코스튬을 쫙 빼입어야 함", d:"44일차"},
+    {w:"exemplary", m:["모범적인", "본보기가 되는"], core:"*코어 이미지: 남들에게 훌륭한 예시(example)가 될 만한 / 🔗[Link] 이그젬플러리. 지각 한 번 없고 실적 1등 찍어서, 부장님이 '김 대리 반만 닮아라!' 하고 예시(example)로 드는 S급 에이스의 모범적 태도", d:"44일차"},
+    {w:"disciplinary", m:["징계의", "훈련상의"], core:"*코어 이미지: 규율(discipline)을 어겼을 때 벌을 주는 / 🔗[Link] 디시플리너리. 회사 법인카드로 룸살롱 갔다가 걸려서, 불려가서 탈탈 털리고 감봉이나 해고 철퇴 맞는 무시무시한 사내 징계 위원회(disciplinary committee)", d:"44일차"},
+    {w:"marital status", m:["결혼 여부", "혼인 상태"], core:"*코어 이미지: 법적으로 결혼(marital)을 했는지 안 했는지의 상태(status) / 🔗[Link] 매리틀 스테이터스. 이력서나 연말정산 서류, 비자 발급받을 때 체크란에 기혼(Married), 미혼(Single), 이혼(Divorced) 중 하나 체크해야 하는 상태", d:"44일차"},
+    {w:"maternity leave", m:["육아 휴직", "출산 휴가"], core:"*코어 이미지: 어머니(maternal)가 아기를 돌보기 위해 자리를 비우는(leave) 것 / 🔗[Link] 머터니티 리브. 임신하고 출산 전후로 회사 눈치 안 보고 당당하게 쉬면서 아기 키우라고 법적으로 보장해 주는 엄마의 출산 휴직 (아빠는 paternity leave)", d:"44일차"},
+    {w:"fiscal", m:["회계의", "재정의"], core:"*코어 이미지: 국가나 기업의 재무 상태, 1년 단위의 자금 흐름과 관련된 / 🔗[Link] 피스컬. '2025년 1분기 재무제표' 할 때 쓰이는 단어로, 회사 예산 짜고 결산할 때 쓰는 회계 연도(Fiscal Year, FY)의 찐 경제 용어", d:"44일차"},
+    {w:"by check", m:["수표로"], core:"*코어 이미지: 현금 대신 은행이 발행한 수표(check) 종이로 지불하는 방식 / 🔗[Link] 바이 체크. 천만 원짜리 물건 살 때 5만 원권 다발로 들고 가기 무거우니까, 은행에서 끊어온 깔끔한 0잔뜩 붙은 수표 한 장으로 스웩 있게 결제함", d:"44일차"},
+    {w:"installment", m:["할부", "1회분"], core:"*코어 이미지: 큰 금액을 한 번에 내지 않고 여러 달에 걸쳐 설치(install)하듯 쪼개 내는 것 / 🔗[Link] 인스톨먼트. 아이폰 15 프로 샀는데 일시불 긁으면 통장 터지니까, '카드 12개월 할부(installment)로 해주세요' 하고 빚을 잘게 쪼개서 갚아나감", d:"44일차"},
+    {w:"balance", m:["잔액", "균형 상태"], core:"*코어 이미지: [※기출 다의어!] 저울의 균형, 또는 입출금을 맞추고 계좌에 남은 찐 '잔고' / 🔗[Link] 밸런스. 워라밸(Work-Life Balance)도 맞지만, 토스 뱅크 앱 켰을 때 월급 다 퍼가고 내 계좌에 처참하게 남아있는 실시간 '통장 잔액(account balance)'", d:"44일차"},
+    {w:"wire transfer", m:["송금", "계좌 이체"], core:"*코어 이미지: 전선(wire) 통신망을 통해 은행 간에 돈을 이동시키는(transfer) 것 / 🔗[Link] 와이어 트랜스퍼. 옛날엔 전보(wire) 쳐서 돈 보냈지만, 지금은 스마트폰 뱅킹 앱 켜서 1초 만에 친구 통장으로 밥값 엔빵 송금/이체 쏴주는 것", d:"44일차"},
+    {w:"subcontract", m:["하청 계약", "하도급을 주다"], core:"*코어 이미지: 메인 계약(contract) 아래(sub)에 또 맺는 새끼 계약 / 🔗[Link] 서브컨트랙트. 현대건설(원청)이 아파트 공사 따내서, 철근이나 시멘트 작업만 전문으로 하는 중소기업한테 '너네가 이거 맡아라' 하고 일감을 떼어주는 하청(sub)", d:"44일차"},
+    {w:"operating fund", m:["운영 기금", "운영 자금"], core:"*코어 이미지: 회사나 조직이 평소에 돌아가기(operating) 위해 쓰는 핏줄 같은 돈(fund) / 🔗[Link] 오퍼레이팅 펀드. 회사 사무실 전기세 내고, 서버비 내고, 직원들 밥값 주면서 회사가 안 망하고 굴러가게 피를 수혈해 주는 필수 런닝 머니(운영 자금)", d:"44일차"},
+    {w:"beneficiary", m:["수혜자", "수익자"], core:"*코어 이미지: 혜택(benefit)을 꿀꺽 받아 챙기는 사람 / 🔗[Link] 베네피셔리. 아빠가 들어둔 10억짜리 생명 보험금의 최종 수령인이 나로 되어 있어서, 혜택(benefit)을 직빵으로 타 먹는 합법적 찐 수혜자", d:"44일차"}
 
 ];
 
@@ -1381,6 +1406,12 @@ const examData = [
     { w: "offset", s: "The sudden increase in fuel prices completely <span class='underlined'>offset</span> the company's profits for this quarter.", c: "cancel out / balance" },
     { w: "have yet to RV", s: "Although the deadline is tomorrow, the management team <span class='underlined'>has yet to</span> approve the final budget.", c: "has not yet approved (※긍정문 형태지만 부정의 뜻!)" },
     { w: "in light of", s: "<span class='underlined'>In light of</span> the recent security breach, we must update all employees' network credentials immediately.", c: "considering (new information)" }
+,
+    // Day 44 비즈니스 다의어 기출 예문 추가
+    { w: "turnover", s: "The call center is struggling to maintain quality due to its incredibly high employee <span class='underlined'>turnover</span> rate.", c: "rate at which employees leave (이직률/퇴사율)" },
+    { w: "balance", s: "Please check your current account <span class='underlined'>balance</span> before attempting to make a large international wire transfer.", c: "amount of money remaining (계좌 잔액)" },
+    { w: "exemplary", s: "He was awarded the employee of the year plaque for his <span class='underlined'>exemplary</span> dedication and flawless work ethic.", c: "outstanding / serving as a model (모범적인)" },
+    { w: "maternity leave", s: "The company's new HR policy offers six months of paid <span class='underlined'>maternity leave</span> for expectant mothers.", c: "time off for having a baby (출산/육아 휴직)" }
 
 ];
 
@@ -1580,5 +1611,11 @@ const idiomData = [
     { idiom: "follow up with", m: "~을 덧붙이다, (메일/회의 등에서) 후속 조치를 하다", w: "follow up with", d: "43일차" },
     { idiom: "in light of vs given", m: "in light of(새로운 변수 고려) / given(이미 정해진 기정사실 고려)", w: "in light of", d: "43일차" },
     { idiom: "offset A against B", m: "A를 B로 상쇄하다, 벌충하다 (경제/비즈니스 지문 빈출)", w: "offset", d: "43일차" }
+    ,
+    // 💡 44일차 필수 비즈니스 숙어 표현
+    { idiom: "high turnover (rate)", m: "높은 이직률 (직원들이 금방금방 그만두는 상태)", w: "turnover", d: "44일차" },
+    { idiom: "account balance", m: "계좌 잔고, 잔액 (은행/회계 지문 빈출)", w: "balance", d: "44일차" },
+    { idiom: "maternity / paternity leave", m: "출산 휴가 (maternity: 엄마 / paternity: 아빠)", w: "maternity leave", d: "44일차" },
+    { idiom: "pay in installments", m: "할부로 지불하다 (※일시불은 pay in full)", w: "installment", d: "44일차" }
     
 ];
