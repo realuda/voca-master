@@ -1208,6 +1208,65 @@ const fullDB = [
     {w:"subcontract", m:["하청 계약", "하도급을 주다"], core:"*코어 이미지: 메인 계약(contract) 아래(sub)에 또 맺는 새끼 계약 / 🔗[Link] 서브컨트랙트. 현대건설(원청)이 아파트 공사 따내서, 철근이나 시멘트 작업만 전문으로 하는 중소기업한테 '너네가 이거 맡아라' 하고 일감을 떼어주는 하청(sub)", d:"44일차"},
     {w:"operating fund", m:["운영 기금", "운영 자금"], core:"*코어 이미지: 회사나 조직이 평소에 돌아가기(operating) 위해 쓰는 핏줄 같은 돈(fund) / 🔗[Link] 오퍼레이팅 펀드. 회사 사무실 전기세 내고, 서버비 내고, 직원들 밥값 주면서 회사가 안 망하고 굴러가게 피를 수혈해 주는 필수 런닝 머니(운영 자금)", d:"44일차"},
     {w:"beneficiary", m:["수혜자", "수익자"], core:"*코어 이미지: 혜택(benefit)을 꿀꺽 받아 챙기는 사람 / 🔗[Link] 베네피셔리. 아빠가 들어둔 10억짜리 생명 보험금의 최종 수령인이 나로 되어 있어서, 혜택(benefit)을 직빵으로 타 먹는 합법적 찐 수혜자", d:"44일차"}
+,
+    // --- 45일차 (28단어, 행사/마케팅 & IT/게임/경제 테마 맞춤형 링크 반영) ---
+    {w:"convention", m:["회의", "대회", "관습"], core:"*코어 이미지: 특정 목적을 위해 사람들이 한곳에 모이는 큰 모임 / 🔗[Link] 컨벤션. 매년 열리는 게임 쇼 '지스타(G-STAR)'나 만화 축제 '코믹콘(Comic-Con)'처럼 전 세계 덕후들이 다 같이(con) 모여(vent) 즐기는 거대 대회", d:"45일차"},
+    {w:"recital", m:["연주회", "발표회"], core:"*코어 이미지: 혼자 또는 소수가 그동안 연습한 것을 사람들 앞에서 읊듯이(cite) 보여주는 것 / 🔗[Link] 리사이틀. '피아니스트 조성진 리사이틀'처럼 오케스트라 떼거리 연주가 아니라, 주인공이 혼자 무대 씹어먹으며 실력을 뽐내는 단독 공연", d:"45일차"},
+    {w:"farewell gathering", m:["송별회"], core:"*코어 이미지: 잘 가라(fare-well)는 인사를 하기 위해 모이는(gathering) 자리 / 🔗[Link] 페어웰 개더링. 이적하는 에이스 축구 선수를 위해 팬들이 마지막 경기 후 눈물 흘리며 작별 인사를 나누는 굿바이 파티", d:"45일차"},
+    {w:"outreach program", m:["지원 활동", "봉사 프로그램"], core:"*코어 이미지: 밖으로(out) 손을 뻗어(reach) 도움이 필요한 사람을 돕는 것 / 🔗[Link] 아웃리치 프로그램. 대기업이나 게임사가 소외 계층 아이들에게 코딩 교육을 해주거나 PC를 기부하는 사회 공헌(CSR) 퀘스트", d:"45일차"},
+    {w:"reunion", m:["친목회", "재회"], core:"*코어 이미지: 떨어져 있던 사람들이 다시(re) 하나로(union) 뭉치는 것 / 🔗[Link] 리유니언. 10년 전 해체했던 록 밴드가 다시 모여 하는 재결합 콘서트나, 명절에 동창들이 펍에 모여 '라떼는 말이야' 시전하는 동창회", d:"45일차"},
+    {w:"alumni", m:["졸업생들", "동창생"], core:"*코어 이미지: 한 학교나 조직을 거쳐 간 사람들의 모임 / 🔗[Link] 얼럼나이. 링크드인(LinkedIn) 프로필에 등록된 '하버드 졸업생 네트워크'처럼, 사회 각 분야에 퍼져서 서로 끌어주고 밀어주는 든든한 학연 인맥들", d:"45일차"},
+    {w:"banquet", m:["연회", "만찬"], core:"*코어 이미지: 고급 호텔에서 각 잡고 화려하게 차려 먹는 성대한 식사 / 🔗[Link] 뱅킷. 연말 시상식 끝난 뒤 배우들이 턱시도 입고 샴페인 잔 부딪히며 스테이크 써는 럭셔리한 대규모 파티 만찬", d:"45일차"},
+    {w:"keynote", m:["기조", "기본 방침"], core:"*코어 이미지: 음악의 으뜸음(key-note)처럼 전체의 중심이 되는 핵심 메시지 / 🔗[Link] 키노트. 애플 개발자 컨퍼런스(WWDC)에서 팀 쿡이 무대 나와서 '올해 아이폰은 이게 핵심이다!'라고 빡세게 발표하는 가장 중요한 메인 연설", d:"45일차"},
+    {w:"observance", m:["기념", "준수"], core:"*코어 이미지: 법을 지켜보며(observe) 따르거나, 특정 날을 기리는 것 / 🔗[Link] 업저번스. 공공기관에서 5.18 민주화운동 기념일을 기리는 행사나, 회사 보안 규정을 어기지 않고 눈 부릅뜨고 지키는 준수 정신", d:"45일차"},
+    {w:"proceeds", m:["수익금", "매출액"], core:"*코어 이미지: [※항상 복수형] 행사를 진행(proceed)해서 나온 결과물인 돈 / 🔗[Link] 프로씨즈. 자선 경매 게임 템 판매 '수익금' 전액을 유니세프에 쏘거나, 굿즈 팔아서 남은 짭짤한 순수 매출 돈 뭉치", d:"45일차"},
+    {w:"brochure", m:["소책자", "안내서"], core:"*코어 이미지: 광고용으로 예쁘게 인쇄된 얇은 안내 책자 / 🔗[Link] 브로슈어. 람보르기니 전시장 갔을 때 직원이 '한번 보세요' 하고 건네주는 빤딱빤딱한 종이 재질의 럭셔리한 카탈로그 안내서", d:"45일차"},
+    {w:"booklet", m:["소책자", "팸플릿"], core:"*코어 이미지: 책(book)의 작은(-let) 버전 / 🔗[Link] 북렛. 새로 산 플스(PS5) 게임 타이틀 케이스 안에 들어있는 얇은 조작법 안내 종이나, 아이폰 박스 밑에 깔려있는 깨알 같은 설명서", d:"45일차"},
+    {w:"handout", m:["유인물", "보조금"], core:"*코어 이미지: 손으로(hand) 밖으로(out) 나눠주는 종이 / 🔗[Link] 핸드아웃. 대학 강의실이나 세미나장에서 '자료 못 받으신 분?' 하며 조교가 한 장씩 돌리는 요약본 종이 뭉치나 국가에서 나눠주는 지원금", d:"45일차"},
+    {w:"admission", m:["입장", "입학", "시인"], core:"*코어 이미지: 안으로 들어오도록 허락하는 것 / 🔗[Link] 어드미션. 롯데월드 갈 때 매표소에서 끊는 '입장권(Admission ticket)'이나, 내가 트롤링했다는 사실을 쿨하게 인정하고 시인하는 것", d:"45일차"},
+    {w:"catering", m:["출장 요리", "음식 조달"], core:"*코어 이미지: 외부 업체가 음식을 준비해서 행사장으로 배달해 주는 서비스 / 🔗[Link] 케이터링. 촬영 현장에 밥차가 와서 연예인들이랑 스태프들 밥 먹여주거나, 홈 파티할 때 요리사 불러서 뷔페 쫙 깔아주는 서비스", d:"45일차"},
+    {w:"culinary", m:["요리의", "음식의"], core:"*코어 이미지: 주방이나 요리 기술과 관련된 / 🔗[Link] 컬리너리. 넷플릭스 '흑백요리사'의 미슐랭 셰프들이 뽐내는 화려한 '요리 예술(Culinary arts)'이나 요리 학교의 전문적인 커리큘럼", d:"45일차"},
+    {w:"complimentary", m:["무료의", "칭찬하는"], core:"*코어 이미지: [※스펠링 주의 'i'] 호의로 거저 주는 / 🔗[Link] 컴플리먼트리. 호텔 냉장고 안 '무료 생수'나 게임 예약 구매하면 공짜로 끼워주는 '무료 DLC 스킨'처럼 내 지갑 안 털어가는 공짜 서비스", d:"45일차"},
+    {w:"redeemable", m:["교환할 수 있는", "상환할 수 있는"], core:"*코어 이미지: 쿠폰이나 포인트를 실제 가치 있는 물건으로 바꿀 수 있는 / 🔗[Link] 리디머블. 구글 기프트 카드 뒷면 긁어서 나오는 '리딤 코드'를 입력해 게임 머니로 바꾸거나, 백화점 상품권을 현찰로 교환하는 것", d:"45일차"},
+    {w:"venue", m:["장소", "개최지"], core:"*코어 이미지: 사람들이 모이기 위해 오는(vent) 장소 / 🔗[Link] 베뉴. LCK 결승전이 열리는 '경주 실내체육관' 같은 대규모 이벤트 장소나, 웨딩 홀처럼 특별한 행사가 열리는 핫플레이스 장소", d:"45일차"},
+    {w:"refreshment", m:["다과", "생기 회복"], core:"*코어 이미지: 기운을 다시 새롭게(fresh) 만들어주는 가벼운 간식 / 🔗[Link] 리프레시먼트. 회의 중간 쉬는 시간에 당 떨어지지 말라고 테이블에 놓인 쿠키, 커피, 주스 같은 가벼운 군것질거리", d:"45일차"},
+    {w:"picturesque", m:["그림 같은", "생생한"], core:"*코어 이미지: 그림(picture)처럼 아름다운 / 🔗[Link] 픽처레스크. 오픈 월드 게임 '레드 데드 리뎀션'에서 말 타고 언덕 올랐을 때 펼쳐지는, 스크린샷 찍어서 배경화면 하고 싶은 미친 절경", d:"45일차"},
+    {w:"hands-on", m:["실습하는", "직접 해보는"], core:"*코어 이미지: 손(hands)을 물건 위(on)에 올리고 직접 만져보는 / 🔗[Link] 핸즈온. 테크 유튜버들이 출시 전 신형 아이폰을 미리 만져보고 올리는 '핸즈온(실제 사용)' 영상이나 신입 사원 현장 실습 훈련", d:"45일차"},
+    {w:"timely", m:["시기적절한", "때맞춘"], core:"*코어 이미지: 시간(time)에 딱 맞춰 일어나는 / 🔗[Link] 타임리. 축구에서 0:0으로 비기고 있다가 90분 추가시간에 꽂아 넣는 극적인 결승 골처럼, 아주 기가 막힌 타이밍에 터진 '시기적절한' 도움", d:"45일차"},
+    {w:"power outage", m:["정전"], core:"*코어 이미지: 전력(power)이 밖으로 나가(out) 버린 결핍 상태 / 🔗[Link] 파워 아웃티지. 한여름 에어컨 풀가동 하다가 아파트 단지 변압기 터져서 집안 가전제품 다 꺼지고 롤 하다가 탈주 처리되는 빡치는 정전 상황", d:"45일차"},
+    {w:"turnout", m:["참여율", "참석자 수"], core:"*코어 이미지: 집 밖으로 나온(turn out) 사람들의 수 / 🔗[Link] 턴아웃. 신작 게임 오픈 베타 날 서버 대기열이 10만 명 찍힐 정도로 터져나가는 미친 '참여율'이나 대통령 선거의 '투표율'", d:"45일차"},
+    {w:"amenity", m:["편의 시설"], core:"*코어 이미지: 머무는 동안 즐거움과 편리함을 주는 시설 / 🔗[Link] 어메니티. 호텔 화장실에 놓인 샴푸, 칫솔 세트나 아파트 단지 내 헬스장, 수영장처럼 삶의 질을 수직 상승시켜 주는 꿀 같은 편의 시설", d:"45일차"},
+    {w:"rest assured", m:["안심하세요", "확신해도 됩니다"], core:"*코어 이미지: 걱정 다 내려놓고 쉬어도(rest) 될 만큼 확실하다(assured) / 🔗[Link] 레스트 어슈어드. 고객의 컴플레인 메일에 상담원이 '저희가 100% 환불해 드릴 테니 안심하세요'라고 쐐기를 박는 든든한 안심 멘트", d:"45일차"},
+    {w:"seamless", m:["매끄러운", "순조로운"], core:"*코어 이미지: 바느질 솔기(seam)가 없어서(less) 툭 걸리는 것 없이 매끈한 / 🔗[Link] 심리스. 시스템 서버 이전했는데 유저들이 눈치도 못 채게 '매끄럽게' 연결되거나, 게임 맵 이동할 때 로딩 화면 없이 쫙 이어지는 심리스 월드", d:"45일차"}
+    ,
+    // --- 46일차 (27단어, 실무 오피스 & IT/경제/게임 테마 융합 링크 - 대장정의 마무리!) ---
+    {w:"forward", m:["전달하다", "앞으로"], core:"*코어 이미지: 이메일이나 물건을 다음 사람에게 넘겨서 앞으로(forward) 보내다 / 🔗[Link] 포워드. 축구의 공격수(포워드)가 공을 앞쪽으로 차내듯, 거래처에서 받은 메일을 부장님한테 [FW] 달아서 그대로 전달함", d:"46일차"},
+    {w:"CC", m:["참조하다", "참조"], core:"*코어 이미지: Carbon Copy. 이메일을 여러 명에게 동시에 복사해서 보내다 / 🔗[Link] 씨씨. "김대리, 이따 클라이언트한테 메일 쏠 때 나 무조건 CC(참조) 걸어서 보내!" 하며 메일 수신판에 숟가락 얹기", d:"46일차"},
+    {w:"stunning", m:["놀랄 만큼 멋진"], core:"*코어 이미지: 스턴(stun, 기절)에 걸릴 정도로 압도적이고 멋진 / 🔗[Link] 스터닝. 애플 신제품 발표회에서 공개된 새 아이폰의 디자인과 화질이 뇌 정지(스턴) 올 만큼 헉 소리 나게 쩔어주는 상태", d:"46일차"},
+    {w:"dispatch", m:["파견하다", "발송하다", "신속히 해치우다"], core:"*코어 이미지: 특정한 목적을 위해 사람이나 물건을 잽싸게 밖으로 쏘아 보내다 / 🔗[Link] 디스패치. 연예인 열애설 떴을 때 파파라치 기자를 현장으로 '파견(디스패치)' 하거나, 쿠팡 물류센터에서 로켓배송 트럭을 신속하게 '발송' 처리함", d:"46일차"},
+    {w:"courier", m:["택배 배달원", "전령"], core:"*코어 이미지: 중요한 서류나 소포를 직접 들고 뛰며 배달해 주는 사람 / 🔗[Link] 쿠리어. 퀵서비스 아저씨나 페덱스(FedEx), DHL 유니폼 입고 회사 로비로 급행 서류 박스 들고 뛰어 들어오는 택배 기사님", d:"46일차"},
+    {w:"fairly", m:["상당히", "공평하게"], core:"*코어 이미지: 한쪽으로 치우치지 않게(공평), 혹은 기대 이상으로 꽤(상당히) / 🔗[Link] 페어리. 이번 분기 영업 실적이 생각했던 것보다 '꽤 상당히(fairly)' 잘 나왔거나, 심판이 편파 판정 없이 '공평하게' 호루라기를 붊", d:"46일차"},
+    {w:"automotive", m:["자동차의"], core:"*코어 이미지: 자동차(auto)를 움직이게(motive) 하는 산업이나 기술 / 🔗[Link] 오토모티브. 테슬라나 현대차처럼 내연기관부터 자율주행 전기차까지 아우르는 거대한 글로벌 자동차(Automotive) 산업 생태계", d:"46일차"},
+    {w:"cutting-edge", m:["최첨단의"], core:"*코어 이미지: 칼날(cutting-edge)의 가장 날카로운 맨 앞부분처럼, 시대의 제일 앞에 있는 기술 / 🔗[Link] 커팅 엣지. 엔비디아(NVIDIA)가 발표한 방금 막 연구실에서 튀어나온, 남들은 따라오지도 못하는 칼끝 같은 초정밀 AI 반도체 기술", d:"46일차"},
+    {w:"state-of-the-art", m:["최첨단의"], core:"*코어 이미지: 현재 기술 상태(state)가 예술(art)의 경지에 이른 최고 수준 / 🔗[Link] 스테이트 오브 디 아트. 삼성이 새로 지은 반도체 공장처럼, 현존하는 인류의 모든 장비와 기술을 갈아 넣어 예술적 경지에 도달한 최신식 설비", d:"46일차"},
+    {w:"remainder", m:["나머지"], core:"*코어 이미지: 전체에서 일부를 빼고 남은(remain) 것 [※주의: reminder(알림)와 혼동 금지!] / 🔗[Link] 리메인더. 계약금 10% 먼저 입금하고, '나머지(remainder)' 잔금 90%는 프로젝트 완료 후 30일 이내에 결제하기로 한 엑셀 청구서", d:"46일차"},
+    {w:"high-profile", m:["유명한", "세간의 이목을 끄는"], core:"*코어 이미지: 옆모습(profile)이 높이 솟아 누구나 다 쳐다보는 / 🔗[Link] 하이 프로파일. 일론 머스크나 스티브 잡스처럼 트위터에 점 하나만 찍어도 전 세계 언론이 대서특필하는 초우주급 어그로 관종 유명 인사", d:"46일차"},
+    {w:"infrastructure", m:["사회 기반 시설", "인프라"], core:"*코어 이미지: 아래(infra)에 깔려 구조(structure)를 지탱하는 뼈대 / 🔗[Link] 인프라스트럭처. 심시티 게임할 때 겉멋 든 랜드마크 짓기 전에, 도시가 돌아가도록 바닥에 쫙 깔아두는 도로, 전기, 수도망 같은 필수 뼈대", d:"46일차"},
+    {w:"complex", m:["복합 건물", "단지", "복잡한"], core:"*코어 이미지: 여러 가지가 한곳에 뭉쳐(com) 꼬여(plex) 있는 상태나 장소 / 🔗[Link] 컴플렉스. 코엑스나 스타필드처럼 쇼핑몰, 영화관, 식당이 거대한 한 덩어리로 얽히고설켜 모여 있는 거대한 복합 단지(Complex)", d:"46일차"},
+    {w:"wear and tear", m:["마모", "손상"], core:"*코어 이미지: 입고(wear) 찢어지며(tear) 발생하는 일상적인 낡음 / 🔗[Link] 웨어 앤 테어. 렌터카 반납할 때 일부러 차 긁은 건 물어내야 하지만, 타이어 닳거나 시트 주름진 것처럼 세월에 따른 '자연 마모(감가상각)'는 면책됨", d:"46일차"},
+    {w:"wilderness", m:["황야", "미개척지"], core:"*코어 이미지: 사람의 손길이 닿지 않은 야생(wild)의 땅 / 🔗[Link] 윌더니스. 젤다의 전설 '브레스 오브 더 와일드(야생의 숨결)'에서 튜토리얼 끝나고 눈앞에 쫙 펼쳐지는, 몬스터만 득실거리는 쌩 야생의 오픈 월드", d:"46일차"},
+    {w:"public figure", m:["유명 인사", "공인"], core:"*코어 이미지: 대중(public)에게 알려진 인물(figure) / 🔗[Link] 퍼블릭 피규어. 정치인이나 유재석처럼 길 가다 밥만 먹어도 사람들이 다 알아보고, 사회적으로 말 한마디 행동 하나 빡세게 조심해야 하는 공인", d:"46일차"},
+    {w:"ventilation", m:["환기", "통풍"], core:"*코어 이미지: 바람(vent)이 통하게 하여 공기를 순환시킴 / 🔗[Link] 벤틸레이션. 구글 데이터 센터의 수만 대 서버 컴퓨터가 열받아서 뻗지 않게, 거대한 대형 팬(Fan)을 돌려 열기를 빼내고 찬 공기를 쏴주는 환기 시스템", d:"46일차"},
+    {w:"on-call security specialist", m:["당직 보안 전문가"], core:"*코어 이미지: 부르면(call) 대기 상태(on)에서 튀어나오는 보안 요원 / 🔗[Link] 온콜 시큐리티 스페셜리스트. 새벽 3시에 회사 서버 디도스(DDoS) 공격받았을 때, 비상 연락망 '온콜(On-call)' 전화받고 자다 깨서 노트북 켜고 방어하는 보안 개발자", d:"46일차"},
+    {w:"floor plan", m:["층별 안내도", "평면도"], core:"*코어 이미지: 바닥(floor)의 구조를 위에서 내려다본 계획도(plan) / 🔗[Link] 플로어 플랜. 아파트 모델하우스 팸플릿에 그려진 방 3개 화장실 2개짜리 위에서 내려다본 도면이거나, 오피스 빌딩 로비에 붙어있는 층별 비상구 미니맵", d:"46일차"},
+    {w:"self-employed", m:["자영업을 하는", "개인 사업자의"], core:"*코어 이미지: 남 밑에 고용된 게 아니라 스스로(self) 고용(employed)한 / 🔗[Link] 셀프 임플로이드. 회사에 영혼 바치는 월급쟁이가 아니라, 내 돈 내산으로 치킨집 차린 사장님이나 집에서 노트북으로 일감 따서 일하는 프리랜서", d:"46일차"},
+    {w:"sign up for", m:["~을 신청하다", "가입하다"], core:"*코어 이미지: 종이에 사인(sign)해서 제출하여 명단에 위(up)로 올리다 / 🔗[Link] 사인 업 포. 넷플릭스 한 달 무료 체험 신청하려고 이메일 비번 치고 '가입하기(Sign up)' 버튼 누르거나, 이번 주 사내 워크숍 명단에 이름 적어넣음", d:"46일차"},
+    {w:"household", m:["가구", "가정의"], core:"*코어 이미지: 한 지붕 아래 집(house)을 유지하고(hold) 사는 사람들의 단위 / 🔗[Link] 하우스홀드. 경제 뉴스에서 맨날 떠드는 '가계(household) 부채 최고치 갱신' 할 때 나오는, 기업도 국가도 아닌 우리 집 살림살이 단위", d:"46일차"},
+    {w:"tailored", m:["맞춤의", "주문 제작의"], core:"*코어 이미지: 재단사(tailor)가 몸 치수 딱 재서 핏하게 깎아 만든 / 🔗[Link] 테일러드. 유튜브 알고리즘이 내 시청 기록을 싹 분석해서, 기가 막히게 내 취향에 100% 딱 들어맞는(테일러드) 도파민 영상들만 홈 화면에 맞춤형으로 쏴줌", d:"46일차"},
+    {w:"to this end", m:["이 목적을 위해"], core:"*코어 이미지: 이(this) 결과나 끝(end/목표)에 도달하기 위하여 / 🔗[Link] 투 디스 엔드. 기획안 PPT 마지막 장에서 \"매출 2배 떡상이라는 '이 목적을 달성하기 위해(To this end)', 우리는 마케팅 예산을 늘려야 합니다\" 하고 결론 때릴 때 쓰는 치트키", d:"46일차"},
+    {w:"litter", m:["어지르다", "쓰레기"], core:"*코어 이미지: 여기저기 아무렇게나 흩어져 있는 지저분한 것들 / 🔗[Link] 리터. 한강 공원에서 불꽃축제 끝나고 양심 없는 사람들이 잔디밭에 널브러뜨리고 튄 먹다 남은 치킨 뼈와 돗자리 쓰레기(litter) 무더기", d:"46일차"},
+    {w:"round trip", m:["왕복 여행"], core:"*코어 이미지: 갔다가 둥글게(round) 원을 그려 다시 돌아오는 여행 / 🔗[Link] 라운드 트립. 스카이스캐너에서 도쿄 출장 비행기표 끊을 때 편도(One-way) 안 끊고, 서울 $\rightarrow$ 도쿄 $\rightarrow$ 서울로 깔끔하게 돌아오는 '왕복(Round trip)' 티켓으로 결제함", d:"46일차"},
+    {w:"carry-on", m:["휴대용의", "기내 수하물"], core:"*코어 이미지: 비행기 탈 때 수하물 칸에 안 맡기고 내 손에 직접 들고(carry) 타는(on) 가방 / 🔗[Link] 캐리 온. 제주도 1박 2일 워크숍 갈 때 귀찮게 수하물 안 부치고, 좌석 위 선반에 바로 쑤셔 넣을 수 있는 20인치짜리 쪼끄만 기내용 캐리어", d:"46일차"}
 
 ];
 
@@ -1412,7 +1471,18 @@ const examData = [
     { w: "balance", s: "Please check your current account <span class='underlined'>balance</span> before attempting to make a large international wire transfer.", c: "amount of money remaining (계좌 잔액)" },
     { w: "exemplary", s: "He was awarded the employee of the year plaque for his <span class='underlined'>exemplary</span> dedication and flawless work ethic.", c: "outstanding / serving as a model (모범적인)" },
     { w: "maternity leave", s: "The company's new HR policy offers six months of paid <span class='underlined'>maternity leave</span> for expectant mothers.", c: "time off for having a baby (출산/육아 휴직)" }
-
+,
+    // Day 45 행사 및 고객 서비스 기출 예문 추가
+    { w: "complimentary", s: "The hotel offers a <span class='underlined'>complimentary</span> shuttle service to and from the airport for all its guests.", c: "free of charge (※'i' 스펠링 주의)" },
+    { w: "proceeds", s: "All of the <span class='underlined'>proceeds</span> from the charity auction will be donated to local orphanages.", c: "profits / earnings (※항상 복수형)" },
+    { w: "seamless", s: "The new software update ensures a <span class='underlined'>seamless</span> transition between mobile and desktop devices.", c: "smooth / continuous (끊김 없는)" },
+    { w: "venue", s: "The organizers are still looking for a suitable <span class='underlined'>venue</span> that can accommodate over 500 convention participants.", c: "location / place" }
+    ,
+    // Day 46 비즈니스 실무 및 계약서 기출 예문 추가 (최종)
+    { w: "wear and tear", s: "The lease agreement clearly states that normal <span class='underlined'>wear and tear</span> on the office equipment is entirely acceptable.", c: "damage from normal use (자연 마모, 정상적 손상)" },
+    { w: "to this end", s: "We need to double our software sales this year. <span class='underlined'>To this end</span>, we will hire five more senior marketing executives.", c: "for this purpose / in order to achieve this (이 목적을 위해)" },
+    { w: "CC", s: "When you send the final revised contract to the client, please make sure to <span class='underlined'>CC</span> the department manager.", c: "carbon copy / include someone in an email (참조하다)" },
+    { w: "cutting-edge", s: "The newly built research facility is fully equipped with <span class='underlined'>cutting-edge</span> medical imaging technology.", c: "highly advanced / state-of-the-art (최첨단의)" }
 ];
 
 
