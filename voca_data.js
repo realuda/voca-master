@@ -1241,7 +1241,7 @@ const fullDB = [
     ,
     // --- 46일차 (27단어, 실무 오피스 & IT/경제/게임 테마 융합 링크 - 대장정의 마무리!) ---
     {w:"forward", m:["전달하다", "앞으로"], core:"*코어 이미지: 이메일이나 물건을 다음 사람에게 넘겨서 앞으로(forward) 보내다 / 🔗[Link] 포워드. 축구의 공격수(포워드)가 공을 앞쪽으로 차내듯, 거래처에서 받은 메일을 부장님한테 [FW] 달아서 그대로 전달함", d:"46일차"},
-    {w:"CC", m:["참조하다", "참조"], core:"*코어 이미지: Carbon Copy. 이메일을 여러 명에게 동시에 복사해서 보내다 / 🔗[Link] 씨씨. "김대리, 이따 클라이언트한테 메일 쏠 때 나 무조건 CC(참조) 걸어서 보내!" 하며 메일 수신판에 숟가락 얹기", d:"46일차"},
+    {w:"CC", m:["참조하다", "참조"], core:"*코어 이미지: Carbon Copy. 이메일을 여러 명에게 동시에 복사해서 보내다 / 🔗[Link] 씨씨. '김대리, 이따 클라이언트한테 메일 쏠 때 나 무조건 CC(참조) 걸어서 보내!' 하며 메일 수신판에 숟가락 얹기", d:"46일차"},
     {w:"stunning", m:["놀랄 만큼 멋진"], core:"*코어 이미지: 스턴(stun, 기절)에 걸릴 정도로 압도적이고 멋진 / 🔗[Link] 스터닝. 애플 신제품 발표회에서 공개된 새 아이폰의 디자인과 화질이 뇌 정지(스턴) 올 만큼 헉 소리 나게 쩔어주는 상태", d:"46일차"},
     {w:"dispatch", m:["파견하다", "발송하다", "신속히 해치우다"], core:"*코어 이미지: 특정한 목적을 위해 사람이나 물건을 잽싸게 밖으로 쏘아 보내다 / 🔗[Link] 디스패치. 연예인 열애설 떴을 때 파파라치 기자를 현장으로 '파견(디스패치)' 하거나, 쿠팡 물류센터에서 로켓배송 트럭을 신속하게 '발송' 처리함", d:"46일차"},
     {w:"courier", m:["택배 배달원", "전령"], core:"*코어 이미지: 중요한 서류나 소포를 직접 들고 뛰며 배달해 주는 사람 / 🔗[Link] 쿠리어. 퀵서비스 아저씨나 페덱스(FedEx), DHL 유니폼 입고 회사 로비로 급행 서류 박스 들고 뛰어 들어오는 택배 기사님", d:"46일차"},
@@ -1267,7 +1267,42 @@ const fullDB = [
     {w:"litter", m:["어지르다", "쓰레기"], core:"*코어 이미지: 여기저기 아무렇게나 흩어져 있는 지저분한 것들 / 🔗[Link] 리터. 한강 공원에서 불꽃축제 끝나고 양심 없는 사람들이 잔디밭에 널브러뜨리고 튄 먹다 남은 치킨 뼈와 돗자리 쓰레기(litter) 무더기", d:"46일차"},
     {w:"round trip", m:["왕복 여행"], core:"*코어 이미지: 갔다가 둥글게(round) 원을 그려 다시 돌아오는 여행 / 🔗[Link] 라운드 트립. 스카이스캐너에서 도쿄 출장 비행기표 끊을 때 편도(One-way) 안 끊고, 서울 $\rightarrow$ 도쿄 $\rightarrow$ 서울로 깔끔하게 돌아오는 '왕복(Round trip)' 티켓으로 결제함", d:"46일차"},
     {w:"carry-on", m:["휴대용의", "기내 수하물"], core:"*코어 이미지: 비행기 탈 때 수하물 칸에 안 맡기고 내 손에 직접 들고(carry) 타는(on) 가방 / 🔗[Link] 캐리 온. 제주도 1박 2일 워크숍 갈 때 귀찮게 수하물 안 부치고, 좌석 위 선반에 바로 쑤셔 넣을 수 있는 20인치짜리 쪼끄만 기내용 캐리어", d:"46일차"}
-
+,
+    // --- 47일차 (33단어, 독해 핵심 숙어 - IT/경제/게임/영화 테마 맞춤형 링크) ---
+    {w:"abide by", m:["~를 준수하다", "~을 따르다"], core:"*코어 이미지: 정해진 규칙이나 약속에 머무르며(abide) 따르다 / 🔗[Link] 어바이드 바이. 소프트웨어 설치할 때 스크롤 1초 만에 쫙 내리고 'EULA(최종 사용자 약관)에 동의하고 준수합니다'에 영혼 없이 체크하는 것", d:"47일차"},
+    {w:"ahead of", m:["~앞에", "~보다 앞서서"], core:"*코어 이미지: 남들보다 시간적, 공간적으로 머리(head) 하나 앞서 있는 / 🔗[Link] 어헤드 오브. 애플이나 삼성보다 한발 앞서서(ahead of) 혁신적인 최첨단 기술을 발표해 시장 점유율을 선점함", d:"47일차"},
+    {w:"apart from", m:["~을 제외하고", "~외에도"], core:"*코어 이미지: 덩어리에서 그것만 따로(apart) 떼어놓고 생각하면 / 🔗[Link] 어파트 프롬. '자잘한 프레임 드랍 버그 몇 개 있는 걸 '제외하고는(apart from)' 올해의 고티(GOTY)급 갓겜이다'", d:"47일차"},
+    {w:"as to", m:["~에 관해서", "~에 대하여"], core:"*코어 이미지: about처럼 특정 주제나 이슈를 콕 집어 가리킬 때 쓰는 격식 표현 / 🔗[Link] 애즈 투. 회의 중 딴소리 나오니까 '그래서 4분기 마케팅 예산 삭감건에 '관해서는(as to)' 어떻게 할 건데?' 하고 주제를 콕 집음", d:"47일차"},
+    {w:"at risk of", m:["~의 위험에 처한"], core:"*코어 이미지: 리스크(risk)의 테두리 안에 갇혀 있는 / 🔗[Link] 앳 리스크 오브. 연속 적자로 상장 폐지되어 주식이 휴지 조각이 될 '위험에 처한' 아슬아슬한 잡주 상태", d:"47일차"},
+    {w:"at the cost of", m:["~을 대가로", "~을 희생하여"], core:"*코어 이미지: [동의어: at the expense of] 무언가를 희생하고 깎아 먹는 대가로 얻어냄 / 🔗[Link] 앳 더 코스트 오브. 롤(LoL)에서 내 HP(체력)의 절반을 깎아 먹는 뼈아픈 출혈을 '대가로' 초강력 궁극기를 시전함", d:"47일차"},
+    {w:"at the mercy of", m:["~에 좌우되는", "~의 처분에 맡겨진"], core:"*코어 이미지: 내 통제권 밖의 무자비한 자비(mercy)에 운명이 걸린 상태 / 🔗[Link] 앳 더 머시 오브. 0.1% 극악의 가챠(뽑기) 확률이라는 시스템의 자비에 내 지갑과 멘탈이 100% '좌우되는' 상황", d:"47일차"},
+    {w:"be apt to RV", m:["~하는 경향이 있다", "~하기 쉽다"], core:"*코어 이미지: 특정한 조건이 주어지면 자연스럽게 그렇게 행동하는 속성 / 🔗[Link] 비 앱트 투. 주식 쌩초보들은 남들이 가즈아 외치며 다 살 때 뇌동매매로 꼭대기 고점에서 풀매수하는 '경향이 있다'", d:"47일차"},
+    {w:"be bent on RVing", m:["~하는데 열중하다", "~하기로 결심하다"], core:"*코어 이미지: 몸을 구부려(bent) 한 가지 목표에만 찰싹 붙어(on) 몰두하는 모습 / 🔗[Link] 비 벤트 온. 플레이스테이션 플래티넘 트로피(업적 100%) 따려고 주말 내내 밥도 안 먹고 모니터로 몸 굽히고 '열중함'", d:"47일차"},
+    {w:"be bound to RV", m:["반드시 ~할 것이다", "~할 의무가 있다"], core:"*코어 이미지: 운명이나 규칙에 단단히 묶여(bound) 있어서 피할 수 없는 / 🔗[Link] 비 바운드 투. 액션 영화에서 '이 작전은 완벽해'라며 사망 플래그 세우는 조연 캐릭터는 '반드시' 죽게 묶여 있는 국룰", d:"47일차"},
+    {w:"be concerned with", m:["~에 관심이 있다", "~와 관련되다"], core:"*코어 이미지: [※ about(걱정하다)과 구별!] 어떤 분야나 주제에 깊이 관여되어 있음 / 🔗[Link] 비 컨선드 위드. 요즘 IT 기업들은 AI 기술 발전에 따른 개인정보 프라이버시 문제에 깊이 '관련되어 있고 관심이 많음'", d:"47일차"},
+    {w:"be subject to", m:["~의 대상이다", "~의 지배를 받다", "~하기 쉽다"], core:"*코어 이미지: [※기출 최빈출] 다른 조건이나 권력 아래에 종속되어 언제든 영향을 받을 수 있는 / 🔗[Link] 비 서브젝트 투. 항공권 약관의 '비행 일정은 기상 악화로 인해 언제든 지연될 '수 있습니다(대상이 됩니다)'라는 무적의 면책 조항", d:"47일차"},
+    {w:"be supposed to RV", m:["~할 의무가 있다", "~할 예정이다"], core:"*코어 이미지: 사전에 그렇게 하기로 가정되어(supposed) 있는 사회적 약속 / 🔗[Link] 비 서포즈드 투. 게임 서버 점검이 원래 오후 2시에 '끝날 예정(의무)이었는데', 버그 터져서 밤 10시로 무기한 연장됨", d:"47일차"},
+    {w:"break into", m:["침입하다", "갑자기 ~하기 시작하다"], core:"*코어 이미지: 평온한 상태나 물리적 장벽을 깨고(break) 안으로(into) 불쑥 들어감 / 🔗[Link] 브레이크 인투. 해커가 은행 보안 방화벽을 '침입해' 뚫고 들어오거나, 얌전하던 주가가 갑자기 폭등하기 '시작함'", d:"47일차"},
+    {w:"break up", m:["헤어지다", "~을 부수다"], core:"*코어 이미지: 하나였던 덩어리가 완전히 산산조각 나서 위로(up) 흩어짐 / 🔗[Link] 브레이크 업. 영원할 줄 알았던 봇 듀오가 멘탈 터져서 파티 쫑내고 '헤어지거나', 거대 독점 IT 기업을 반독점법으로 잘게 '부수고 쪼갬'", d:"47일차"},
+    {w:"bring to life", m:["~에 활기를 불어넣다", "소생시키다"], core:"*코어 이미지: 죽어있거나 무생물인 A를 생명(life)이 있는 상태로 가져오다(bring) / 🔗[Link] 브링 투 라이프. 언리얼 엔진 5 그래픽이 폴리곤 덩어리에 불과했던 NPC 캐릭터 얼굴 표정과 머리카락에 미친 퀄리티로 '활기를 불어넣음'", d:"47일차"},
+    {w:"bring about", m:["~을 초래하다", "야기하다"], core:"*코어 이미지: 주변(about)에 어떤 사건이나 변화를 가져오다(bring) / 🔗[Link] 브링 어바웃. 미국 금리 인상이라는 나비효과가 한국 부동산 시장 폭락과 대규모 영끌족 파산을 '초래하고 야기함'", d:"47일차"},
+    {w:"bring out", m:["~을 끌어내다", "~을 발매하다"], core:"*코어 이미지: 숨겨져 있던 것을 밖으로(out) 끄집어내어 보여주다 / 🔗[Link] 브링 아웃. 애플이 9월 스페셜 이벤트에서 꼭꼭 숨겨뒀던 아이폰 신작을 짠! 하고 '발매하거나', 선수의 잠재력을 영혼까지 '끌어냄'", d:"47일차"},
+    {w:"bring up", m:["~을 기르다", "(화제를) 꺼내다"], core:"*코어 이미지: 아이를 위로(up) 자라게 하거나, 묻혀있던 주제를 수면 위로 올리다 / 🔗[Link] 브링 업. 인터넷 커뮤니티에서 몇 년 전 끝난 떡밥 논쟁을 굳이 다시 끌고 올라와(Bump) 화제를 '꺼내며' 불타오르게 함", d:"47일차"},
+    {w:"by means of", m:["~에 의하여", "~의 도움으로"], core:"*코어 이미지: 수단과 방법(means)을 동원하여 / 🔗[Link] 바이 민즈 오브. 은행 대출 안 받고, 킥스타터 '크라우드 펀딩이라는 수단에 의하여' 인디 게임 개발 자금을 성공적으로 조달함", d:"47일차"},
+    {w:"by no means", m:["결코 ~이 아닌"], core:"*코어 이미지: 어떤 수단(means)을 쓰더라도 절대(no) 아님 [※문두에 오면 도치 발생] / 🔗[Link] 바이 노 민즈. 개발자가 '이건 치명적 에러가 아니라, '결코' 버그가 아닌 의도된 기능(It's a feature)입니다'라고 박박 우김", d:"47일차"},
+    {w:"by virtue of", m:["~덕분에", "~의 힘으로"], core:"*코어 이미지: 어떤 것의 긍정적인 덕목이나 장점(virtue) 덕분에 / 🔗[Link] 바이 버츄 오브. 팀원들 다 던지는데 미드라이너의 미친 피지컬 캐리력 '덕분에(힘으로)' 넥서스 안 터지고 대역전승함", d:"47일차"},
+    {w:"call down", m:["~을 비난하다", "꾸짖다"], core:"*코어 이미지: 위에 서서 아래로(down) 깔아뭉개듯 큰소리치다 / 🔗[Link] 콜 다운. 온라인 게임에서 고의 트롤링하는 유저를 향해 팀원 4명이 채팅창으로 단체로 패드립 섞어가며 집중 '비난 폭격'을 쏟아냄", d:"47일차"},
+    {w:"call off", m:["~을 취소하다"], core:"*코어 이미지: 진행되던 것을 소리쳐서(call) 떨어져 나가게(off) 하다 / 🔗[Link] 콜 오프. 태풍 와서 오늘 저녁 예정됐던 프로야구 경기를 심판이 우천 '취소(콜 오프)' 선언해버림", d:"47일차"},
+    {w:"carry on", m:["계속하다", "진행하다"], core:"*코어 이미지: 하던 일의 짐을 지고 계속 앞으로 나아가다 / 🔗[Link] 캐리 온. 서버에 트래픽 터져서 디비(DB) 뻗을 위기인데도, 개발자가 커피 수혈하면서 밤샘 코딩 작업을 킵고잉(Keep going) '계속함'", d:"47일차"},
+    {w:"carry out", m:["~을 수행하다", "실행하다"], core:"*코어 이미지: 계획이나 명령을 밖으로(out) 들고나가 실제로 끝맺다 / 🔗[Link] 캐리 아웃. 군 특수부대가 새벽 2시에 작전 지도를 접고, 적진에 침투해 테러리스트 암살 미션을 완벽하게 '수행하고 실행함'", d:"47일차"},
+    {w:"come across", m:["~을 우연히 마주치다", "이해되다"], core:"*코어 이미지: 길을 걷다 선을 가로질러(across) 툭 하고 우연히 만나다 / 🔗[Link] 컴 어크로스. 던전 파밍하다가 0.01% 확률로 드랍되는 전설급 레어 아이템을 '우연히 마주치고' 득템하여 소리 지름", d:"47일차"},
+    {w:"come in handy", m:["유용하다", "도움이 되다"], core:"*코어 이미지: 내 손(hand)안으로 들어와서 딱 쓰기 좋게 핏이 맞다 / 🔗[Link] 컴 인 핸디. 평소엔 쓸 데 없던 맥가이버칼(스위스 아미 나이프)이 캠핑장 가서 병따개 없을 때 엄청나게 '유용하고 쓸모 있게 됨'", d:"47일차"},
+    {w:"come to life", m:["활기를 띠다", "살아나다"], core:"*코어 이미지: 생명(life)이 있는 상태로 오다(come) / 🔗[Link] 컴 투 라이프. BGM도 없던 게임 마을에 오케스트라 사운드트랙 딱 깔아주니까, 죽어있던 마을 풍경이 갑자기 웅장하게 '활기를 띰'", d:"47일차"},
+    {w:"come up with", m:["~을 생각해내다", "~을 제안하다"], core:"*코어 이미지: 아이디어를 위로(up) 끌어올려 함께(with) 테이블 위에 꺼내놓다 / 🔗[Link] 컴 업 위드. 기획 회의에서 숨 막히는 침묵이 이어질 때, 막내가 유튜브 쇼츠 알고리즘을 활용한 신박한 마케팅 아이디어를 '제안함'", d:"47일차"},
+    {w:"cope with", m:["~에 대처하다", "극복하다"], core:"*코어 이미지: 힘든 상황이나 스트레스에 맞서서 다루다 / 🔗[Link] 코프 위드. 갑자기 초당 10만 건씩 쏟아지는 디도스(DDoS) 공격 트래픽 헬파티 상황에 멘탈 부여잡고 서버 증설하며 '대처함'", d:"47일차"},
+    {w:"cut back (on)", m:["~을 줄이다", "삭감하다"], core:"*코어 이미지: 튀어나온 부분을 잘라서(cut) 뒤로(back) 후퇴시키다 / 🔗[Link] 컷 백 온. 회사 매출 떡락해서 비상경영 체제 돌입하고, 야근 식대랑 부서 회식비부터 칼같이 '삭감하고 줄여버림'", d:"47일차"},
+    {w:"dead end", m:["막다른 골목", "교착 상태"], core:"*코어 이미지: 끝(end)이 꽉 막혀 죽어있는(dead) 길 / 🔗[Link] 데드 엔드. 미로 게임에서 신나게 달렸는데 벽으로 꽉 막힌 길이라 몬스터한테 둘러싸이거나, 코드 버그 잡다가 더 이상 답이 없는 상태", d:"47일차"}
+,
 ];
 
 
@@ -1483,6 +1518,13 @@ const examData = [
     { w: "to this end", s: "We need to double our software sales this year. <span class='underlined'>To this end</span>, we will hire five more senior marketing executives.", c: "for this purpose / in order to achieve this (이 목적을 위해)" },
     { w: "CC", s: "When you send the final revised contract to the client, please make sure to <span class='underlined'>CC</span> the department manager.", c: "carbon copy / include someone in an email (참조하다)" },
     { w: "cutting-edge", s: "The newly built research facility is fully equipped with <span class='underlined'>cutting-edge</span> medical imaging technology.", c: "highly advanced / state-of-the-art (최첨단의)" }
+,
+    // Day 47 독해 핵심 숙어 기출 예문 추가
+    { w: "be subject to", s: "Please note that all scheduled flight times are <span class='underlined'>subject to</span> change without prior notice depending on weather conditions.", c: "likely to be affected by (~의 대상이 되다)" },
+    { w: "by no means", s: "<span class='underlined'>By no means</span> is this software bug a critical security threat, but it still needs to be patched.", c: "not at all / never (결코 ~이 아닌, 도치 주의)" },
+    { w: "at the cost of", s: "He finally achieved his dream of becoming CEO, but it was <span class='underlined'>at the cost of</span> his health and family life.", c: "at the expense of (~을 희생하여)" },
+    { w: "come up with", s: "We need to <span class='underlined'>come up with</span> a more innovative marketing strategy to beat our competitors.", c: "think of / suggest (아이디어를 제안하다)" }
+    
 ];
 
 
@@ -1687,5 +1729,22 @@ const idiomData = [
     { idiom: "account balance", m: "계좌 잔고, 잔액 (은행/회계 지문 빈출)", w: "balance", d: "44일차" },
     { idiom: "maternity / paternity leave", m: "출산 휴가 (maternity: 엄마 / paternity: 아빠)", w: "maternity leave", d: "44일차" },
     { idiom: "pay in installments", m: "할부로 지불하다 (※일시불은 pay in full)", w: "installment", d: "44일차" }
-    
+    ,
+    // 💡 45일차 필수 실무 숙어 표현
+    { idiom: "rest assured that", m: "~이므로 안심하세요, 확신하셔도 됩니다", w: "rest assured", d: "45일차" },
+    { idiom: "hands-on experience", m: "직접 해보는 경험, 실무 경험", w: "hands-on", d: "45일차" },
+    { idiom: "keynote speech", m: "기조 연설 (행사의 핵심 주제를 담은 메인 강연)", w: "keynote", d: "45일차"},
+    { idiom: "complimentary vs complementary", m: "complimentary(무료의) / complementary(보완적인) 구별 주의", w: "complimentary", d: "45일차" }
+    ,
+    // 💡 46일차 필수 비즈니스 숙어 표현 (최종)
+    { idiom: "wear and tear", m: "(일상적인 사용에 의한) 마모, 닳음, 손상", w: "wear and tear", d: "46일차" },
+    { idiom: "to this end", m: "이 목적을 달성하기 위해 (보고서/기획안 결론부 빈출)", w: "to this end", d: "46일차" },
+    { idiom: "sign up for", m: "~을 신청하다, ~에 가입/등록하다", w: "sign up for", d: "46일차" },
+    { idiom: "round trip vs one-way", m: "round trip(왕복) / one-way(편도)", w: "round trip", d: "46일차" }
+    ,
+    // 💡 47일차 문법 및 뉘앙스 필수 체크
+    { idiom: "be subject to N/Ving", m: "~의 영향을 받기 쉽다 (※to는 전치사이므로 뒤에 명사나 ing가 옴)", w: "be subject to", d: "47일차" },
+    { idiom: "by no means", m: "결코 ~가 아니다 (※문장 맨 앞에 오면 주어+동사 도치 발생)", w: "by no means", d: "47일차" },
+    { idiom: "be concerned with vs about", m: "with: ~에 관련/관심 있다 / about: ~에 대해 걱정하다", w: "be concerned with", d: "47일차" },
+    { idiom: "at the mercy of", m: "~에 좌우되는, ~의 자비에 맡겨진 (통제 불능 상태)", w: "at the mercy of", d: "47일차" }
 ];
